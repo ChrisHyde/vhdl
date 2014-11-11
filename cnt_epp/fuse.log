@@ -1,0 +1,12 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb_isim_beh.exe -prj C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb_beh.prj work.cnt_epp_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/epp_device.vhd" into library work
+Parsing VHDL file "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.vhd" into library work
+Parsing VHDL file "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1156 - "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb.vhd" Line 61: Formal port <DSTB> does not exist in entity <epp_device>.  Please compare the definition of block <epp_device> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb.vhd" Line 62: Formal port <ASTB> does not exist in entity <epp_device>.  Please compare the definition of block <epp_device> to its component declaration and its instantion to detect the mismatch.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit cnt_epp_tb in library work failed

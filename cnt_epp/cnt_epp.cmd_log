@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 cnt_epp.ngc cnt_epp.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cnt_epp_map.ncd cnt_epp.ngd cnt_epp.pcf 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 cnt_epp.ngc cnt_epp.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cnt_epp_map.ncd cnt_epp.ngd cnt_epp.pcf 
+par -w -intstyle ise -ol high -mt off cnt_epp_map.ncd cnt_epp.ncd cnt_epp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cnt_epp.twx cnt_epp.ncd -o cnt_epp.twr cnt_epp.pcf 
+netgen -intstyle ise -s 3  -pcf cnt_epp.pcf -rpw 100 -tpw 0 -ar Structure -tm cnt_epp -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim cnt_epp.ncd cnt_epp_timesim.vhd 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 cnt_epp.ngc cnt_epp.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cnt_epp_map.ncd cnt_epp.ngd cnt_epp.pcf 
+par -w -intstyle ise -ol high -mt off cnt_epp_map.ncd cnt_epp.ncd cnt_epp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cnt_epp.twx cnt_epp.ncd -o cnt_epp.twr cnt_epp.pcf 
+netgen -intstyle ise -s 3  -pcf cnt_epp.pcf -rpw 100 -tpw 0 -ar Structure -tm cnt_epp -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim cnt_epp.ncd cnt_epp_timesim.vhd 

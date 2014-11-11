@@ -1,0 +1,3 @@
+vhdl work "epp_device.vhd"
+vhdl work "cnt_epp.vhd"
+vhdl work "cnt_epp_tb.vhd"
