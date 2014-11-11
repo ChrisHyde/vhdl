@@ -30,26 +30,125 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity cnt_epp is
- port (
- CLK : 		in 	std_logic;
- RST : 		in 	std_logic;
- ASTRB: 		in 	std_logic;
- DSTRB: 		in 	std_logic;
- DATA: 		inout std_logic_vector(7 downto 0);
- PWRIT: 		in 	std_logic;
- PWAIT: 		out 	std_logic;
- DATO_RD:	in 	std_logic_vector(7 downto 0);
- CE_RD: 		out 	std_logic;
- DIR: 		out 	std_logic_vector(7 downto 0);
- DIR_VLD:	out 	std_logic;
- DATO: 		out 	std_logic_vector(7 downto 0);
- DATO_VLD: 	out 	std_logic);
-end cnt_epp;
+  port (
+    CLK      : in    std_logic;
+    RST      : in    std_logic;
+    ASTRB    : in    std_logic;
+    DSTRB    : in    std_logic;
+    DATA     : inout std_logic_vector(7 downto 0);
+    PWRITE   : in    std_logic;
+    PWAIT    : out   std_logic;
+    DATO_RD  : in    std_logic_vector(7 downto 0);
+    CE_RD    : out   std_logic;
+    DIR      : out   std_logic_vector (7 downto 0);
+    DIR_VLD  : out   std_logic;
+    DATO     : out   std_logic_vector (7 downto 0);
+    DATO_VLD : out   std_logic);
+end ;
 
-architecture Behavioral of cnt_epp is
+architecture rtl of cnt_epp is
 
+   signal S1:std_logic; 
+	signal S11:std_logic;
+	signal Q:std_logic;
+	
+	signal S2:std_logic; 
+	signal S22:std_logic;
+	signal Q2:std_logic;
+	
+	
 begin
 
+------------------ADDRESS---------------------------------
+   AddrBiestableD1:process (CLK,RST)
+    begin
+	 if (RST='1') then
+	      Q <= '0';
+	 elsif (CLK'event and CLK='1')then	    
+		   Q <= ASTRB;	      
+    end if;
+   end process;
 
-end Behavioral;
+
+   S1<= ASTRB and not Q;
+	S11<=S1 and not PWRITE;
+	
+	
+	AddrBiestableD2:process (CLK,RST)
+    begin
+	 if (RST='1') then
+	      DIR_VLD <= '0';
+	 elsif (CLK'event and CLK='1')then	    
+		   DIR_VLD <= S11;	      
+    end if;
+   end process;
+	
+	
+  AddrBiestableD3:process (CLK,RST,S11)
+    begin
+	 if (RST='1') then
+	      DIR <= (others=>'0');
+	 elsif (CLK'event and CLK='1')then
+			if (S11='1') then
+		   DIR <= DATA;	     
+         end if;			
+    end if;
+   end process;
+	
+	
+   --tristate
+DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='0')) else (others => 'Z');
+------------------END ADDRESS----------------------------
+
+
+
+-----------------DATA------------------------------------
+	   DataBiestableD1:process (CLK,RST)
+    begin
+	 if (RST='1') then
+	      Q2 <= '0';
+	 elsif (CLK'event and CLK='1')then	    
+		   Q2 <= DSTRB;	      
+    end if;
+   end process;
+	
+	
+	 S2<= DSTRB and not Q2;
+	S22<=S2 and not PWRITE;
+
+DataBiestableD2:process (CLK,RST)
+    begin
+	 if (RST='1') then
+	      DATO_VLD <= '0';
+	 elsif (CLK'event and CLK='1')then	    
+		   DATO_VLD <= S22;	      
+    end if;
+   end process;
+	
+	
+  DataBiestableD3:process (CLK,RST,S22)
+    begin
+	 if (RST='1') then
+	      DATO <= (others=>'0');
+	 elsif (CLK'event and CLK='1')then
+			if (S22='1') then
+		   DATO <= DATA;	     
+         end if;			
+    end if;
+   end process;
+	
+	DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='1')) else (others => 'Z');
+	
+--------------------END DATA----------------------------
+  PWAITbiestableD:process (CLK,RST)
+    begin
+	 if (RST='1') then
+	      PWAIT <= '0';
+	 elsif (CLK'event and CLK='1')then
+			PWAIT <= (not(ASTRB)) and (not(DSTRB));         		
+    end if;
+   end process;
+
+
+end rtl;
 
