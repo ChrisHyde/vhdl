@@ -1,0 +1,170 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/christopher/Dropbox/workspace/modelado14/top_system1
+Ecnt_epp
+Z1 w1415887150
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8cnt_epp.vhd
+Z5 Fcnt_epp.vhd
+l0
+L32
+VcVc^4fRYHn`5:S4Tf@^Jk2
+!s100 iO287D@WnNH4M`zU]elRn0
+Z6 OP;C;10.3d;59
+31
+Z7 !s110 1415927633
+!i10b 1
+Z8 !s108 1415927633.723000
+Z9 !s90 -reportprogress|300|-explicit|-93|cnt_epp.vhd|
+Z10 !s107 cnt_epp.vhd|
+!i113 1
+Z11 o-explicit -93 -O0
+Z12 tExplicit 1
+Artl
+R2
+R3
+DEx4 work 7 cnt_epp 0 22 cVc^4fRYHn`5:S4Tf@^Jk2
+l60
+L49
+Vh01C2HInYX8gcL1:gYF<W3
+!s100 hDC@S@bYfj9MgfEEk9Snc3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eepp_device
+Z13 w1415927621
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z16 8epp_device.vhd
+Z17 Fepp_device.vhd
+l0
+L7
+Vo6E<G<8e?W>f[>B<c`No_0
+!s100 `>lSjCJSWf?YoOI6DeoXB2
+R6
+31
+Z18 !s110 1415927635
+!i10b 1
+Z19 !s108 1415927635.170000
+Z20 !s90 -reportprogress|300|-explicit|-93|epp_device.vhd|
+Z21 !s107 epp_device.vhd|
+!i113 1
+R11
+R12
+Asim
+R14
+R15
+R2
+R3
+DEx4 work 10 epp_device 0 22 o6E<G<8e?W>f[>B<c`No_0
+l25
+L16
+V6YH<zQeScC[0k?eJmDeb82
+!s100 ]KJAK;SUko7YADW][2Zd40
+R6
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R11
+R12
+Etop_system1
+Z22 w1415926400
+R2
+R3
+R0
+Z23 8top_system1.vhd
+Z24 Ftop_system1.vhd
+l0
+L32
+VI]o7H95=TiDUF>KK5^4O[2
+!s100 A=Y_^Nz=5ke=:A0oD6n`H2
+R6
+31
+Z25 !s110 1415927634
+!i10b 1
+Z26 !s108 1415927634.436000
+Z27 !s90 -reportprogress|300|-explicit|-93|top_system1.vhd|
+Z28 !s107 top_system1.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 11 top_system1 0 22 I]o7H95=TiDUF>KK5^4O[2
+l78
+L48
+VK7_<n3K;>?3i0gDl[AkQR0
+!s100 ^403Z>[l`8_nY>bVZP^;D3
+R6
+31
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R11
+R12
+Etop_system1_tb
+Z29 w1415927602
+R2
+R3
+R0
+Z30 8top_system1_tb.vhd
+Z31 Ftop_system1_tb.vhd
+l0
+L35
+V0C?RaEzMHYmznmXcaUUd03
+!s100 9nDnAVSXacM<JecL`4RK;3
+R6
+31
+Z32 !s110 1415927636
+!i10b 1
+Z33 !s108 1415927636.004000
+Z34 !s90 -reportprogress|300|-explicit|-93|top_system1_tb.vhd|
+Z35 !s107 top_system1_tb.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R2
+R3
+Z36 DEx4 work 14 top_system1_tb 0 22 0C?RaEzMHYmznmXcaUUd03
+l83
+L38
+VX8PGM4Xd95nDTC85Q;LcZ3
+!s100 VRz6DGY;;EX_H8TlF^bz[3
+R6
+31
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R11
+R12

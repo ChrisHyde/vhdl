@@ -1,0 +1,16 @@
+* OrCAD Model Editor - Version 9.1
+
+*$
+* 7474  Dual D-Type Positive-Edge-Triggered Flip-Flops with Preset and Clear
+*
+* The TTL Data Book, Vol 2, 1985, TI
+* tdn	06/28/89	Update interface and model names
+
+.subckt 7474-X  1CLRBAR 1D 1CLK 1CE 1Q 1QBAR
++	optional: DPWR=$G_DPWR DGND=$G_DGND
++	params: MNTYMXDLY=0 IO_LEVEL=0
+UFF1 dff(1) DPWR DGND
++	1PREBAR 1CLRBAR 1CLK   1D   1Q 1QBAR
++	D_74 IO_STD MNTYMXDLY={MNTYMXDLY} IO_LEVEL={IO_LEVEL}
+.ends
+*$

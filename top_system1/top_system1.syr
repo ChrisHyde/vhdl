@@ -1,0 +1,421 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: top_system1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_system1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_system1"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : top_system1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\christopher\Dropbox\workspace\modelado14\top_system1\cnt_epp.vhd" into library work
+Parsing entity <cnt_epp>.
+Parsing architecture <rtl> of entity <cnt_epp>.
+Parsing VHDL file "C:\Users\christopher\Dropbox\workspace\modelado14\top_system1\top_system1.vhd" into library work
+Parsing entity <top_system1>.
+Parsing architecture <Behavioral> of entity <top_system1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top_system1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <cnt_epp> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_system1>.
+    Related source file is "C:\Users\christopher\Dropbox\workspace\modelado14\top_system1\top_system1.vhd".
+    Found 8-bit register for signal <DATO_REG>.
+    Found 8-bit register for signal <DATO_RD_comm>.
+    Found 8-bit register for signal <DIR_REG>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <top_system1> synthesized.
+
+Synthesizing Unit <cnt_epp>.
+    Related source file is "C:\Users\christopher\Dropbox\workspace\modelado14\top_system1\cnt_epp.vhd".
+    Found 1-bit register for signal <CE_RD>.
+    Found 1-bit register for signal <DIR_VLD>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <DATO_VLD>.
+    Found 1-bit register for signal <PWAIT>.
+    Found 1-bit register for signal <Q>.
+    Found 8-bit register for signal <DIR>.
+    Found 8-bit register for signal <DATO>.
+    Found 1-bit tristate buffer for signal <DATA<7>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<6>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<5>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<4>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<3>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<2>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<1>> created at line 141
+    Found 1-bit tristate buffer for signal <DATA<0>> created at line 141
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <cnt_epp> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 11
+ 1-bit register                                        : 6
+ 8-bit register                                        : 5
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_system1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_system1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_system1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 15
+#      LUT2                        : 2
+#      LUT3                        : 11
+#      LUT4                        : 1
+#      LUT6                        : 1
+# FlipFlops/Latches                : 46
+#      FDC                         : 5
+#      FDCE                        : 40
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 13
+#      IOBUF                       : 8
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              45  out of  54576     0%  
+ Number of Slice LUTs:                   15  out of  27288     0%  
+    Number used as Logic:                15  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     48
+   Number with an unused Flip Flop:       3  out of     48     6%  
+   Number with an unused LUT:            33  out of     48    68%  
+   Number of fully used LUT-FF pairs:    12  out of     48    25%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    218    14%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 46    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.423ns (Maximum Frequency: 292.171MHz)
+   Minimum input arrival time before clock: 3.521ns
+   Maximum output required time after clock: 4.484ns
+   Maximum combinational path delay: 5.607ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.423ns (frequency: 292.171MHz)
+  Total number of paths / destination ports: 123 / 59
+-------------------------------------------------------------------------
+Delay:               3.423ns (Levels of Logic = 2)
+  Source:            cntEpp/DIR_3 (FF)
+  Destination:       DATO_RD_comm_7 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: cntEpp/DIR_3 to DATO_RD_comm_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.864  cntEpp/DIR_3 (cntEpp/DIR_3)
+     LUT4:I0->O            1   0.203   0.580  CE_RD_comm_GND_3_o_AND_7_o_SW0 (N2)
+     LUT6:I5->O            8   0.205   0.802  CE_RD_comm_GND_3_o_AND_7_o (CE_RD_comm_GND_3_o_AND_7_o)
+     FDCE:CE                   0.322          DATO_RD_comm_7
+    ----------------------------------------
+    Total                      3.423ns (1.177ns logic, 2.246ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 112 / 92
+-------------------------------------------------------------------------
+Offset:              3.521ns (Levels of Logic = 2)
+  Source:            DSTRB (PAD)
+  Destination:       cntEpp/DATO_7 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: DSTRB to cntEpp/DATO_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.943  DSTRB_IBUF (DSTRB_IBUF)
+     LUT3:I0->O            9   0.205   0.829  cntEpp/S221 (cntEpp/S22)
+     FDCE:CE                   0.322          cntEpp/DATO_0
+    ----------------------------------------
+    Total                      3.521ns (1.749ns logic, 1.772ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 25 / 17
+-------------------------------------------------------------------------
+Offset:              4.484ns (Levels of Logic = 2)
+  Source:            DIR_REG_7 (FF)
+  Destination:       LEDS_O<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: DIR_REG_7 to LEDS_O<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.447   0.684  DIR_REG_7 (DIR_REG_7)
+     LUT3:I1->O            1   0.203   0.579  Mmux_LEDS_O81 (LEDS_O_7_OBUF)
+     OBUF:I->O                 2.571          LEDS_O_7_OBUF (LEDS_O<7>)
+    ----------------------------------------
+    Total                      4.484ns (3.221ns logic, 1.263ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 24 / 16
+-------------------------------------------------------------------------
+Delay:               5.607ns (Levels of Logic = 3)
+  Source:            PSH_BUTTON (PAD)
+  Destination:       LEDS_O<7> (PAD)
+
+  Data Path: PSH_BUTTON to LEDS_O<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   1.031  PSH_BUTTON_IBUF (PSH_BUTTON_IBUF)
+     LUT3:I0->O            1   0.205   0.579  Mmux_LEDS_O81 (LEDS_O_7_OBUF)
+     OBUF:I->O                 2.571          LEDS_O_7_OBUF (LEDS_O<7>)
+    ----------------------------------------
+    Total                      5.607ns (3.998ns logic, 1.609ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.423|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.45 secs
+ 
+--> 
+
+Total memory usage is 259400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
