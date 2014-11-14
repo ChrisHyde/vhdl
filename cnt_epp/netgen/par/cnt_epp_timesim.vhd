@@ -7,7 +7,7 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: cnt_epp_timesim.vhd
--- /___/   /\     Timestamp: Tue Nov 11 23:32:47 2014
+-- /___/   /\     Timestamp: Thu Nov 13 12:33:56 2014
 -- \   \  /  \ 
 --  \___\/\___\
 --             
@@ -57,115 +57,96 @@ entity cnt_epp is
 end cnt_epp;
 
 architecture Structure of cnt_epp is
-  signal DATA_1_MLTSRCEDGE : STD_LOGIC; 
+  signal DATO_2_308 : STD_LOGIC; 
+  signal DATO_3_309 : STD_LOGIC; 
+  signal DATO_4_310 : STD_LOGIC; 
+  signal DATO_5_311 : STD_LOGIC; 
+  signal DATO_6_312 : STD_LOGIC; 
+  signal DATO_7_313 : STD_LOGIC; 
   signal DATO_RD_0_IBUF_0 : STD_LOGIC; 
-  signal N9 : STD_LOGIC; 
   signal DATO_RD_1_IBUF_0 : STD_LOGIC; 
-  signal DATA_0_MLTSRCEDGE_0 : STD_LOGIC; 
-  signal DATA_3_MLTSRCEDGE : STD_LOGIC; 
+  signal PWAIT_OBUF_316 : STD_LOGIC; 
+  signal DATO_VLD_OBUF_317 : STD_LOGIC; 
   signal DATO_RD_2_IBUF_0 : STD_LOGIC; 
   signal DATO_RD_3_IBUF_0 : STD_LOGIC; 
-  signal DATA_2_MLTSRCEDGE_0 : STD_LOGIC; 
-  signal CLK_BUFGP : STD_LOGIC; 
   signal ASTRB_IBUF_0 : STD_LOGIC; 
-  signal DSTRB_IBUF_0 : STD_LOGIC; 
-  signal Q2_345 : STD_LOGIC; 
-  signal ASTRB_DSTRB_AND_7_o_0 : STD_LOGIC; 
-  signal DATO_VLD_OBUF_347 : STD_LOGIC; 
-  signal RST_IBUF_0 : STD_LOGIC; 
-  signal DATA_5_MLTSRCEDGE : STD_LOGIC; 
   signal DATO_RD_4_IBUF_0 : STD_LOGIC; 
   signal DATO_RD_5_IBUF_0 : STD_LOGIC; 
-  signal DATA_4_MLTSRCEDGE_0 : STD_LOGIC; 
-  signal DATA_7_MLTSRCEDGE : STD_LOGIC; 
   signal DATO_RD_6_IBUF_0 : STD_LOGIC; 
   signal DATO_RD_7_IBUF_0 : STD_LOGIC; 
-  signal DATA_6_MLTSRCEDGE_0 : STD_LOGIC; 
-  signal N17_0 : STD_LOGIC; 
-  signal N16_0 : STD_LOGIC; 
-  signal N15_0 : STD_LOGIC; 
-  signal N14_0 : STD_LOGIC; 
-  signal N13_0 : STD_LOGIC; 
-  signal N12_0 : STD_LOGIC; 
-  signal DATO_0_363 : STD_LOGIC; 
-  signal N11_0 : STD_LOGIC; 
-  signal DATO_1_365 : STD_LOGIC; 
-  signal N10_0 : STD_LOGIC; 
-  signal DATO_2_367 : STD_LOGIC; 
-  signal DATO_3_368 : STD_LOGIC; 
-  signal DATO_4_369 : STD_LOGIC; 
-  signal DATO_5_370 : STD_LOGIC; 
-  signal DATO_6_371 : STD_LOGIC; 
-  signal DATO_7_372 : STD_LOGIC; 
-  signal PWAIT_OBUF_373 : STD_LOGIC; 
-  signal DIR_0_374 : STD_LOGIC; 
-  signal DIR_1_375 : STD_LOGIC; 
-  signal DIR_2_376 : STD_LOGIC; 
-  signal DIR_3_377 : STD_LOGIC; 
-  signal DIR_4_378 : STD_LOGIC; 
-  signal DIR_5_379 : STD_LOGIC; 
-  signal DIR_6_380 : STD_LOGIC; 
-  signal DIR_7_381 : STD_LOGIC; 
-  signal DIR_VLD_OBUF_382 : STD_LOGIC; 
+  signal DIR_0_325 : STD_LOGIC; 
+  signal DIR_1_326 : STD_LOGIC; 
+  signal DIR_2_327 : STD_LOGIC; 
+  signal DIR_3_328 : STD_LOGIC; 
+  signal DIR_4_329 : STD_LOGIC; 
+  signal DIR_5_330 : STD_LOGIC; 
+  signal DIR_6_331 : STD_LOGIC; 
+  signal DIR_7_332 : STD_LOGIC; 
+  signal RST_IBUF_0 : STD_LOGIC; 
+  signal DIR_VLD_OBUF_334 : STD_LOGIC; 
+  signal PWRITE_IBUF_0 : STD_LOGIC; 
   signal CLK_BUFGP_IBUFG_0 : STD_LOGIC; 
-  signal Q_384 : STD_LOGIC; 
-  signal N17 : STD_LOGIC; 
-  signal N16 : STD_LOGIC; 
-  signal N15 : STD_LOGIC; 
-  signal N14 : STD_LOGIC; 
-  signal N13 : STD_LOGIC; 
-  signal N12 : STD_LOGIC; 
-  signal N11 : STD_LOGIC; 
-  signal N10 : STD_LOGIC; 
-  signal DATO_RD_0_IBUF_57 : STD_LOGIC; 
-  signal DATO_RD_1_IBUF_60 : STD_LOGIC; 
-  signal DATO_RD_2_IBUF_67 : STD_LOGIC; 
-  signal DATO_RD_3_IBUF_70 : STD_LOGIC; 
-  signal ASTRB_IBUF_73 : STD_LOGIC; 
-  signal DATO_RD_4_IBUF_76 : STD_LOGIC; 
-  signal DATO_RD_5_IBUF_79 : STD_LOGIC; 
-  signal DATO_RD_6_IBUF_82 : STD_LOGIC; 
-  signal DATO_RD_7_IBUF_85 : STD_LOGIC; 
-  signal RST_IBUF_104 : STD_LOGIC; 
-  signal ProtoComp5_IINV_OUT : STD_LOGIC; 
-  signal N9_non_inverted : STD_LOGIC; 
-  signal CLK_BUFGP_IBUFG_113 : STD_LOGIC; 
-  signal DSTRB_IBUF_116 : STD_LOGIC; 
-  signal DATA_4_MLTSRCEDGE : STD_LOGIC; 
-  signal DATA_6_MLTSRCEDGE : STD_LOGIC; 
-  signal DATA_0_MLTSRCEDGE : STD_LOGIC; 
-  signal DATA_2_MLTSRCEDGE : STD_LOGIC; 
-  signal ASTRB_IBUF_rt_172 : STD_LOGIC; 
-  signal Q_pack_10 : STD_LOGIC; 
-  signal DIR_0_rstpot_168 : STD_LOGIC; 
-  signal DIR_1_rstpot_167 : STD_LOGIC; 
-  signal DIR_3_rstpot_162 : STD_LOGIC; 
-  signal DIR_2_rstpot_154 : STD_LOGIC; 
-  signal DIR_4_rstpot_205 : STD_LOGIC; 
-  signal DIR_5_rstpot_198 : STD_LOGIC; 
-  signal DIR_6_rstpot_191 : STD_LOGIC; 
-  signal DIR_7_rstpot_183 : STD_LOGIC; 
-  signal S11 : STD_LOGIC; 
-  signal ASTRB_DSTRB_AND_7_o : STD_LOGIC; 
+  signal DSTRB_IBUF_0 : STD_LOGIC; 
+  signal CLK_BUFGP : STD_LOGIC; 
+  signal ASTRB_DSTRB_AND_6_o_0 : STD_LOGIC; 
+  signal N7_0 : STD_LOGIC; 
+  signal Q2_341 : STD_LOGIC; 
+  signal N6_0 : STD_LOGIC; 
+  signal N5_0 : STD_LOGIC; 
+  signal N4_0 : STD_LOGIC; 
+  signal N3_0 : STD_LOGIC; 
+  signal N2_0 : STD_LOGIC; 
+  signal N9_0 : STD_LOGIC; 
+  signal Q_348 : STD_LOGIC; 
+  signal N8_0 : STD_LOGIC; 
+  signal DATO_0_350 : STD_LOGIC; 
+  signal DATO_1_351 : STD_LOGIC; 
+  signal PWRITE_DSTRB_AND_5_o_inv_0 : STD_LOGIC; 
+  signal DATO_RD_0_IBUF_13 : STD_LOGIC; 
+  signal DATO_RD_1_IBUF_16 : STD_LOGIC; 
+  signal DATO_RD_2_IBUF_23 : STD_LOGIC; 
+  signal DATO_RD_3_IBUF_26 : STD_LOGIC; 
+  signal ASTRB_IBUF_29 : STD_LOGIC; 
+  signal DATO_RD_4_IBUF_32 : STD_LOGIC; 
+  signal DATO_RD_5_IBUF_35 : STD_LOGIC; 
+  signal DATO_RD_6_IBUF_38 : STD_LOGIC; 
+  signal DATO_RD_7_IBUF_41 : STD_LOGIC; 
+  signal RST_IBUF_60 : STD_LOGIC; 
+  signal PWRITE_IBUF_65 : STD_LOGIC; 
+  signal CLK_BUFGP_IBUFG_68 : STD_LOGIC; 
+  signal DSTRB_IBUF_71 : STD_LOGIC; 
+  signal N9 : STD_LOGIC; 
+  signal N8 : STD_LOGIC; 
+  signal N7 : STD_LOGIC; 
+  signal N6 : STD_LOGIC; 
+  signal N5 : STD_LOGIC; 
+  signal N4 : STD_LOGIC; 
+  signal N3 : STD_LOGIC; 
+  signal N2 : STD_LOGIC; 
+  signal DATO_0_rstpot_149 : STD_LOGIC; 
+  signal DSTRB_IBUF_rt_148 : STD_LOGIC; 
+  signal Q2_pack_10 : STD_LOGIC; 
+  signal DATO_3_rstpot_139 : STD_LOGIC; 
+  signal DATO_2_rstpot_131 : STD_LOGIC; 
+  signal DATO_1_rstpot_124 : STD_LOGIC; 
+  signal PWRITE_DSTRB_AND_5_o_inv : STD_LOGIC; 
   signal S22 : STD_LOGIC; 
-  signal DATO_4_rstpot_252 : STD_LOGIC; 
-  signal DATO_5_rstpot_245 : STD_LOGIC; 
-  signal DATO_6_rstpot_238 : STD_LOGIC; 
-  signal DATO_7_rstpot_230 : STD_LOGIC; 
-  signal DATO_0_rstpot_286 : STD_LOGIC; 
-  signal DATO_1_rstpot_279 : STD_LOGIC; 
-  signal DATO_2_rstpot_272 : STD_LOGIC; 
-  signal DATO_3_rstpot_264 : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_0_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_1_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_2_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_3_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_4_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_5_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATO_0_OBUF_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_6_IOBUF_OBUFT_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATO_1_OBUF_I : STD_LOGIC; 
-  signal NlwBufferSignal_DATA_7_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal DATO_4_rstpot_189 : STD_LOGIC; 
+  signal DATO_5_rstpot_182 : STD_LOGIC; 
+  signal DATO_6_rstpot_175 : STD_LOGIC; 
+  signal DATO_7_rstpot_167 : STD_LOGIC; 
+  signal ASTRB_DSTRB_AND_6_o : STD_LOGIC; 
+  signal S11 : STD_LOGIC; 
+  signal DIR_4_rstpot_229 : STD_LOGIC; 
+  signal DIR_5_rstpot_222 : STD_LOGIC; 
+  signal DIR_6_rstpot_215 : STD_LOGIC; 
+  signal DIR_7_rstpot_207 : STD_LOGIC; 
+  signal DIR_0_rstpot_261 : STD_LOGIC; 
+  signal ASTRB_IBUF_rt_260 : STD_LOGIC; 
+  signal Q_pack_10 : STD_LOGIC; 
+  signal DIR_3_rstpot_251 : STD_LOGIC; 
+  signal DIR_2_rstpot_243 : STD_LOGIC; 
+  signal DIR_1_rstpot_236 : STD_LOGIC; 
   signal NlwBufferSignal_DATO_2_OBUF_I : STD_LOGIC; 
   signal NlwBufferSignal_DATO_3_OBUF_I : STD_LOGIC; 
   signal NlwBufferSignal_DATO_4_OBUF_I : STD_LOGIC; 
@@ -186,265 +167,42 @@ architecture Structure of cnt_epp is
   signal NlwBufferSignal_PWAIT_CLK : STD_LOGIC; 
   signal NlwBufferSignal_PWAIT_IN : STD_LOGIC; 
   signal NlwBufferSignal_CLK_BUFGP_BUFG_IN : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_3_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_2_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_1_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_0_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_Q_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_7_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_6_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_5_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_4_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DIR_VLD_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_0_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_1_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_2_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_3_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_4_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_5_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATO_0_OBUF_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_6_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATO_1_OBUF_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATA_7_IOBUF_OBUFT_I : STD_LOGIC; 
+  signal NlwBufferSignal_DATO_3_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DATO_2_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DATO_1_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DATO_0_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_Q2_CLK : STD_LOGIC; 
   signal NlwBufferSignal_DATO_VLD_CLK : STD_LOGIC; 
   signal NlwBufferSignal_DATO_7_CLK : STD_LOGIC; 
   signal NlwBufferSignal_DATO_6_CLK : STD_LOGIC; 
   signal NlwBufferSignal_DATO_5_CLK : STD_LOGIC; 
   signal NlwBufferSignal_DATO_4_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_Q2_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_Q2_IN : STD_LOGIC; 
-  signal NlwBufferSignal_DATO_3_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DATO_2_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DATO_1_CLK : STD_LOGIC; 
-  signal NlwBufferSignal_DATO_0_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_VLD_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_7_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_6_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_5_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_4_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_3_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_2_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_1_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_DIR_0_CLK : STD_LOGIC; 
+  signal NlwBufferSignal_Q_CLK : STD_LOGIC; 
   signal VCC : STD_LOGIC; 
   signal GND : STD_LOGIC; 
 begin
-  DATA_0_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD221"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_0_IOBUF_OBUFT_I,
-      O => DATA(0),
-      CTL => N9
-    );
-  DATA_0_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD221",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N17,
-      I => DATA(0)
-    );
-  ProtoComp2_IMUX : X_BUF
-    generic map(
-      LOC => "PAD221",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N17,
-      O => N17_0
-    );
-  DATA_1_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD222"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_1_IOBUF_OBUFT_I,
-      O => DATA(1),
-      CTL => N9
-    );
-  DATA_1_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD222",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N16,
-      I => DATA(1)
-    );
-  ProtoComp2_IMUX_1 : X_BUF
-    generic map(
-      LOC => "PAD222",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N16,
-      O => N16_0
-    );
-  DATA_2_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD223"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_2_IOBUF_OBUFT_I,
-      O => DATA(2),
-      CTL => N9
-    );
-  DATA_2_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD223",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N15,
-      I => DATA(2)
-    );
-  ProtoComp2_IMUX_2 : X_BUF
-    generic map(
-      LOC => "PAD223",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N15,
-      O => N15_0
-    );
-  DATA_3_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD224"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_3_IOBUF_OBUFT_I,
-      O => DATA(3),
-      CTL => N9
-    );
-  DATA_3_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD224",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N14,
-      I => DATA(3)
-    );
-  ProtoComp2_IMUX_3 : X_BUF
-    generic map(
-      LOC => "PAD224",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N14,
-      O => N14_0
-    );
-  DATA_4_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD225"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_4_IOBUF_OBUFT_I,
-      O => DATA(4),
-      CTL => N9
-    );
-  DATA_4_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD225",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N13,
-      I => DATA(4)
-    );
-  ProtoComp2_IMUX_4 : X_BUF
-    generic map(
-      LOC => "PAD225",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N13,
-      O => N13_0
-    );
-  DATA_5_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD226"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_5_IOBUF_OBUFT_I,
-      O => DATA(5),
-      CTL => N9
-    );
-  DATA_5_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD226",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N12,
-      I => DATA(5)
-    );
-  ProtoComp2_IMUX_5 : X_BUF
-    generic map(
-      LOC => "PAD226",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N12,
-      O => N12_0
-    );
-  DATO_0_OBUF : X_OBUF
-    generic map(
-      LOC => "PAD209"
-    )
-    port map (
-      I => NlwBufferSignal_DATO_0_OBUF_I,
-      O => DATO(0)
-    );
-  DATA_6_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD229"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_6_IOBUF_OBUFT_I,
-      O => DATA(6),
-      CTL => N9
-    );
-  DATA_6_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD229",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N11,
-      I => DATA(6)
-    );
-  ProtoComp2_IMUX_6 : X_BUF
-    generic map(
-      LOC => "PAD229",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N11,
-      O => N11_0
-    );
-  DATO_1_OBUF : X_OBUF
-    generic map(
-      LOC => "PAD210"
-    )
-    port map (
-      I => NlwBufferSignal_DATO_1_OBUF_I,
-      O => DATO(1)
-    );
-  DATA_7_IOBUF_OBUFT : X_OBUFT
-    generic map(
-      LOC => "PAD230"
-    )
-    port map (
-      I => NlwBufferSignal_DATA_7_IOBUF_OBUFT_I,
-      O => DATA(7),
-      CTL => N9
-    );
-  DATA_7_IOBUF_IBUF : X_BUF
-    generic map(
-      LOC => "PAD230",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      O => N10,
-      I => DATA(7)
-    );
-  ProtoComp2_IMUX_7 : X_BUF
-    generic map(
-      LOC => "PAD230",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N10,
-      O => N10_0
-    );
   DATO_2_OBUF : X_OBUF
     generic map(
-      LOC => "PAD211"
+      LOC => "PAD253"
     )
     port map (
       I => NlwBufferSignal_DATO_2_OBUF_I,
@@ -452,7 +210,7 @@ begin
     );
   DATO_3_OBUF : X_OBUF
     generic map(
-      LOC => "PAD212"
+      LOC => "PAD254"
     )
     port map (
       I => NlwBufferSignal_DATO_3_OBUF_I,
@@ -460,7 +218,7 @@ begin
     );
   DATO_4_OBUF : X_OBUF
     generic map(
-      LOC => "PAD213"
+      LOC => "PAD255"
     )
     port map (
       I => NlwBufferSignal_DATO_4_OBUF_I,
@@ -468,7 +226,7 @@ begin
     );
   DATO_5_OBUF : X_OBUF
     generic map(
-      LOC => "PAD214"
+      LOC => "PAD256"
     )
     port map (
       I => NlwBufferSignal_DATO_5_OBUF_I,
@@ -476,7 +234,7 @@ begin
     );
   DATO_6_OBUF : X_OBUF
     generic map(
-      LOC => "PAD215"
+      LOC => "PAD257"
     )
     port map (
       I => NlwBufferSignal_DATO_6_OBUF_I,
@@ -484,7 +242,7 @@ begin
     );
   DATO_7_OBUF : X_OBUF
     generic map(
-      LOC => "PAD216"
+      LOC => "PAD258"
     )
     port map (
       I => NlwBufferSignal_DATO_7_OBUF_I,
@@ -492,43 +250,43 @@ begin
     );
   DATO_RD_0_IBUF : X_BUF
     generic map(
-      LOC => "PAD259",
+      LOC => "PAD260",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_0_IBUF_57,
+      O => DATO_RD_0_IBUF_13,
       I => DATO_RD(0)
     );
-  ProtoComp4_IMUX : X_BUF
+  ProtoComp1_IMUX : X_BUF
     generic map(
-      LOC => "PAD259",
+      LOC => "PAD260",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_0_IBUF_57,
+      I => DATO_RD_0_IBUF_13,
       O => DATO_RD_0_IBUF_0
     );
   DATO_RD_1_IBUF : X_BUF
     generic map(
-      LOC => "PAD260",
+      LOC => "PAD261",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_1_IBUF_60,
+      O => DATO_RD_1_IBUF_16,
       I => DATO_RD(1)
     );
-  ProtoComp4_IMUX_1 : X_BUF
+  ProtoComp1_IMUX_1 : X_BUF
     generic map(
-      LOC => "PAD260",
+      LOC => "PAD261",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_1_IBUF_60,
+      I => DATO_RD_1_IBUF_16,
       O => DATO_RD_1_IBUF_0
     );
   PWAIT_OBUF : X_OBUF
     generic map(
-      LOC => "PAD291"
+      LOC => "PAD259"
     )
     port map (
       I => NlwBufferSignal_PWAIT_OBUF_I,
@@ -536,7 +294,7 @@ begin
     );
   DATO_VLD_OBUF : X_OBUF
     generic map(
-      LOC => "PAD220"
+      LOC => "PAD232"
     )
     port map (
       I => NlwBufferSignal_DATO_VLD_OBUF_I,
@@ -544,133 +302,133 @@ begin
     );
   DATO_RD_2_IBUF : X_BUF
     generic map(
-      LOC => "PAD261",
+      LOC => "PAD262",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_2_IBUF_67,
+      O => DATO_RD_2_IBUF_23,
       I => DATO_RD(2)
     );
-  ProtoComp4_IMUX_2 : X_BUF
+  ProtoComp1_IMUX_2 : X_BUF
     generic map(
-      LOC => "PAD261",
+      LOC => "PAD262",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_2_IBUF_67,
+      I => DATO_RD_2_IBUF_23,
       O => DATO_RD_2_IBUF_0
     );
   DATO_RD_3_IBUF : X_BUF
     generic map(
-      LOC => "PAD262",
+      LOC => "PAD291",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_3_IBUF_70,
+      O => DATO_RD_3_IBUF_26,
       I => DATO_RD(3)
     );
-  ProtoComp4_IMUX_3 : X_BUF
+  ProtoComp1_IMUX_3 : X_BUF
     generic map(
-      LOC => "PAD262",
+      LOC => "PAD291",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_3_IBUF_70,
+      I => DATO_RD_3_IBUF_26,
       O => DATO_RD_3_IBUF_0
     );
   ASTRB_IBUF : X_BUF
     generic map(
-      LOC => "PAD231",
+      LOC => "PAD227",
       PATHPULSE => 202 ps
     )
     port map (
-      O => ASTRB_IBUF_73,
+      O => ASTRB_IBUF_29,
       I => ASTRB
     );
-  ProtoComp4_IMUX_4 : X_BUF
+  ProtoComp1_IMUX_4 : X_BUF
     generic map(
-      LOC => "PAD231",
+      LOC => "PAD227",
       PATHPULSE => 202 ps
     )
     port map (
-      I => ASTRB_IBUF_73,
+      I => ASTRB_IBUF_29,
       O => ASTRB_IBUF_0
     );
   DATO_RD_4_IBUF : X_BUF
     generic map(
-      LOC => "PAD295",
+      LOC => "PAD292",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_4_IBUF_76,
+      O => DATO_RD_4_IBUF_32,
       I => DATO_RD(4)
     );
-  ProtoComp4_IMUX_5 : X_BUF
+  ProtoComp1_IMUX_5 : X_BUF
     generic map(
-      LOC => "PAD295",
+      LOC => "PAD292",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_4_IBUF_76,
+      I => DATO_RD_4_IBUF_32,
       O => DATO_RD_4_IBUF_0
     );
   DATO_RD_5_IBUF : X_BUF
     generic map(
-      LOC => "PAD292",
+      LOC => "PAD293",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_5_IBUF_79,
+      O => DATO_RD_5_IBUF_35,
       I => DATO_RD(5)
     );
-  ProtoComp4_IMUX_6 : X_BUF
+  ProtoComp1_IMUX_6 : X_BUF
     generic map(
-      LOC => "PAD292",
+      LOC => "PAD293",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_5_IBUF_79,
+      I => DATO_RD_5_IBUF_35,
       O => DATO_RD_5_IBUF_0
     );
   DATO_RD_6_IBUF : X_BUF
     generic map(
-      LOC => "PAD293",
+      LOC => "PAD294",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_6_IBUF_82,
+      O => DATO_RD_6_IBUF_38,
       I => DATO_RD(6)
     );
-  ProtoComp4_IMUX_7 : X_BUF
+  ProtoComp1_IMUX_7 : X_BUF
     generic map(
-      LOC => "PAD293",
+      LOC => "PAD294",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_6_IBUF_82,
+      I => DATO_RD_6_IBUF_38,
       O => DATO_RD_6_IBUF_0
     );
   DATO_RD_7_IBUF : X_BUF
     generic map(
-      LOC => "PAD294",
+      LOC => "PAD295",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DATO_RD_7_IBUF_85,
+      O => DATO_RD_7_IBUF_41,
       I => DATO_RD(7)
     );
-  ProtoComp4_IMUX_8 : X_BUF
+  ProtoComp1_IMUX_8 : X_BUF
     generic map(
-      LOC => "PAD294",
+      LOC => "PAD295",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_RD_7_IBUF_85,
+      I => DATO_RD_7_IBUF_41,
       O => DATO_RD_7_IBUF_0
     );
   DIR_0_OBUF : X_OBUF
     generic map(
-      LOC => "PAD232"
+      LOC => "PAD209"
     )
     port map (
       I => NlwBufferSignal_DIR_0_OBUF_I,
@@ -678,7 +436,7 @@ begin
     );
   DIR_1_OBUF : X_OBUF
     generic map(
-      LOC => "PAD251"
+      LOC => "PAD210"
     )
     port map (
       I => NlwBufferSignal_DIR_1_OBUF_I,
@@ -686,7 +444,7 @@ begin
     );
   DIR_2_OBUF : X_OBUF
     generic map(
-      LOC => "PAD252"
+      LOC => "PAD211"
     )
     port map (
       I => NlwBufferSignal_DIR_2_OBUF_I,
@@ -694,7 +452,7 @@ begin
     );
   DIR_3_OBUF : X_OBUF
     generic map(
-      LOC => "PAD253"
+      LOC => "PAD212"
     )
     port map (
       I => NlwBufferSignal_DIR_3_OBUF_I,
@@ -702,7 +460,7 @@ begin
     );
   DIR_4_OBUF : X_OBUF
     generic map(
-      LOC => "PAD254"
+      LOC => "PAD213"
     )
     port map (
       I => NlwBufferSignal_DIR_4_OBUF_I,
@@ -710,7 +468,7 @@ begin
     );
   DIR_5_OBUF : X_OBUF
     generic map(
-      LOC => "PAD255"
+      LOC => "PAD214"
     )
     port map (
       I => NlwBufferSignal_DIR_5_OBUF_I,
@@ -718,7 +476,7 @@ begin
     );
   DIR_6_OBUF : X_OBUF
     generic map(
-      LOC => "PAD258"
+      LOC => "PAD215"
     )
     port map (
       I => NlwBufferSignal_DIR_6_OBUF_I,
@@ -726,7 +484,7 @@ begin
     );
   DIR_7_OBUF : X_OBUF
     generic map(
-      LOC => "PAD257"
+      LOC => "PAD216"
     )
     port map (
       I => NlwBufferSignal_DIR_7_OBUF_I,
@@ -734,25 +492,25 @@ begin
     );
   RST_IBUF : X_BUF
     generic map(
-      LOC => "PAD228",
+      LOC => "PAD231",
       PATHPULSE => 202 ps
     )
     port map (
-      O => RST_IBUF_104,
+      O => RST_IBUF_60,
       I => RST
     );
-  ProtoComp4_IMUX_9 : X_BUF
+  ProtoComp1_IMUX_9 : X_BUF
     generic map(
-      LOC => "PAD228",
+      LOC => "PAD231",
       PATHPULSE => 202 ps
     )
     port map (
-      I => RST_IBUF_104,
+      I => RST_IBUF_60,
       O => RST_IBUF_0
     );
   DIR_VLD_OBUF : X_OBUF
     generic map(
-      LOC => "PAD227"
+      LOC => "PAD219"
     )
     port map (
       I => NlwBufferSignal_DIR_VLD_OBUF_I,
@@ -760,30 +518,21 @@ begin
     );
   PWRITE_IBUF : X_BUF
     generic map(
-      LOC => "PAD256",
+      LOC => "PAD228",
       PATHPULSE => 202 ps
     )
     port map (
-      O => N9_non_inverted,
+      O => PWRITE_IBUF_65,
       I => PWRITE
     );
-  ProtoComp5_IMUX : X_BUF
+  ProtoComp1_IMUX_10 : X_BUF
     generic map(
-      LOC => "PAD256",
+      LOC => "PAD228",
       PATHPULSE => 202 ps
     )
     port map (
-      I => ProtoComp5_IINV_OUT,
-      O => N9
-    );
-  ProtoComp5_IINV : X_INV
-    generic map(
-      LOC => "PAD256",
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => N9_non_inverted,
-      O => ProtoComp5_IINV_OUT
+      I => PWRITE_IBUF_65,
+      O => PWRITE_IBUF_0
     );
   CLK_BUFGP_IBUFG : X_BUF
     generic map(
@@ -791,46 +540,46 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      O => CLK_BUFGP_IBUFG_113,
+      O => CLK_BUFGP_IBUFG_68,
       I => CLK
     );
-  ProtoComp4_IMUX_10 : X_BUF
+  ProtoComp1_IMUX_11 : X_BUF
     generic map(
       LOC => "PAD314",
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP_IBUFG_113,
+      I => CLK_BUFGP_IBUFG_68,
       O => CLK_BUFGP_IBUFG_0
     );
   DSTRB_IBUF : X_BUF
     generic map(
-      LOC => "PAD219",
+      LOC => "PAD220",
       PATHPULSE => 202 ps
     )
     port map (
-      O => DSTRB_IBUF_116,
+      O => DSTRB_IBUF_71,
       I => DSTRB
     );
-  ProtoComp4_IMUX_11 : X_BUF
+  ProtoComp1_IMUX_12 : X_BUF
     generic map(
-      LOC => "PAD219",
+      LOC => "PAD220",
       PATHPULSE => 202 ps
     )
     port map (
-      I => DSTRB_IBUF_116,
+      I => DSTRB_IBUF_71,
       O => DSTRB_IBUF_0
     );
-  PWAIT_152 : X_FF
+  PWAIT_105 : X_FF
     generic map(
-      LOC => "OLOGIC_X0Y37",
+      LOC => "OLOGIC_X0Y5",
       INIT => '0'
     )
     port map (
       CE => VCC,
       CLK => NlwBufferSignal_PWAIT_CLK,
       I => NlwBufferSignal_PWAIT_IN,
-      O => PWAIT_OBUF_373,
+      O => PWAIT_OBUF_316,
       SET => GND,
       RST => RST_IBUF_0
     );
@@ -843,145 +592,691 @@ begin
       I => NlwBufferSignal_CLK_BUFGP_BUFG_IN,
       O => CLK_BUFGP
     );
-  DATA_5_MLTSRCEDGE_DATA_5_MLTSRCEDGE_DMUX_Delay : X_BUF
+  DATA_0_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD221"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_0_IOBUF_OBUFT_I,
+      O => DATA(0),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_0_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD221",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N9,
+      I => DATA(0)
+    );
+  ProtoComp8_IMUX : X_BUF
+    generic map(
+      LOC => "PAD221",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N9,
+      O => N9_0
+    );
+  DATA_1_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD222"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_1_IOBUF_OBUFT_I,
+      O => DATA(1),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_1_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD222",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N8,
+      I => DATA(1)
+    );
+  ProtoComp8_IMUX_1 : X_BUF
+    generic map(
+      LOC => "PAD222",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N8,
+      O => N8_0
+    );
+  DATA_2_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD223"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_2_IOBUF_OBUFT_I,
+      O => DATA(2),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_2_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD223",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N7,
+      I => DATA(2)
+    );
+  ProtoComp8_IMUX_2 : X_BUF
+    generic map(
+      LOC => "PAD223",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N7,
+      O => N7_0
+    );
+  DATA_3_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD224"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_3_IOBUF_OBUFT_I,
+      O => DATA(3),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_3_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD224",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N6,
+      I => DATA(3)
+    );
+  ProtoComp8_IMUX_3 : X_BUF
+    generic map(
+      LOC => "PAD224",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N6,
+      O => N6_0
+    );
+  DATA_4_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD225"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_4_IOBUF_OBUFT_I,
+      O => DATA(4),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_4_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD225",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N5,
+      I => DATA(4)
+    );
+  ProtoComp8_IMUX_4 : X_BUF
+    generic map(
+      LOC => "PAD225",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N5,
+      O => N5_0
+    );
+  DATA_5_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD226"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_5_IOBUF_OBUFT_I,
+      O => DATA(5),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_5_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD226",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N4,
+      I => DATA(5)
+    );
+  ProtoComp8_IMUX_5 : X_BUF
+    generic map(
+      LOC => "PAD226",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N4,
+      O => N4_0
+    );
+  DATO_0_OBUF : X_OBUF
+    generic map(
+      LOC => "PAD251"
+    )
+    port map (
+      I => NlwBufferSignal_DATO_0_OBUF_I,
+      O => DATO(0)
+    );
+  DATA_6_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD229"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_6_IOBUF_OBUFT_I,
+      O => DATA(6),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_6_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD229",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N3,
+      I => DATA(6)
+    );
+  ProtoComp8_IMUX_6 : X_BUF
+    generic map(
+      LOC => "PAD229",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N3,
+      O => N3_0
+    );
+  DATO_1_OBUF : X_OBUF
+    generic map(
+      LOC => "PAD252"
+    )
+    port map (
+      I => NlwBufferSignal_DATO_1_OBUF_I,
+      O => DATO(1)
+    );
+  DATA_7_IOBUF_OBUFT : X_OBUFT
+    generic map(
+      LOC => "PAD230"
+    )
+    port map (
+      I => NlwBufferSignal_DATA_7_IOBUF_OBUFT_I,
+      O => DATA(7),
+      CTL => PWRITE_DSTRB_AND_5_o_inv_0
+    );
+  DATA_7_IOBUF_IBUF : X_BUF
+    generic map(
+      LOC => "PAD230",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      O => N2,
+      I => DATA(7)
+    );
+  ProtoComp8_IMUX_7 : X_BUF
+    generic map(
+      LOC => "PAD230",
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => N2,
+      O => N2_0
+    );
+  DATO_3_DATO_3_AMUX_Delay : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATA_4_MLTSRCEDGE,
-      O => DATA_4_MLTSRCEDGE_0
+      I => Q2_pack_10,
+      O => Q2_341
     );
-  DATA_5_MLTSRCEDGE_DATA_5_MLTSRCEDGE_CMUX_Delay : X_BUF
+  DATO_3 : X_FF
     generic map(
-      PATHPULSE => 202 ps
+      LOC => "SLICE_X13Y1",
+      INIT => '0'
     )
     port map (
-      I => DATA_6_MLTSRCEDGE,
-      O => DATA_6_MLTSRCEDGE_0
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_3_CLK,
+      I => DATO_3_rstpot_139,
+      O => DATO_3_309,
+      RST => RST_IBUF_0,
+      SET => GND
     );
-  DATA_5_MLTSRCEDGELogicTrst1 : X_LUT6
+  DATO_3_rstpot : X_LUT6
     generic map(
-      LOC => "SLICE_X7Y14",
-      INIT => X"FFAAFFAAFFAAFFAA"
-    )
-    port map (
-      ADR4 => '1',
-      ADR1 => '1',
-      ADR2 => '1',
-      ADR0 => N9,
-      ADR3 => DATO_RD_5_IBUF_0,
-      ADR5 => '1',
-      O => DATA_5_MLTSRCEDGE
-    );
-  DATA_4_MLTSRCEDGELogicTrst1 : X_LUT5
-    generic map(
-      LOC => "SLICE_X7Y14",
-      INIT => X"FAFAFAFA"
-    )
-    port map (
-      ADR3 => '1',
-      ADR1 => '1',
-      ADR2 => DATO_RD_4_IBUF_0,
-      ADR0 => N9,
-      ADR4 => '1',
-      O => DATA_4_MLTSRCEDGE
-    );
-  DATA_7_MLTSRCEDGELogicTrst1 : X_LUT6
-    generic map(
-      LOC => "SLICE_X7Y14",
-      INIT => X"FFFFF0F0FFFFF0F0"
+      LOC => "SLICE_X13Y1",
+      INIT => X"FFFFFFF300000C00"
     )
     port map (
       ADR0 => '1',
-      ADR1 => '1',
-      ADR3 => '1',
-      ADR4 => N9,
-      ADR2 => DATO_RD_7_IBUF_0,
-      ADR5 => '1',
-      O => DATA_7_MLTSRCEDGE
+      ADR3 => N6_0,
+      ADR1 => DSTRB_IBUF_0,
+      ADR5 => DATO_3_309,
+      ADR2 => PWRITE_IBUF_0,
+      ADR4 => Q2_341,
+      O => DATO_3_rstpot_139
     );
-  DATA_6_MLTSRCEDGELogicTrst1 : X_LUT5
+  DATO_2 : X_FF
     generic map(
-      LOC => "SLICE_X7Y14",
-      INIT => X"FFFFAAAA"
+      LOC => "SLICE_X13Y1",
+      INIT => '0'
     )
     port map (
-      ADR2 => '1',
-      ADR1 => '1',
-      ADR0 => DATO_RD_6_IBUF_0,
-      ADR4 => N9,
-      ADR3 => '1',
-      O => DATA_6_MLTSRCEDGE
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_2_CLK,
+      I => DATO_2_rstpot_131,
+      O => DATO_2_308,
+      RST => RST_IBUF_0,
+      SET => GND
     );
-  DATA_1_MLTSRCEDGE_DATA_1_MLTSRCEDGE_AMUX_Delay : X_BUF
+  DATO_2_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => X"FFFD0008FFFD0008"
+    )
+    port map (
+      ADR5 => '1',
+      ADR1 => N7_0,
+      ADR0 => DSTRB_IBUF_0,
+      ADR4 => DATO_2_308,
+      ADR3 => PWRITE_IBUF_0,
+      ADR2 => Q2_341,
+      O => DATO_2_rstpot_131
+    );
+  DATO_1 : X_FF
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_1_CLK,
+      I => DATO_1_rstpot_124,
+      O => DATO_1_351,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_1_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => X"FFFF0000FFAF00A0"
+    )
+    port map (
+      ADR1 => '1',
+      ADR0 => N8_0,
+      ADR2 => DSTRB_IBUF_0,
+      ADR4 => DATO_1_351,
+      ADR3 => PWRITE_IBUF_0,
+      ADR5 => Q2_341,
+      O => DATO_1_rstpot_124
+    );
+  DATO_0 : X_FF
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_0_CLK,
+      I => DATO_0_rstpot_149,
+      O => DATO_0_350,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_0_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => X"FFEF1000FFEF1000"
+    )
+    port map (
+      ADR3 => N9_0,
+      ADR2 => DSTRB_IBUF_0,
+      ADR0 => PWRITE_IBUF_0,
+      ADR4 => DATO_0_350,
+      ADR1 => Q2_341,
+      ADR5 => '1',
+      O => DATO_0_rstpot_149
+    );
+  DSTRB_IBUF_rt : X_LUT5
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => X"F0F0F0F0"
+    )
+    port map (
+      ADR0 => '1',
+      ADR2 => DSTRB_IBUF_0,
+      ADR1 => '1',
+      ADR3 => '1',
+      ADR4 => '1',
+      O => DSTRB_IBUF_rt_148
+    );
+  Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X13Y1",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_Q2_CLK,
+      I => DSTRB_IBUF_rt_148,
+      O => Q2_pack_10,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_VLD_OBUF_DATO_VLD_OBUF_AMUX_Delay : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATA_0_MLTSRCEDGE,
-      O => DATA_0_MLTSRCEDGE_0
+      I => PWRITE_DSTRB_AND_5_o_inv,
+      O => PWRITE_DSTRB_AND_5_o_inv_0
     );
-  DATA_1_MLTSRCEDGELogicTrst1 : X_LUT6
+  DATO_VLD_168 : X_FF
     generic map(
-      LOC => "SLICE_X8Y2",
-      INIT => X"FFF0FFF0FFF0FFF0"
+      LOC => "SLICE_X15Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_VLD_CLK,
+      I => S22,
+      O => DATO_VLD_OBUF_317,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  S221 : X_LUT6
+    generic map(
+      LOC => "SLICE_X15Y2",
+      INIT => X"000C000C000C000C"
     )
     port map (
       ADR0 => '1',
-      ADR1 => '1',
       ADR4 => '1',
-      ADR3 => N9,
-      ADR2 => DATO_RD_1_IBUF_0,
+      ADR1 => DSTRB_IBUF_0,
+      ADR2 => PWRITE_IBUF_0,
+      ADR3 => Q2_341,
       ADR5 => '1',
-      O => DATA_1_MLTSRCEDGE
+      O => S22
     );
-  DATA_0_MLTSRCEDGELogicTrst1 : X_LUT5
+  PWRITE_DSTRB_AND_5_o_inv1 : X_LUT5
     generic map(
-      LOC => "SLICE_X8Y2",
-      INIT => X"FFCCFFCC"
+      LOC => "SLICE_X15Y2",
+      INIT => X"3F3F3F3F"
     )
     port map (
       ADR0 => '1',
-      ADR2 => '1',
-      ADR1 => DATO_RD_0_IBUF_0,
-      ADR3 => N9,
+      ADR3 => '1',
+      ADR1 => DSTRB_IBUF_0,
+      ADR2 => PWRITE_IBUF_0,
       ADR4 => '1',
-      O => DATA_0_MLTSRCEDGE
+      O => PWRITE_DSTRB_AND_5_o_inv
     );
-  DATA_3_MLTSRCEDGE_DATA_3_MLTSRCEDGE_DMUX_Delay : X_BUF
+  DATO_7 : X_FF
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_7_CLK,
+      I => DATO_7_rstpot_167,
+      O => DATO_7_313,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_7_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => X"FFFF0000FCFF0C00"
+    )
+    port map (
+      ADR0 => '1',
+      ADR1 => N2_0,
+      ADR3 => DSTRB_IBUF_0,
+      ADR4 => DATO_7_313,
+      ADR2 => PWRITE_IBUF_0,
+      ADR5 => Q2_341,
+      O => DATO_7_rstpot_167
+    );
+  DATO_6 : X_FF
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_6_CLK,
+      I => DATO_6_rstpot_175,
+      O => DATO_6_312,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_6_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => X"FFFF0000EFEF4040"
+    )
+    port map (
+      ADR3 => '1',
+      ADR1 => N3_0,
+      ADR2 => DSTRB_IBUF_0,
+      ADR4 => DATO_6_312,
+      ADR0 => PWRITE_IBUF_0,
+      ADR5 => Q2_341,
+      O => DATO_6_rstpot_175
+    );
+  DATO_5 : X_FF
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_5_CLK,
+      I => DATO_5_rstpot_182,
+      O => DATO_5_311,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_5_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => X"FFFF0000FBFB0808"
+    )
+    port map (
+      ADR3 => '1',
+      ADR0 => N4_0,
+      ADR1 => DSTRB_IBUF_0,
+      ADR4 => DATO_5_311,
+      ADR2 => PWRITE_IBUF_0,
+      ADR5 => Q2_341,
+      O => DATO_5_rstpot_182
+    );
+  DATO_4 : X_FF
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DATO_4_CLK,
+      I => DATO_4_rstpot_189,
+      O => DATO_4_310,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DATO_4_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X16Y2",
+      INIT => X"FFFF0000FDFD0808"
+    )
+    port map (
+      ADR3 => '1',
+      ADR1 => N5_0,
+      ADR0 => DSTRB_IBUF_0,
+      ADR4 => DATO_4_310,
+      ADR2 => PWRITE_IBUF_0,
+      ADR5 => Q2_341,
+      O => DATO_4_rstpot_189
+    );
+  DIR_VLD_OBUF_DIR_VLD_OBUF_AMUX_Delay : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATA_2_MLTSRCEDGE,
-      O => DATA_2_MLTSRCEDGE_0
+      I => ASTRB_DSTRB_AND_6_o,
+      O => ASTRB_DSTRB_AND_6_o_0
     );
-  DATA_3_MLTSRCEDGELogicTrst1 : X_LUT6
+  DIR_VLD_181 : X_FF
     generic map(
-      LOC => "SLICE_X8Y3",
-      INIT => X"FFFFAAAAFFFFAAAA"
+      LOC => "SLICE_X18Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DIR_VLD_CLK,
+      I => S11,
+      O => DIR_VLD_OBUF_334,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  S111 : X_LUT6
+    generic map(
+      LOC => "SLICE_X18Y2",
+      INIT => X"00000A0A00000A0A"
     )
     port map (
       ADR3 => '1',
       ADR1 => '1',
-      ADR2 => '1',
-      ADR0 => N9,
-      ADR4 => DATO_RD_3_IBUF_0,
+      ADR0 => ASTRB_IBUF_0,
+      ADR2 => PWRITE_IBUF_0,
+      ADR4 => Q_348,
       ADR5 => '1',
-      O => DATA_3_MLTSRCEDGE
+      O => S11
     );
-  DATA_2_MLTSRCEDGELogicTrst1 : X_LUT5
+  ASTRB_DSTRB_AND_6_o1 : X_LUT5
     generic map(
-      LOC => "SLICE_X8Y3",
-      INIT => X"EEEEEEEE"
+      LOC => "SLICE_X18Y2",
+      INIT => X"11111111"
     )
     port map (
-      ADR3 => '1',
       ADR2 => '1',
-      ADR1 => DATO_RD_2_IBUF_0,
-      ADR0 => N9,
+      ADR1 => DSTRB_IBUF_0,
+      ADR0 => ASTRB_IBUF_0,
+      ADR3 => '1',
       ADR4 => '1',
-      O => DATA_2_MLTSRCEDGE
+      O => ASTRB_DSTRB_AND_6_o
+    );
+  DIR_7 : X_FF
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DIR_7_CLK,
+      I => DIR_7_rstpot_207,
+      O => DIR_7_332,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DIR_7_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => X"FFFF0000FFDD2200"
+    )
+    port map (
+      ADR2 => '1',
+      ADR3 => N2_0,
+      ADR0 => ASTRB_IBUF_0,
+      ADR4 => DIR_7_332,
+      ADR1 => PWRITE_IBUF_0,
+      ADR5 => Q_348,
+      O => DIR_7_rstpot_207
+    );
+  DIR_6 : X_FF
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DIR_6_CLK,
+      I => DIR_6_rstpot_215,
+      O => DIR_6_331,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DIR_6_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => X"FFFF0000FFDD0088"
+    )
+    port map (
+      ADR2 => '1',
+      ADR1 => N3_0,
+      ADR0 => ASTRB_IBUF_0,
+      ADR4 => DIR_6_331,
+      ADR3 => PWRITE_IBUF_0,
+      ADR5 => Q_348,
+      O => DIR_6_rstpot_215
+    );
+  DIR_5 : X_FF
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DIR_5_CLK,
+      I => DIR_5_rstpot_222,
+      O => DIR_5_330,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DIR_5_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => X"FFFFFFF300000C00"
+    )
+    port map (
+      ADR0 => '1',
+      ADR3 => N4_0,
+      ADR1 => ASTRB_IBUF_0,
+      ADR5 => DIR_5_330,
+      ADR2 => PWRITE_IBUF_0,
+      ADR4 => Q_348,
+      O => DIR_5_rstpot_222
+    );
+  DIR_4 : X_FF
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => '0'
+    )
+    port map (
+      CE => VCC,
+      CLK => NlwBufferSignal_DIR_4_CLK,
+      I => DIR_4_rstpot_229,
+      O => DIR_4_329,
+      RST => RST_IBUF_0,
+      SET => GND
+    );
+  DIR_4_rstpot : X_LUT6
+    generic map(
+      LOC => "SLICE_X19Y2",
+      INIT => X"FFFFFCFF00000C00"
+    )
+    port map (
+      ADR0 => '1',
+      ADR1 => N5_0,
+      ADR3 => ASTRB_IBUF_0,
+      ADR5 => DIR_4_329,
+      ADR2 => PWRITE_IBUF_0,
+      ADR4 => Q_348,
+      O => DIR_4_rstpot_229
     );
   DIR_3_DIR_3_AMUX_Delay : X_BUF
     generic map(
@@ -989,119 +1284,119 @@ begin
     )
     port map (
       I => Q_pack_10,
-      O => Q_384
+      O => Q_348
     );
   DIR_3 : X_FF
     generic map(
-      LOC => "SLICE_X13Y0",
+      LOC => "SLICE_X21Y2",
       INIT => '0'
     )
     port map (
       CE => VCC,
       CLK => NlwBufferSignal_DIR_3_CLK,
-      I => DIR_3_rstpot_162,
-      O => DIR_3_377,
+      I => DIR_3_rstpot_251,
+      O => DIR_3_328,
       RST => RST_IBUF_0,
       SET => GND
     );
   DIR_3_rstpot : X_LUT6
     generic map(
-      LOC => "SLICE_X13Y0",
-      INIT => X"FFFFBBFF00008800"
+      LOC => "SLICE_X21Y2",
+      INIT => X"FFFFFAFF00005000"
     )
     port map (
-      ADR2 => '1',
-      ADR0 => N14_0,
+      ADR1 => '1',
+      ADR2 => N6_0,
       ADR3 => ASTRB_IBUF_0,
-      ADR5 => DIR_3_377,
-      ADR1 => N9,
-      ADR4 => Q_384,
-      O => DIR_3_rstpot_162
+      ADR5 => DIR_3_328,
+      ADR0 => PWRITE_IBUF_0,
+      ADR4 => Q_348,
+      O => DIR_3_rstpot_251
     );
   DIR_2 : X_FF
     generic map(
-      LOC => "SLICE_X13Y0",
+      LOC => "SLICE_X21Y2",
       INIT => '0'
     )
     port map (
       CE => VCC,
       CLK => NlwBufferSignal_DIR_2_CLK,
-      I => DIR_2_rstpot_154,
-      O => DIR_2_376,
+      I => DIR_2_rstpot_243,
+      O => DIR_2_327,
       RST => RST_IBUF_0,
       SET => GND
     );
   DIR_2_rstpot : X_LUT6
     generic map(
-      LOC => "SLICE_X13Y0",
-      INIT => X"FCFF0C00FFFF0000"
+      LOC => "SLICE_X21Y2",
+      INIT => X"FEFF0200FEFF0200"
     )
     port map (
-      ADR0 => '1',
-      ADR1 => N15_0,
+      ADR5 => '1',
+      ADR0 => N7_0,
       ADR3 => ASTRB_IBUF_0,
-      ADR4 => DIR_2_376,
-      ADR5 => N9,
-      ADR2 => Q_384,
-      O => DIR_2_rstpot_154
+      ADR4 => DIR_2_327,
+      ADR1 => PWRITE_IBUF_0,
+      ADR2 => Q_348,
+      O => DIR_2_rstpot_243
     );
   DIR_1 : X_FF
     generic map(
-      LOC => "SLICE_X13Y0",
+      LOC => "SLICE_X21Y2",
       INIT => '0'
     )
     port map (
       CE => VCC,
       CLK => NlwBufferSignal_DIR_1_CLK,
-      I => DIR_1_rstpot_167,
-      O => DIR_1_375,
+      I => DIR_1_rstpot_236,
+      O => DIR_1_326,
       RST => RST_IBUF_0,
       SET => GND
     );
   DIR_1_rstpot : X_LUT6
     generic map(
-      LOC => "SLICE_X13Y0",
-      INIT => X"FFFF0000F5FFA000"
+      LOC => "SLICE_X21Y2",
+      INIT => X"FFFF0000FAFF0A00"
     )
     port map (
       ADR1 => '1',
-      ADR2 => N16_0,
-      ADR0 => ASTRB_IBUF_0,
-      ADR4 => DIR_1_375,
-      ADR3 => N9,
-      ADR5 => Q_384,
-      O => DIR_1_rstpot_167
+      ADR0 => N8_0,
+      ADR3 => ASTRB_IBUF_0,
+      ADR4 => DIR_1_326,
+      ADR2 => PWRITE_IBUF_0,
+      ADR5 => Q_348,
+      O => DIR_1_rstpot_236
     );
   DIR_0 : X_FF
     generic map(
-      LOC => "SLICE_X13Y0",
+      LOC => "SLICE_X21Y2",
       INIT => '0'
     )
     port map (
       CE => VCC,
       CLK => NlwBufferSignal_DIR_0_CLK,
-      I => DIR_0_rstpot_168,
-      O => DIR_0_374,
+      I => DIR_0_rstpot_261,
+      O => DIR_0_325,
       RST => RST_IBUF_0,
       SET => GND
     );
   DIR_0_rstpot : X_LUT6
     generic map(
-      LOC => "SLICE_X13Y0",
-      INIT => X"FDFF2000FDFF2000"
+      LOC => "SLICE_X21Y2",
+      INIT => X"FFFD0020FFFD0020"
     )
     port map (
-      ADR2 => N17_0,
+      ADR2 => N9_0,
       ADR0 => ASTRB_IBUF_0,
-      ADR3 => N9,
-      ADR4 => DIR_0_374,
-      ADR1 => Q_384,
+      ADR3 => PWRITE_IBUF_0,
+      ADR4 => DIR_0_325,
+      ADR1 => Q_348,
       ADR5 => '1',
-      O => DIR_0_rstpot_168
+      O => DIR_0_rstpot_261
     );
   ASTRB_IBUF_rt : X_LUT5
     generic map(
-      LOC => "SLICE_X13Y0",
+      LOC => "SLICE_X21Y2",
       INIT => X"AAAAAAAA"
     )
     port map (
@@ -1110,519 +1405,27 @@ begin
       ADR2 => '1',
       ADR3 => '1',
       ADR4 => '1',
-      O => ASTRB_IBUF_rt_172
+      O => ASTRB_IBUF_rt_260
     );
   Q : X_FF
     generic map(
-      LOC => "SLICE_X13Y0",
+      LOC => "SLICE_X21Y2",
       INIT => '0'
     )
     port map (
       CE => VCC,
       CLK => NlwBufferSignal_Q_CLK,
-      I => ASTRB_IBUF_rt_172,
+      I => ASTRB_IBUF_rt_260,
       O => Q_pack_10,
       RST => RST_IBUF_0,
       SET => GND
-    );
-  DIR_7 : X_FF
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DIR_7_CLK,
-      I => DIR_7_rstpot_183,
-      O => DIR_7_381,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DIR_7_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => X"FFFF0000F7F78080"
-    )
-    port map (
-      ADR3 => '1',
-      ADR2 => N10_0,
-      ADR0 => ASTRB_IBUF_0,
-      ADR4 => DIR_7_381,
-      ADR1 => N9,
-      ADR5 => Q_384,
-      O => DIR_7_rstpot_183
-    );
-  DIR_6 : X_FF
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DIR_6_CLK,
-      I => DIR_6_rstpot_191,
-      O => DIR_6_380,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DIR_6_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => X"FFFF0000BFBF8080"
-    )
-    port map (
-      ADR3 => '1',
-      ADR0 => N11_0,
-      ADR1 => ASTRB_IBUF_0,
-      ADR4 => DIR_6_380,
-      ADR2 => N9,
-      ADR5 => Q_384,
-      O => DIR_6_rstpot_191
-    );
-  DIR_5 : X_FF
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DIR_5_CLK,
-      I => DIR_5_rstpot_198,
-      O => DIR_5_379,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DIR_5_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => X"FFFF0000CFFFC000"
-    )
-    port map (
-      ADR0 => '1',
-      ADR1 => N12_0,
-      ADR2 => ASTRB_IBUF_0,
-      ADR4 => DIR_5_379,
-      ADR3 => N9,
-      ADR5 => Q_384,
-      O => DIR_5_rstpot_198
-    );
-  DIR_4 : X_FF
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DIR_4_CLK,
-      I => DIR_4_rstpot_205,
-      O => DIR_4_378,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DIR_4_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X14Y2",
-      INIT => X"FFFF0000FF5FA000"
-    )
-    port map (
-      ADR1 => '1',
-      ADR3 => N13_0,
-      ADR2 => ASTRB_IBUF_0,
-      ADR4 => DIR_4_378,
-      ADR0 => N9,
-      ADR5 => Q_384,
-      O => DIR_4_rstpot_205
-    );
-  DIR_VLD_188 : X_FF
-    generic map(
-      LOC => "SLICE_X16Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DIR_VLD_CLK,
-      I => S11,
-      O => DIR_VLD_OBUF_382,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  S111 : X_LUT6
-    generic map(
-      LOC => "SLICE_X16Y2",
-      INIT => X"0000F0F000000000"
-    )
-    port map (
-      ADR0 => '1',
-      ADR1 => '1',
-      ADR3 => '1',
-      ADR5 => ASTRB_IBUF_0,
-      ADR2 => N9,
-      ADR4 => Q_384,
-      O => S11
-    );
-  DATO_VLD_OBUF_DATO_VLD_OBUF_AMUX_Delay : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => ASTRB_DSTRB_AND_7_o,
-      O => ASTRB_DSTRB_AND_7_o_0
-    );
-  DATO_VLD_192 : X_FF
-    generic map(
-      LOC => "SLICE_X18Y6",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_VLD_CLK,
-      I => S22,
-      O => DATO_VLD_OBUF_347,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  S221 : X_LUT6
-    generic map(
-      LOC => "SLICE_X18Y6",
-      INIT => X"0808080808080808"
-    )
-    port map (
-      ADR4 => '1',
-      ADR3 => '1',
-      ADR1 => DSTRB_IBUF_0,
-      ADR0 => N9,
-      ADR2 => Q2_345,
-      ADR5 => '1',
-      O => S22
-    );
-  ASTRB_DSTRB_AND_7_o1 : X_LUT5
-    generic map(
-      LOC => "SLICE_X18Y6",
-      INIT => X"00330033"
-    )
-    port map (
-      ADR0 => '1',
-      ADR3 => ASTRB_IBUF_0,
-      ADR1 => DSTRB_IBUF_0,
-      ADR2 => '1',
-      ADR4 => '1',
-      O => ASTRB_DSTRB_AND_7_o
-    );
-  DATO_7 : X_FF
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_7_CLK,
-      I => DATO_7_rstpot_230,
-      O => DATO_7_372,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_7_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => X"FFFF0000AFFFA000"
-    )
-    port map (
-      ADR1 => '1',
-      ADR0 => N10_0,
-      ADR3 => DSTRB_IBUF_0,
-      ADR4 => DATO_7_372,
-      ADR2 => N9,
-      ADR5 => Q2_345,
-      O => DATO_7_rstpot_230
-    );
-  DATO_6 : X_FF
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_6_CLK,
-      I => DATO_6_rstpot_238,
-      O => DATO_6_371,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_6_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => X"FFFFCFFF0000C000"
-    )
-    port map (
-      ADR0 => '1',
-      ADR1 => N11_0,
-      ADR3 => DSTRB_IBUF_0,
-      ADR5 => DATO_6_371,
-      ADR2 => N9,
-      ADR4 => Q2_345,
-      O => DATO_6_rstpot_238
-    );
-  DATO_5 : X_FF
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_5_CLK,
-      I => DATO_5_rstpot_245,
-      O => DATO_5_370,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_5_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => X"FFFF0000F7F78080"
-    )
-    port map (
-      ADR3 => '1',
-      ADR2 => N12_0,
-      ADR1 => DSTRB_IBUF_0,
-      ADR4 => DATO_5_370,
-      ADR0 => N9,
-      ADR5 => Q2_345,
-      O => DATO_5_rstpot_245
-    );
-  DATO_4 : X_FF
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_4_CLK,
-      I => DATO_4_rstpot_252,
-      O => DATO_4_369,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_4_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X19Y2",
-      INIT => X"FFFF0000F7F78080"
-    )
-    port map (
-      ADR3 => '1',
-      ADR2 => N13_0,
-      ADR0 => DSTRB_IBUF_0,
-      ADR4 => DATO_4_369,
-      ADR1 => N9,
-      ADR5 => Q2_345,
-      O => DATO_4_rstpot_252
-    );
-  Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X20Y6",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_Q2_CLK,
-      I => NlwBufferSignal_Q2_IN,
-      O => Q2_345,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_3 : X_FF
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_3_CLK,
-      I => DATO_3_rstpot_264,
-      O => DATO_3_368,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_3_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => X"FFFF0000F3FFC000"
-    )
-    port map (
-      ADR0 => '1',
-      ADR2 => N14_0,
-      ADR3 => DSTRB_IBUF_0,
-      ADR4 => DATO_3_368,
-      ADR1 => N9,
-      ADR5 => Q2_345,
-      O => DATO_3_rstpot_264
-    );
-  DATO_2 : X_FF
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_2_CLK,
-      I => DATO_2_rstpot_272,
-      O => DATO_2_367,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_2_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => X"FFFF0000AFFFA000"
-    )
-    port map (
-      ADR1 => '1',
-      ADR0 => N15_0,
-      ADR2 => DSTRB_IBUF_0,
-      ADR4 => DATO_2_367,
-      ADR3 => N9,
-      ADR5 => Q2_345,
-      O => DATO_2_rstpot_272
-    );
-  DATO_1 : X_FF
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_1_CLK,
-      I => DATO_1_rstpot_279,
-      O => DATO_1_365,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_1_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => X"FFFF0000AFFFA000"
-    )
-    port map (
-      ADR1 => '1',
-      ADR0 => N16_0,
-      ADR2 => DSTRB_IBUF_0,
-      ADR4 => DATO_1_365,
-      ADR3 => N9,
-      ADR5 => Q2_345,
-      O => DATO_1_rstpot_279
-    );
-  DATO_0 : X_FF
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => '0'
-    )
-    port map (
-      CE => VCC,
-      CLK => NlwBufferSignal_DATO_0_CLK,
-      I => DATO_0_rstpot_286,
-      O => DATO_0_363,
-      RST => RST_IBUF_0,
-      SET => GND
-    );
-  DATO_0_rstpot : X_LUT6
-    generic map(
-      LOC => "SLICE_X21Y2",
-      INIT => X"FFFF0000F7F78080"
-    )
-    port map (
-      ADR3 => '1',
-      ADR2 => N17_0,
-      ADR0 => DSTRB_IBUF_0,
-      ADR4 => DATO_0_363,
-      ADR1 => N9,
-      ADR5 => Q2_345,
-      O => DATO_0_rstpot_286
-    );
-  NlwBufferBlock_DATA_0_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_0_MLTSRCEDGE_0,
-      O => NlwBufferSignal_DATA_0_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATA_1_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_1_MLTSRCEDGE,
-      O => NlwBufferSignal_DATA_1_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATA_2_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_2_MLTSRCEDGE_0,
-      O => NlwBufferSignal_DATA_2_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATA_3_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_3_MLTSRCEDGE,
-      O => NlwBufferSignal_DATA_3_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATA_4_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_4_MLTSRCEDGE_0,
-      O => NlwBufferSignal_DATA_4_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATA_5_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_5_MLTSRCEDGE,
-      O => NlwBufferSignal_DATA_5_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATO_0_OBUF_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATO_0_363,
-      O => NlwBufferSignal_DATO_0_OBUF_I
-    );
-  NlwBufferBlock_DATA_6_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_6_MLTSRCEDGE_0,
-      O => NlwBufferSignal_DATA_6_IOBUF_OBUFT_I
-    );
-  NlwBufferBlock_DATO_1_OBUF_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATO_1_365,
-      O => NlwBufferSignal_DATO_1_OBUF_I
-    );
-  NlwBufferBlock_DATA_7_IOBUF_OBUFT_I : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DATA_7_MLTSRCEDGE,
-      O => NlwBufferSignal_DATA_7_IOBUF_OBUFT_I
     );
   NlwBufferBlock_DATO_2_OBUF_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_2_367,
+      I => DATO_2_308,
       O => NlwBufferSignal_DATO_2_OBUF_I
     );
   NlwBufferBlock_DATO_3_OBUF_I : X_BUF
@@ -1630,7 +1433,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_3_368,
+      I => DATO_3_309,
       O => NlwBufferSignal_DATO_3_OBUF_I
     );
   NlwBufferBlock_DATO_4_OBUF_I : X_BUF
@@ -1638,7 +1441,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_4_369,
+      I => DATO_4_310,
       O => NlwBufferSignal_DATO_4_OBUF_I
     );
   NlwBufferBlock_DATO_5_OBUF_I : X_BUF
@@ -1646,7 +1449,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_5_370,
+      I => DATO_5_311,
       O => NlwBufferSignal_DATO_5_OBUF_I
     );
   NlwBufferBlock_DATO_6_OBUF_I : X_BUF
@@ -1654,7 +1457,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_6_371,
+      I => DATO_6_312,
       O => NlwBufferSignal_DATO_6_OBUF_I
     );
   NlwBufferBlock_DATO_7_OBUF_I : X_BUF
@@ -1662,7 +1465,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_7_372,
+      I => DATO_7_313,
       O => NlwBufferSignal_DATO_7_OBUF_I
     );
   NlwBufferBlock_PWAIT_OBUF_I : X_BUF
@@ -1670,7 +1473,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => PWAIT_OBUF_373,
+      I => PWAIT_OBUF_316,
       O => NlwBufferSignal_PWAIT_OBUF_I
     );
   NlwBufferBlock_DATO_VLD_OBUF_I : X_BUF
@@ -1678,7 +1481,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DATO_VLD_OBUF_347,
+      I => DATO_VLD_OBUF_317,
       O => NlwBufferSignal_DATO_VLD_OBUF_I
     );
   NlwBufferBlock_DIR_0_OBUF_I : X_BUF
@@ -1686,7 +1489,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_0_374,
+      I => DIR_0_325,
       O => NlwBufferSignal_DIR_0_OBUF_I
     );
   NlwBufferBlock_DIR_1_OBUF_I : X_BUF
@@ -1694,7 +1497,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_1_375,
+      I => DIR_1_326,
       O => NlwBufferSignal_DIR_1_OBUF_I
     );
   NlwBufferBlock_DIR_2_OBUF_I : X_BUF
@@ -1702,7 +1505,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_2_376,
+      I => DIR_2_327,
       O => NlwBufferSignal_DIR_2_OBUF_I
     );
   NlwBufferBlock_DIR_3_OBUF_I : X_BUF
@@ -1710,7 +1513,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_3_377,
+      I => DIR_3_328,
       O => NlwBufferSignal_DIR_3_OBUF_I
     );
   NlwBufferBlock_DIR_4_OBUF_I : X_BUF
@@ -1718,7 +1521,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_4_378,
+      I => DIR_4_329,
       O => NlwBufferSignal_DIR_4_OBUF_I
     );
   NlwBufferBlock_DIR_5_OBUF_I : X_BUF
@@ -1726,7 +1529,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_5_379,
+      I => DIR_5_330,
       O => NlwBufferSignal_DIR_5_OBUF_I
     );
   NlwBufferBlock_DIR_6_OBUF_I : X_BUF
@@ -1734,7 +1537,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_6_380,
+      I => DIR_6_331,
       O => NlwBufferSignal_DIR_6_OBUF_I
     );
   NlwBufferBlock_DIR_7_OBUF_I : X_BUF
@@ -1742,7 +1545,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_7_381,
+      I => DIR_7_332,
       O => NlwBufferSignal_DIR_7_OBUF_I
     );
   NlwBufferBlock_DIR_VLD_OBUF_I : X_BUF
@@ -1750,7 +1553,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => DIR_VLD_OBUF_382,
+      I => DIR_VLD_OBUF_334,
       O => NlwBufferSignal_DIR_VLD_OBUF_I
     );
   NlwBufferBlock_PWAIT_CLK : X_BUF
@@ -1766,7 +1569,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => ASTRB_DSTRB_AND_7_o_0,
+      I => ASTRB_DSTRB_AND_6_o_0,
       O => NlwBufferSignal_PWAIT_IN
     );
   NlwBufferBlock_CLK_BUFGP_BUFG_IN : X_BUF
@@ -1777,85 +1580,125 @@ begin
       I => CLK_BUFGP_IBUFG_0,
       O => NlwBufferSignal_CLK_BUFGP_BUFG_IN
     );
-  NlwBufferBlock_DIR_3_CLK : X_BUF
+  NlwBufferBlock_DATA_0_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_3_CLK
+      I => DATO_RD_0_IBUF_0,
+      O => NlwBufferSignal_DATA_0_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_DIR_2_CLK : X_BUF
+  NlwBufferBlock_DATA_1_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_2_CLK
+      I => DATO_RD_1_IBUF_0,
+      O => NlwBufferSignal_DATA_1_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_DIR_1_CLK : X_BUF
+  NlwBufferBlock_DATA_2_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_1_CLK
+      I => DATO_RD_2_IBUF_0,
+      O => NlwBufferSignal_DATA_2_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_DIR_0_CLK : X_BUF
+  NlwBufferBlock_DATA_3_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_0_CLK
+      I => DATO_RD_3_IBUF_0,
+      O => NlwBufferSignal_DATA_3_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_Q_CLK : X_BUF
+  NlwBufferBlock_DATA_4_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_Q_CLK
+      I => DATO_RD_4_IBUF_0,
+      O => NlwBufferSignal_DATA_4_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_DIR_7_CLK : X_BUF
+  NlwBufferBlock_DATA_5_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_7_CLK
+      I => DATO_RD_5_IBUF_0,
+      O => NlwBufferSignal_DATA_5_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_DIR_6_CLK : X_BUF
+  NlwBufferBlock_DATO_0_OBUF_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_6_CLK
+      I => DATO_0_350,
+      O => NlwBufferSignal_DATO_0_OBUF_I
     );
-  NlwBufferBlock_DIR_5_CLK : X_BUF
+  NlwBufferBlock_DATA_6_IOBUF_OBUFT_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_5_CLK
+      I => DATO_RD_6_IBUF_0,
+      O => NlwBufferSignal_DATA_6_IOBUF_OBUFT_I
     );
-  NlwBufferBlock_DIR_4_CLK : X_BUF
+  NlwBufferBlock_DATO_1_OBUF_I : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
-      I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_4_CLK
+      I => DATO_1_351,
+      O => NlwBufferSignal_DATO_1_OBUF_I
     );
-  NlwBufferBlock_DIR_VLD_CLK : X_BUF
+  NlwBufferBlock_DATA_7_IOBUF_OBUFT_I : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => DATO_RD_7_IBUF_0,
+      O => NlwBufferSignal_DATA_7_IOBUF_OBUFT_I
+    );
+  NlwBufferBlock_DATO_3_CLK : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
       I => CLK_BUFGP,
-      O => NlwBufferSignal_DIR_VLD_CLK
+      O => NlwBufferSignal_DATO_3_CLK
+    );
+  NlwBufferBlock_DATO_2_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DATO_2_CLK
+    );
+  NlwBufferBlock_DATO_1_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DATO_1_CLK
+    );
+  NlwBufferBlock_DATO_0_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DATO_0_CLK
+    );
+  NlwBufferBlock_Q2_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_Q2_CLK
     );
   NlwBufferBlock_DATO_VLD_CLK : X_BUF
     generic map(
@@ -1897,53 +1740,85 @@ begin
       I => CLK_BUFGP,
       O => NlwBufferSignal_DATO_4_CLK
     );
-  NlwBufferBlock_Q2_CLK : X_BUF
+  NlwBufferBlock_DIR_VLD_CLK : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
       I => CLK_BUFGP,
-      O => NlwBufferSignal_Q2_CLK
+      O => NlwBufferSignal_DIR_VLD_CLK
     );
-  NlwBufferBlock_Q2_IN : X_BUF
-    generic map(
-      PATHPULSE => 202 ps
-    )
-    port map (
-      I => DSTRB_IBUF_0,
-      O => NlwBufferSignal_Q2_IN
-    );
-  NlwBufferBlock_DATO_3_CLK : X_BUF
+  NlwBufferBlock_DIR_7_CLK : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
       I => CLK_BUFGP,
-      O => NlwBufferSignal_DATO_3_CLK
+      O => NlwBufferSignal_DIR_7_CLK
     );
-  NlwBufferBlock_DATO_2_CLK : X_BUF
+  NlwBufferBlock_DIR_6_CLK : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
       I => CLK_BUFGP,
-      O => NlwBufferSignal_DATO_2_CLK
+      O => NlwBufferSignal_DIR_6_CLK
     );
-  NlwBufferBlock_DATO_1_CLK : X_BUF
+  NlwBufferBlock_DIR_5_CLK : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
       I => CLK_BUFGP,
-      O => NlwBufferSignal_DATO_1_CLK
+      O => NlwBufferSignal_DIR_5_CLK
     );
-  NlwBufferBlock_DATO_0_CLK : X_BUF
+  NlwBufferBlock_DIR_4_CLK : X_BUF
     generic map(
       PATHPULSE => 202 ps
     )
     port map (
       I => CLK_BUFGP,
-      O => NlwBufferSignal_DATO_0_CLK
+      O => NlwBufferSignal_DIR_4_CLK
+    );
+  NlwBufferBlock_DIR_3_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DIR_3_CLK
+    );
+  NlwBufferBlock_DIR_2_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DIR_2_CLK
+    );
+  NlwBufferBlock_DIR_1_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DIR_1_CLK
+    );
+  NlwBufferBlock_DIR_0_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_DIR_0_CLK
+    );
+  NlwBufferBlock_Q_CLK : X_BUF
+    generic map(
+      PATHPULSE => 202 ps
+    )
+    port map (
+      I => CLK_BUFGP,
+      O => NlwBufferSignal_Q_CLK
     );
   NlwBlock_cnt_epp_VCC : X_ONE
     port map (

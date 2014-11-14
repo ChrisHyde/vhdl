@@ -95,9 +95,7 @@ begin
     end if;
    end process;
 	
-	
-   --tristate
-DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='0')) else (others => 'Z');
+
 ------------------END ADDRESS----------------------------
 
 
@@ -137,9 +135,13 @@ DataBiestableD2:process (CLK,RST)
     end if;
    end process;
 	
-	DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='1')) else (others => 'Z');
-	
 --------------------END DATA----------------------------
+
+--tristate buffer
+DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='1')) else (others => 'Z');
+
+
+
   PWAITbiestableD:process (CLK,RST)
     begin
 	 if (RST='1') then
@@ -148,7 +150,17 @@ DataBiestableD2:process (CLK,RST)
 			PWAIT <= (not(ASTRB)) and (not(DSTRB));         		
     end if;
    end process;
-
-
+	
+	
+  CE_RDbiestableD:process (CLK,RST,PWRITE)
+    begin
+	 if (RST='1') then
+	      CE_RD <= '1';
+	 elsif (CLK'event and CLK='1')then
+		if (PWRITE='1') then
+			CE_RD <= DSTRB;  
+		end if;			
+    end if;
+   end process;
 end rtl;
 

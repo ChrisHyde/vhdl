@@ -33,9 +33,7 @@ begin
     procedure epp_cicle ( address : in    std_logic_vector(7 downto 0);
                           data_io : inout std_logic_vector(7 downto 0);
                           r_w     : in    character) is
-								  
-								   variable    aux:integer:=0;
-     
+
     begin 
 	
       wait until clk_epp = '1';
@@ -54,8 +52,8 @@ begin
       if r_w = 'w' then                 --  write   cicle 
         PWRITE <= '0';
         data   <= data_io;
-		  aux:=to_integer(unsigned(data));
-		  report "The value of 'data' is " & integer'image (aux);
+		
+		  
       end if;
 -------------------------------------------------------------------------------
 
@@ -88,7 +86,7 @@ file arch_in : text ;
     ASTRB   <= '1';
     dir  := (others   => '0');
 	 
------------------first values----------   
+-----------------first write values----------   
 
 	wait for 130 ns;
     DIR:=dir_dpram1;
@@ -97,13 +95,7 @@ file arch_in : text ;
                     data_io => dato,
                     r_w     => 'w');
 
-     DIR:=x"12";
-    epp_cicle ( address => dir,
-                    data_io => dato,
-                    r_w     => 'r');
-
-    read_value<=dato;
------------------second values----------  
+-----------------second write values----------  
 	  wait for 130 ns;
     DIR:=dir_dpram2;
     DATO:=X"44";
@@ -111,14 +103,9 @@ file arch_in : text ;
                     data_io => dato,
                     r_w     => 'w');
 
-     DIR:=x"22";
-    epp_cicle ( address => dir,
-                    data_io => dato,
-                    r_w     => 'r');
 
-    read_value<=dato;
     
------------------third values----------  
+-----------------third write values----------  
 	  wait for 130 ns;
     DIR:=dir_frec;
     DATO:=X"54";
@@ -126,7 +113,10 @@ file arch_in : text ;
                     data_io => dato,
                     r_w     => 'w');
 
-     DIR:=x"32";
+
+-----------------first read values----------  
+ wait for 130 ns;
+    DIR:=X"FF";
     epp_cicle ( address => dir,
                     data_io => dato,
                     r_w     => 'r');

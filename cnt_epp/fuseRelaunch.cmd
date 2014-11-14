@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb_isim_beh.exe" -prj "C:/Users/christopher/Dropbox/workspace/modelado14/cnt_epp/cnt_epp_tb_beh.prj" "work.cnt_epp_tb" 

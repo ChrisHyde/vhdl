@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-11-11T23:50:11</DateModified>
+  <DateModified>2014-11-14T02:20:39</DateModified>
   <ModuleName>cnt_dac</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/christopher/Dropbox/workspace/modelado14/cnt_dac/iseconfig/cnt_dac.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/christopher/Dropbox/workspace/modelado14/cnt_dac</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/christopher/Dropbox/workspace/modelado14/cnt_dac\</ImplementationReportsDirectory>
   <DateInitialized>2014-11-11T23:50:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,23 +1,9 @@
 # Reading C:/Modeltech_pe_edu_10.3d/tcl/vsim/pref.tcl
-# do {cnt_epp_tb.tdo}
+# do {cnt_epp_tb.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:35:49 on Nov 11,2014
-# vcom -reportprogress 300 -explicit -93 netgen/par/cnt_epp_timesim.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VCOMPONENTS
-# -- Loading package VITAL_Primitives
-# -- Loading package VPACKAGE
-# -- Compiling entity cnt_epp
-# -- Compiling architecture Structure of cnt_epp
-# End time: 23:35:51 on Nov 11,2014, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:35:51 on Nov 11,2014
+# Start time: 14:06:15 on Nov 13,2014
 # vcom -reportprogress 300 -explicit -93 epp_device.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,17 +12,27 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity epp_device
 # -- Compiling architecture sim of epp_device
-# End time: 23:35:52 on Nov 11,2014, Elapsed time: 0:00:01
+# End time: 14:06:16 on Nov 13,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:35:52 on Nov 11,2014
+# Start time: 14:06:16 on Nov 13,2014
+# vcom -reportprogress 300 -explicit -93 cnt_epp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cnt_epp
+# -- Compiling architecture rtl of cnt_epp
+# End time: 14:06:17 on Nov 13,2014, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:06:17 on Nov 13,2014
 # vcom -reportprogress 300 -explicit -93 cnt_epp_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity cnt_epp_tb
-# -- Compiling architecture behavior of cnt_epp_tb
-# End time: 23:35:53 on Nov 11,2014, Elapsed time: 0:00:01
+# -- Compiling architecture rtl of cnt_epp_tb
+# End time: 14:06:18 on Nov 13,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.3d Oct  7 2014 
 # //
@@ -51,398 +47,33 @@
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {cnt_epp_tb.tdo}" 
-# Start time: 23:35:53 on Nov 11,2014
+# vsim -gui -do "do {cnt_epp_tb.fdo}" 
+# Start time: 14:06:18 on Nov 13,2014
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.cnt_epp_tb(behavior)
+# Loading work.cnt_epp_tb(rtl)
+# Loading work.cnt_epp(rtl)
 # Loading ieee.numeric_std(body)
 # Loading ieee.std_logic_textio(body)
 # Loading work.epp_device(sim)
-# Loading vital2000.vital_timing(body)
-# Loading simprim.vcomponents
-# Loading vital2000.vital_primitives(body)
-# Loading simprim.vpackage(body)
-# Loading work.cnt_epp(structure)
-# Loading simprim.x_obuft(x_obuft_v)
-# Loading simprim.x_buf(x_buf_v)
-# Loading simprim.x_obuf(x_obuf_v)
-# Loading simprim.x_inv(x_inv_v)
-# Loading simprim.x_ff(x_ff_v)
-# Loading simprim.x_ckbuf(x_ckbuf_v)
-# Loading simprim.x_lut6(x_lut6_v)
-# Loading simprim.x_lut5(x_lut5_v)
-# Loading simprim.x_one(x_one_v)
-# Loading simprim.x_zero(x_zero_v)
-# Loading simprim.x_roc(x_roc_v)
-# Loading simprim.x_toc(x_toc_v)
-# Loading instances from netgen/par/cnt_epp_timesim.sdf
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1187): Failed to find INSTANCE 'ASTRB_DSTRB_AND_7_o1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(386): Failed to find INSTANCE 'ASTRB_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(934): Failed to find INSTANCE 'ASTRB_IBUF_rt'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(639): Failed to find INSTANCE 'CLK_BUFGP_BUFG'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(587): Failed to find INSTANCE 'CLK_BUFGP_IBUFG'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(27): Failed to find INSTANCE 'DATA_0_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(16): Failed to find INSTANCE 'DATA_0_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(733): Failed to find INSTANCE 'DATA_0_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(54): Failed to find INSTANCE 'DATA_1_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(43): Failed to find INSTANCE 'DATA_1_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(720): Failed to find INSTANCE 'DATA_1_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(712): Failed to find INSTANCE 'DATA_1_MLTSRCEDGE_DATA_1_MLTSRCEDGE_AMUX_Delay'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(81): Failed to find INSTANCE 'DATA_2_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(70): Failed to find INSTANCE 'DATA_2_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(765): Failed to find INSTANCE 'DATA_2_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(108): Failed to find INSTANCE 'DATA_3_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(97): Failed to find INSTANCE 'DATA_3_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(752): Failed to find INSTANCE 'DATA_3_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(744): Failed to find INSTANCE 'DATA_3_MLTSRCEDGE_DATA_3_MLTSRCEDGE_DMUX_Delay'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(135): Failed to find INSTANCE 'DATA_4_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(124): Failed to find INSTANCE 'DATA_4_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(677): Failed to find INSTANCE 'DATA_4_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(162): Failed to find INSTANCE 'DATA_5_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(151): Failed to find INSTANCE 'DATA_5_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(664): Failed to find INSTANCE 'DATA_5_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(656): Failed to find INSTANCE 'DATA_5_MLTSRCEDGE_DATA_5_MLTSRCEDGE_CMUX_Delay'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(648): Failed to find INSTANCE 'DATA_5_MLTSRCEDGE_DATA_5_MLTSRCEDGE_DMUX_Delay'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(198): Failed to find INSTANCE 'DATA_6_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(187): Failed to find INSTANCE 'DATA_6_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(701): Failed to find INSTANCE 'DATA_6_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(234): Failed to find INSTANCE 'DATA_7_IOBUF_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(223): Failed to find INSTANCE 'DATA_7_IOBUF_OBUFT'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(688): Failed to find INSTANCE 'DATA_7_MLTSRCEDGELogicTrst1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1477): Failed to find INSTANCE 'DATO_0'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(178): Failed to find INSTANCE 'DATO_0_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1497): Failed to find INSTANCE 'DATO_0_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1440): Failed to find INSTANCE 'DATO_1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(214): Failed to find INSTANCE 'DATO_1_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1460): Failed to find INSTANCE 'DATO_1_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1403): Failed to find INSTANCE 'DATO_2'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(250): Failed to find INSTANCE 'DATO_2_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1423): Failed to find INSTANCE 'DATO_2_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1366): Failed to find INSTANCE 'DATO_3'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(259): Failed to find INSTANCE 'DATO_3_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1386): Failed to find INSTANCE 'DATO_3_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1309): Failed to find INSTANCE 'DATO_4'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(268): Failed to find INSTANCE 'DATO_4_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1329): Failed to find INSTANCE 'DATO_4_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1272): Failed to find INSTANCE 'DATO_5'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(277): Failed to find INSTANCE 'DATO_5_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1292): Failed to find INSTANCE 'DATO_5_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1235): Failed to find INSTANCE 'DATO_6'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(286): Failed to find INSTANCE 'DATO_6_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1255): Failed to find INSTANCE 'DATO_6_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1198): Failed to find INSTANCE 'DATO_7'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(295): Failed to find INSTANCE 'DATO_7_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1218): Failed to find INSTANCE 'DATO_7_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(304): Failed to find INSTANCE 'DATO_RD_0_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(320): Failed to find INSTANCE 'DATO_RD_1_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(354): Failed to find INSTANCE 'DATO_RD_2_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(370): Failed to find INSTANCE 'DATO_RD_3_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(402): Failed to find INSTANCE 'DATO_RD_4_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(418): Failed to find INSTANCE 'DATO_RD_5_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(434): Failed to find INSTANCE 'DATO_RD_6_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(450): Failed to find INSTANCE 'DATO_RD_7_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1152): Failed to find INSTANCE 'DATO_VLD_192'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(345): Failed to find INSTANCE 'DATO_VLD_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1144): Failed to find INSTANCE 'DATO_VLD_OBUF_DATO_VLD_OBUF_AMUX_Delay'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(895): Failed to find INSTANCE 'DIR_0'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(466): Failed to find INSTANCE 'DIR_0_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(915): Failed to find INSTANCE 'DIR_0_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(858): Failed to find INSTANCE 'DIR_1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(475): Failed to find INSTANCE 'DIR_1_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(878): Failed to find INSTANCE 'DIR_1_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(821): Failed to find INSTANCE 'DIR_2'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(484): Failed to find INSTANCE 'DIR_2_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(841): Failed to find INSTANCE 'DIR_2_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(784): Failed to find INSTANCE 'DIR_3'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(776): Failed to find INSTANCE 'DIR_3_DIR_3_AMUX_Delay'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(493): Failed to find INSTANCE 'DIR_3_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(804): Failed to find INSTANCE 'DIR_3_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1074): Failed to find INSTANCE 'DIR_4'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(502): Failed to find INSTANCE 'DIR_4_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1094): Failed to find INSTANCE 'DIR_4_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1037): Failed to find INSTANCE 'DIR_5'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(511): Failed to find INSTANCE 'DIR_5_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1057): Failed to find INSTANCE 'DIR_5_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1000): Failed to find INSTANCE 'DIR_6'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(520): Failed to find INSTANCE 'DIR_6_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1020): Failed to find INSTANCE 'DIR_6_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(963): Failed to find INSTANCE 'DIR_7'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(529): Failed to find INSTANCE 'DIR_7_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(983): Failed to find INSTANCE 'DIR_7_rstpot'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1111): Failed to find INSTANCE 'DIR_VLD_188'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(554): Failed to find INSTANCE 'DIR_VLD_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(603): Failed to find INSTANCE 'DSTRB_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1746): Failed to find INSTANCE 'NlwBufferBlock_CLK_BUFGP_BUFG_IN'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1514): Failed to find INSTANCE 'NlwBufferBlock_DATA_0_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1522): Failed to find INSTANCE 'NlwBufferBlock_DATA_1_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1530): Failed to find INSTANCE 'NlwBufferBlock_DATA_2_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1538): Failed to find INSTANCE 'NlwBufferBlock_DATA_3_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1546): Failed to find INSTANCE 'NlwBufferBlock_DATA_4_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1554): Failed to find INSTANCE 'NlwBufferBlock_DATA_5_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1570): Failed to find INSTANCE 'NlwBufferBlock_DATA_6_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1586): Failed to find INSTANCE 'NlwBufferBlock_DATA_7_IOBUF_OBUFT_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1914): Failed to find INSTANCE 'NlwBufferBlock_DATO_0_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1562): Failed to find INSTANCE 'NlwBufferBlock_DATO_0_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1906): Failed to find INSTANCE 'NlwBufferBlock_DATO_1_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1578): Failed to find INSTANCE 'NlwBufferBlock_DATO_1_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1898): Failed to find INSTANCE 'NlwBufferBlock_DATO_2_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1594): Failed to find INSTANCE 'NlwBufferBlock_DATO_2_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1890): Failed to find INSTANCE 'NlwBufferBlock_DATO_3_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1602): Failed to find INSTANCE 'NlwBufferBlock_DATO_3_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1866): Failed to find INSTANCE 'NlwBufferBlock_DATO_4_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1610): Failed to find INSTANCE 'NlwBufferBlock_DATO_4_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1858): Failed to find INSTANCE 'NlwBufferBlock_DATO_5_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1618): Failed to find INSTANCE 'NlwBufferBlock_DATO_5_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1850): Failed to find INSTANCE 'NlwBufferBlock_DATO_6_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1626): Failed to find INSTANCE 'NlwBufferBlock_DATO_6_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1842): Failed to find INSTANCE 'NlwBufferBlock_DATO_7_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1634): Failed to find INSTANCE 'NlwBufferBlock_DATO_7_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1834): Failed to find INSTANCE 'NlwBufferBlock_DATO_VLD_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1650): Failed to find INSTANCE 'NlwBufferBlock_DATO_VLD_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1778): Failed to find INSTANCE 'NlwBufferBlock_DIR_0_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1658): Failed to find INSTANCE 'NlwBufferBlock_DIR_0_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1770): Failed to find INSTANCE 'NlwBufferBlock_DIR_1_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1666): Failed to find INSTANCE 'NlwBufferBlock_DIR_1_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1762): Failed to find INSTANCE 'NlwBufferBlock_DIR_2_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1674): Failed to find INSTANCE 'NlwBufferBlock_DIR_2_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1754): Failed to find INSTANCE 'NlwBufferBlock_DIR_3_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1682): Failed to find INSTANCE 'NlwBufferBlock_DIR_3_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1818): Failed to find INSTANCE 'NlwBufferBlock_DIR_4_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1690): Failed to find INSTANCE 'NlwBufferBlock_DIR_4_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1810): Failed to find INSTANCE 'NlwBufferBlock_DIR_5_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1698): Failed to find INSTANCE 'NlwBufferBlock_DIR_5_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1802): Failed to find INSTANCE 'NlwBufferBlock_DIR_6_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1706): Failed to find INSTANCE 'NlwBufferBlock_DIR_6_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1794): Failed to find INSTANCE 'NlwBufferBlock_DIR_7_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1714): Failed to find INSTANCE 'NlwBufferBlock_DIR_7_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1826): Failed to find INSTANCE 'NlwBufferBlock_DIR_VLD_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1722): Failed to find INSTANCE 'NlwBufferBlock_DIR_VLD_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1730): Failed to find INSTANCE 'NlwBufferBlock_PWAIT_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1738): Failed to find INSTANCE 'NlwBufferBlock_PWAIT_IN'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1642): Failed to find INSTANCE 'NlwBufferBlock_PWAIT_OBUF_I'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1874): Failed to find INSTANCE 'NlwBufferBlock_Q2_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1882): Failed to find INSTANCE 'NlwBufferBlock_Q2_IN'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1786): Failed to find INSTANCE 'NlwBufferBlock_Q_CLK'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(619): Failed to find INSTANCE 'PWAIT_152'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(336): Failed to find INSTANCE 'PWAIT_OBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(563): Failed to find INSTANCE 'PWRITE_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(35): Failed to find INSTANCE 'ProtoComp2_IMUX'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(62): Failed to find INSTANCE 'ProtoComp2_IMUX_1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(89): Failed to find INSTANCE 'ProtoComp2_IMUX_2'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(116): Failed to find INSTANCE 'ProtoComp2_IMUX_3'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(143): Failed to find INSTANCE 'ProtoComp2_IMUX_4'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(170): Failed to find INSTANCE 'ProtoComp2_IMUX_5'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(206): Failed to find INSTANCE 'ProtoComp2_IMUX_6'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(242): Failed to find INSTANCE 'ProtoComp2_IMUX_7'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(312): Failed to find INSTANCE 'ProtoComp4_IMUX'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(328): Failed to find INSTANCE 'ProtoComp4_IMUX_1'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(595): Failed to find INSTANCE 'ProtoComp4_IMUX_10'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(611): Failed to find INSTANCE 'ProtoComp4_IMUX_11'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(362): Failed to find INSTANCE 'ProtoComp4_IMUX_2'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(378): Failed to find INSTANCE 'ProtoComp4_IMUX_3'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(394): Failed to find INSTANCE 'ProtoComp4_IMUX_4'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(410): Failed to find INSTANCE 'ProtoComp4_IMUX_5'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(426): Failed to find INSTANCE 'ProtoComp4_IMUX_6'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(442): Failed to find INSTANCE 'ProtoComp4_IMUX_7'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(458): Failed to find INSTANCE 'ProtoComp4_IMUX_8'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(546): Failed to find INSTANCE 'ProtoComp4_IMUX_9'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(579): Failed to find INSTANCE 'ProtoComp5_IINV'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(571): Failed to find INSTANCE 'ProtoComp5_IMUX'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(943): Failed to find INSTANCE 'Q'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1346): Failed to find INSTANCE 'Q2'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(538): Failed to find INSTANCE 'RST_IBUF'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1131): Failed to find INSTANCE 'S111'.
-# 
-# ** Error: (vsim-SDF-3250) netgen/par/cnt_epp_timesim.sdf(1172): Failed to find INSTANCE 'S221'.
-# 
-# ** Error: (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
-# 
-# ** Warning: Design size of 31896 statements or 184 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
-# Expect performance to be quite adversely affected.
-# ** Warning: (vsim-8683) Uninitialized out port /cnt_epp_tb/uut/CE_RD has no driver.
-# 
-# This port will contribute value (U) to the signal network.
-# 
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./cnt_epp_tb.tdo PAUSED at line 29
-# End time: 23:36:01 on Nov 11,2014, Elapsed time: 0:00:08
-# Errors: 178, Warnings: 2
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: christopher  Hostname: CTHYDE-LAPTOP  ProcessID: 6148
+# 
+#           Attempting to use alternate WLF file "./wlftiwh446".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftiwh446
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+run -all
+# ** Failure: FIN CICLO R/W
+#    Time: 16150 ns  Iteration: 0  Process: /cnt_epp_tb/eppDevice/line__33 File: epp_device.vhd
+# Break in Process line__33 at epp_device.vhd line 129
+add wave -position end  sim:/cnt_epp_tb/eppDevice/DSTRB
+add wave -position end  sim:/cnt_epp_tb/eppDevice/DATA
+# End time: 14:09:24 on Nov 13,2014, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 2

@@ -31,7 +31,7 @@ USE ieee.std_logic_1164.ALL;
 ENTITY cnt_epp_tb IS
 END cnt_epp_tb;
  
-ARCHITECTURE behavior OF cnt_epp_tb IS 
+ARCHITECTURE rtl OF cnt_epp_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -67,11 +67,11 @@ ARCHITECTURE behavior OF cnt_epp_tb IS
 		signal DSTRB_comm:std_logic;
 		signal PWRITE_comm:std_logic;
 		signal PWAIT_comm:std_logic;
-		signal DATA_comm:std_logic_vector(7 downto 0):=x"AA";
+		signal DATA_comm:std_logic_vector(7 downto 0);
 		
 		--cnt_epp
 		
-		signal 	DATO_RD_comm :std_logic_vector(7 downto 0);
+		signal 	DATO_RD_comm :std_logic_vector(7 downto 0):=x"AA";
       signal 	CE_RD :std_logic;
       signal 	DIR :std_logic_vector(7 downto 0);
       signal   DIR_VLD : std_logic;
@@ -86,15 +86,7 @@ ARCHITECTURE behavior OF cnt_epp_tb IS
  
 BEGIN
  
- 
- 	eppDevice:epp_device
-	  port map(
-		DATA=>DATA_comm,
-		PWRITE=>PWRITE_comm,
-		DSTRB=>DSTRB_comm,
-		ASTRB=>ASTRB_comm,
-		PWAIT=>PWAIT_comm
-		);
+
 		
 	-- Instantiate the Unit Under Test (UUT)
    uut: cnt_epp PORT MAP (
@@ -113,7 +105,15 @@ BEGIN
           DATO_VLD => DATO_VLD
         );
 		  
-
+ 
+ 	eppDevice:epp_device
+	  port map(
+		DATA=>DATA_comm,
+		PWRITE=>PWRITE_comm,
+		DSTRB=>DSTRB_comm,
+		ASTRB=>ASTRB_comm,
+		PWAIT=>PWAIT_comm
+		);
 
    -- Clock process definitions
    CLK_process :process
@@ -131,4 +131,4 @@ BEGIN
    end process;
 
 
-END;
+END rtl;
