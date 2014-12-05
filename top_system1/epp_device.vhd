@@ -17,9 +17,9 @@ architecture sim of epp_device is
  constant 	T_clk_epp 			: time      := 100 ns;  -- Internal clock period.   
  signal   	clk_epp   			: std_logic := '0';     -- Internal clock signal.  
  signal     read_value       	: std_logic_vector(7 downto 0)  := (others => '0');
- constant   dir_frec         	: std_logic_vector( 7 downto 0) := x"32";
+ constant   dir_frec         	: std_logic_vector( 7 downto 0) := x"30";
  constant  	dir_dpram1      	: std_logic_vector( 7 downto 0) := x"A1";
- constant   dir_dpram2       	: std_logic_vector( 7 downto 0) := x"32";
+ constant   dir_dpram2       	: std_logic_vector( 7 downto 0) := x"30";
  constant 	EPP_cicle_length 	: natural                       := 10;
 
 begin

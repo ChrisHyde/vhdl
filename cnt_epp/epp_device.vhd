@@ -122,6 +122,13 @@ file arch_in : text ;
                     r_w     => 'r');
 
     read_value<=dato;
+	 
+	     DIR:=X"FF";
+    epp_cicle ( address => dir,
+                    data_io => dato,
+                    r_w     => 'r');
+
+    read_value<=dato;
     
     
  wait for 1 us;

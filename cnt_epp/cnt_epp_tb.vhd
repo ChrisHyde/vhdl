@@ -71,7 +71,7 @@ ARCHITECTURE rtl OF cnt_epp_tb IS
 		
 		--cnt_epp
 		
-		signal 	DATO_RD_comm :std_logic_vector(7 downto 0):=x"AA";
+		signal 	DATO_RD_comm :std_logic_vector(7 downto 0);
       signal 	CE_RD :std_logic;
       signal 	DIR :std_logic_vector(7 downto 0);
       signal   DIR_VLD : std_logic;
@@ -128,6 +128,15 @@ BEGIN
    begin	
 		wait for 5 ns;
 		RST <= '0';		
+   end process;
+	
+	
+	   DATO_RD_process :process
+   begin
+		DATO_RD_comm <= x"FF";
+		wait for 1000ns;
+		DATO_RD_comm <= x"BB";
+		wait for 1000ns;
    end process;
 
 

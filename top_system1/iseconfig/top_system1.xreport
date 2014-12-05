@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-11-14T01:42:12</DateModified>
+  <DateModified>2014-12-03T19:36:18</DateModified>
   <ModuleName>top_system1</ModuleName>
   <SummaryTimeStamp>2014-11-14T01:42:04</SummaryTimeStamp>
   <SavedFilePath>C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/iseconfig/top_system1.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/christopher/Dropbox/workspace/modelado14/top_system1</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/christopher/Dropbox/workspace/modelado14/top_system1\</ImplementationReportsDirectory>
   <DateInitialized>2014-11-13T15:20:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -54,7 +54,7 @@ architecture rtl of cnt_epp is
 	
 	signal S2:std_logic; 
 	signal S22:std_logic;
-	signal Q2:std_logic;
+	signal Q2:std_logic; 
 	
 	
 begin
@@ -138,16 +138,21 @@ DataBiestableD2:process (CLK,RST)
 --------------------END DATA----------------------------
 
 --tristate buffer
-DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='1')) else (others => 'Z');
+DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='1')) else (others=>'Z');
 
 
 
-  PWAITbiestableD:process (CLK,RST)
+
+  PWAITbiestableD:process (CLK,RST,ASTRB,DSTRB,PWRITE)
     begin
 	 if (RST='1') then
 	      PWAIT <= '0';
 	 elsif (CLK'event and CLK='1')then
-			PWAIT <= (not(ASTRB)) and (not(DSTRB));         		
+	     if ((PWRITE='0') and (ASTRB='0')) or  ((PWRITE='0') and (DSTRB='0')) or ((PWRITE='1') and (DSTRB='0')) then
+		    	 PWAIT <= '1';
+			else
+			PWAIT <= '0';
+		  end if;
     end if;
    end process;
 	
