@@ -1,0 +1,7 @@
+vhdl work "gen_dir.vhd"
+vhdl work "dpram_mem.vhd"
+vhdl work "dcm.vhd"
+vhdl work "cnt_epp.vhd"
+vhdl work "cnt_dpram.vhd"
+vhdl work "cnt_dac.vhd"
+vhdl work "gen_funciones.vhd"

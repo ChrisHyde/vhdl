@@ -1,0 +1,77 @@
+# Reading C:/Modeltech_pe_edu_10.3d/tcl/vsim/pref.tcl
+# do {dpram_mem_tb.tdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 01:33:40 on Dec 07,2014
+# vcom -reportprogress 300 -explicit -93 netgen/par/dpram_mem_timesim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VCOMPONENTS
+# -- Loading package VITAL_Primitives
+# -- Loading package VPACKAGE
+# -- Compiling entity dpram_mem
+# -- Compiling architecture Structure of dpram_mem
+# End time: 01:33:42 on Dec 07,2014, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 01:33:42 on Dec 07,2014
+# vcom -reportprogress 300 -explicit -93 dpram_mem_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dpram_mem_tb
+# -- Compiling architecture behavior of dpram_mem_tb
+# End time: 01:33:43 on Dec 07,2014, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.3d Oct  7 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui -do "do {dpram_mem_tb.tdo}" 
+# Start time: 01:33:43 on Dec 07,2014
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.dpram_mem_tb(behavior)
+# SDF 10.3d Compiler 2014.10 Oct  7 2014
+# 
+# Loading vital2000.vital_timing(body)
+# Loading simprim.vcomponents
+# Loading vital2000.vital_primitives(body)
+# Loading simprim.vpackage(body)
+# Loading work.dpram_mem(structure)
+# Loading simprim.x_ckbuf(x_ckbuf_v)
+# Loading simprim.x_buf(x_buf_v)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_textio(body)
+# Loading simprim.x_ramb8bwer(x_ramb8bwer_v)
+# Loading simprim.x_obuf(x_obuf_v)
+# Loading simprim.x_zero(x_zero_v)
+# Loading simprim.x_roc(x_roc_v)
+# Loading simprim.x_toc(x_toc_v)
+# Loading instances from netgen/par/dpram_mem_timesim.sdf
+# Loading timing data from netgen/par/dpram_mem_timesim.sdf
+# ** Warning: Design size of 27668 statements or 112 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /dpram_mem_tb File: dpram_mem_tb.vhd
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 01:38:30 on Dec 07,2014, Elapsed time: 0:04:47
+# Errors: 0, Warnings: 1

@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+xst -intstyle ise -ifn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.xst" -ofn "C:/Users/christopher/Dropbox/workspace/modelado14/dpram_mem/dpram_mem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 dpram_mem.ngc dpram_mem.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dpram_mem_map.ncd dpram_mem.ngd dpram_mem.pcf 
+par -w -intstyle ise -ol high -mt off dpram_mem_map.ncd dpram_mem.ncd dpram_mem.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dpram_mem.twx dpram_mem.ncd -o dpram_mem.twr dpram_mem.pcf 
+netgen -intstyle ise -s 3  -pcf dpram_mem.pcf -rpw 100 -tpw 0 -ar Structure -tm dpram_mem -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim dpram_mem.ncd dpram_mem_timesim.vhd 

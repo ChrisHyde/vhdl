@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/christopher/Dropbox/workspace/modelado14/dcm/dcm_isim_beh.exe" -prj "C:/Users/christopher/Dropbox/workspace/modelado14/dcm/dcm_beh.prj" "dcm" 

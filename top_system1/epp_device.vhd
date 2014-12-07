@@ -87,14 +87,14 @@ file arch_in : text ;
     dir  := (others   => '0');
 	 
 -----------------first write values----------   
---
---	wait for 130 ns;
---    DIR:=dir_dpram1;
---    DATO:=X"34";
---    epp_cicle ( address => dir,
---                    data_io => dato,
---                    r_w     => 'w');
---
+
+	wait for 130 ns;
+    DIR:=dir_dpram1;
+    DATO:=X"34";
+    epp_cicle ( address => dir,
+                    data_io => dato,
+                    r_w     => 'w');
+
 -------------------second write values----------  
 	  wait for 130 ns;
     DIR:=dir_dpram2;
@@ -115,14 +115,14 @@ file arch_in : text ;
 
 
 -----------------first read values----------  
--- wait for 130 ns;
---    DIR:=X"FF";
---    epp_cicle ( address => dir,
---                    data_io => dato,
---                    r_w     => 'r');
---
---    read_value<=dato;
---    
+ wait for 130 ns;
+    DIR:=X"32";
+    epp_cicle ( address => dir,
+                    data_io => dato,
+                    r_w     => 'r');
+
+    read_value<=dato;
+    
     
  wait for 1 us;
     

@@ -9,82 +9,153 @@ z2
 cModel Technology
 Z0 dC:/Users/christopher/Dropbox/workspace/modelado14/cnt_dac
 Ecnt_dac
-Z1 w1417724934
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z1 w1417908430
+Z2 DPx9 vital2000 16 vital_primitives 0 22 `a]zGa`>UD04SCd]1aJR_3
+Z3 DPx7 simprim 8 vpackage 0 22 ieF@fNI[UF]T6R2Q0ZG:61
+Z4 DPx9 vital2000 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx7 simprim 11 vcomponents 0 22 DgFaojEEYblW>If<>z2eN2
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8cnt_dac.vhd
-Z6 Fcnt_dac.vhd
+Z8 8netgen/par/cnt_dac_timesim.vhd
+Z9 Fnetgen/par/cnt_dac_timesim.vhd
 l0
-L5
-VaceoUXm6a]8Yz:88K7n7z0
-!s100 ^B`[O^HHX8LicoKR`0M9h0
-Z7 OP;C;10.3d;59
+L41
+VWfBf7g?0DA<Roc1XQ1]DF1
+!s100 gBeQkg=O3dFJTVk70:7fa3
+Z10 OP;C;10.3d;59
 31
-Z8 !s110 1417724944
+Z11 !s110 1417908444
 !i10b 1
-Z9 !s108 1417724944.453000
-Z10 !s90 -reportprogress|300|-explicit|-93|cnt_dac.vhd|
-Z11 !s107 cnt_dac.vhd|
+Z12 !s108 1417908443.692000
+Z13 !s90 -reportprogress|300|-explicit|-93|netgen/par/cnt_dac_timesim.vhd|
+Z14 !s107 netgen/par/cnt_dac_timesim.vhd|
 !i113 1
-Z12 o-explicit -93 -O0
-Z13 tExplicit 1
-Artl
+Z15 o-explicit -93 -O0
+Z16 tExplicit 1
+Astructure
 R2
 R3
 R4
+R5
+R6
+R7
+DEx4 work 7 cnt_dac 0 22 WfBf7g?0DA<Roc1XQ1]DF1
+l136
+L55
+VlJ1JC@:?@aVLK?>J=747G3
+!s100 jQ71`ZaDDb_FEkFNcO6<R0
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Artl
+Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R6
+R7
 DEx4 work 7 cnt_dac 0 22 aceoUXm6a]8Yz:88K7n7z0
 l41
 L18
-VG9g<zPikYWmM[1G]di5Nn2
-!s100 UFMP[?zCZd:0o4if]VkRo1
-R7
-31
-R8
-!i10b 1
-R9
+VT=h=dBDAP2Ghg`FN83@ag2
+!s100 a0U0bT^URE=3UBM@Wh;1A2
 R10
-R11
+31
+!s110 1417906540
+!i10b 1
+!s108 1417906540.181000
+!s90 -reportprogress|300|-explicit|-93|cnt_dac.vhd|
+!s107 cnt_dac.vhd|
 !i113 1
-R12
-R13
+R15
+R16
+Fcnt_dac.vhd
+w1417878333
+8cnt_dac.vhd
 Ecnt_dac_tb
-Z14 w1417449415
-R3
-R4
-R0
-Z15 8cnt_dac_tb.vhd
-Z16 Fcnt_dac_tb.vhd
-l0
-L35
-Vl;@KES]O]RAMTmXIc8I>[3
-!s100 >S<?SC0hcYbzaT<ZLI4iD0
+Z18 w1417908268
 R7
-31
-Z17 !s110 1417724945
-!i10b 1
-Z18 !s108 1417724945.293000
-Z19 !s90 -reportprogress|300|-explicit|-93|cnt_dac_tb.vhd|
-Z20 !s107 cnt_dac_tb.vhd|
-!i113 1
-R12
-R13
-Abehavior
-R3
-R4
-Z21 DEx4 work 10 cnt_dac_tb 0 22 l;@KES]O]RAMTmXIc8I>[3
-l74
-L38
-Z22 VBW8A[2Uj?Ac[F;Rc=iWJP1
-Z23 !s100 BT;d1f]nT:9[;Ob_cU<FP3
-R7
-31
+R6
 R17
+R0
+Z19 8cnt_dac_tb.vhd
+Z20 Fcnt_dac_tb.vhd
+l0
+L36
+VN]FeA:;DlfflhBINR]6`l2
+!s100 6@HLO]jX62VaH;RJH`I>I0
+R10
+31
+Z21 !s110 1417908446
 !i10b 1
-R18
-R19
-R20
+Z22 !s108 1417908446.882000
+Z23 !s90 -reportprogress|300|-explicit|-93|cnt_dac_tb.vhd|
+Z24 !s107 cnt_dac_tb.vhd|
 !i113 1
-R12
-R13
+R15
+R16
+Abehavior
+R7
+R6
+R17
+Z25 DEx4 work 10 cnt_dac_tb 0 22 N]FeA:;DlfflhBINR]6`l2
+l87
+L39
+VWZ7KF=OX<KF;BL=KKMQTW0
+!s100 d_2Wf@L7AN0[`j_F00C600
+R10
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R15
+R16
+Edac121s101
+Z26 w1411643218
+R17
+R6
+R7
+R0
+Z27 8DAC121S101.vhd
+Z28 FDAC121S101.vhd
+l0
+L4
+VPAXE8Pe4b1<FiR@UCJkAc3
+!s100 bG[e<TGbX290SINX<Rn0e3
+R10
+31
+R21
+!i10b 1
+Z29 !s108 1417908445.996000
+Z30 !s90 -reportprogress|300|-explicit|-93|DAC121S101.vhd|
+Z31 !s107 DAC121S101.vhd|
+!i113 1
+R15
+R16
+Artl
+R17
+R6
+R7
+DEx4 work 10 dac121s101 0 22 PAXE8Pe4b1<FiR@UCJkAc3
+l25
+L12
+Vcc[j@:?3@T0192]NB8]GN0
+!s100 KFeXEiZk]^2`RihPbzKV80
+R10
+31
+R21
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R15
+R16

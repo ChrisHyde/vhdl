@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: cnt_dac.prj
 
@@ -151,7 +151,7 @@ Synthesizing Unit <cnt_dac>.
 	inferred   1 RAM(s).
 	inferred   2 Adder/Subtractor(s).
 	inferred   7 D-type flip-flop(s).
-	inferred   7 Multiplexer(s).
+	inferred   6 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <cnt_dac> synthesized.
 
@@ -167,9 +167,9 @@ Macro Statistics
 # Registers                                            : 4
  1-bit register                                        : 3
  4-bit register                                        : 1
-# Multiplexers                                         : 7
+# Multiplexers                                         : 6
  1-bit 10-to-1 multiplexer                             : 2
- 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 2-to-1 multiplexer                              : 2
  1-bit 3-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
@@ -208,9 +208,9 @@ Macro Statistics
  4-bit up counter                                      : 1
 # Registers                                            : 2
  Flip-Flops                                            : 2
-# Multiplexers                                         : 5
+# Multiplexers                                         : 4
  1-bit 10-to-1 multiplexer                             : 2
- 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 2-to-1 multiplexer                              : 1
  1-bit 3-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 
@@ -273,8 +273,9 @@ Primitive and Black Box Usage:
 #      LUT5                        : 1
 #      LUT6                        : 6
 # FlipFlops/Latches                : 9
-#      FDC                         : 5
+#      FDC                         : 4
 #      FDCE                        : 4
+#      FDP                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 22
@@ -399,10 +400,10 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
 -------------------------------------------------------------------------
 Offset:              2.542ns (Levels of Logic = 2)
   Source:            DATO_OK (PAD)
-  Destination:       state_FSM_FFd2 (FF)
+  Destination:       SYNC (FF)
   Destination Clock: CLK rising
 
-  Data Path: DATO_OK to state_FSM_FFd2
+  Data Path: DATO_OK to SYNC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -503,7 +504,7 @@ Clock to Setup on destination clock CLK
 Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------+---------+---------+---------+---------+
 CLK               |    2.078|         |         |         |
-sclkPulseCounter_0|    3.012|         |         |         |
+sclkPulseCounter_0|    2.992|         |         |         |
 ------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sclkPulseCounter_0
@@ -518,12 +519,12 @@ sclkPulseCounter_0|    2.216|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.75 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.78 secs
  
 --> 
 
-Total memory usage is 260936 kilobytes
+Total memory usage is 260616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

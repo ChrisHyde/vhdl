@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-03T19:36:18</DateModified>
+  <DateModified>2014-12-07T23:14:29</DateModified>
   <ModuleName>top_system1</ModuleName>
-  <SummaryTimeStamp>2014-11-14T01:42:04</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-12-06T15:20:28</SummaryTimeStamp>
   <SavedFilePath>C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/iseconfig/top_system1.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/christopher/Dropbox/workspace/modelado14/top_system1\</ImplementationReportsDirectory>
   <DateInitialized>2014-11-13T15:20:47</DateInitialized>
@@ -17,6 +17,8 @@
     <toc-item title="Performance Summary" target="Performance Summary" />
     <toc-item title="Failing Constraints" target="Failing Constraints" />
     <toc-item title="Detailed Reports" target="Detailed Reports" />
+    <table-item tableState="CollapsedTable" tableKey="DeviceUtilizationSummary" />
+    <table-item tableState="CollapsedTable" tableKey="DeviceUtilizationSummary" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="top_system1_envsettings.html" label="System Settings" />
    <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="top_system1_map.xrpt" label="IOB Properties" />

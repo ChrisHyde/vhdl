@@ -36,8 +36,8 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-DATO_OK     |    0.911(R)|      FAST  |   -0.008(R)|      SLOW  |CLK_BUFGP         |   0.000|
-RST         |    0.683(R)|      FAST  |    0.100(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DATO_OK     |    0.797(R)|      FAST  |    0.282(R)|      SLOW  |CLK_BUFGP         |   0.000|
+RST         |    0.409(R)|      FAST  |    0.528(R)|      SLOW  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -45,8 +45,8 @@ Clock CLK to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-SCLK        |         8.207(R)|      SLOW  |         4.483(R)|      FAST  |CLK_BUFGP         |   0.000|
-SYNC        |         7.929(R)|      SLOW  |         4.285(R)|      FAST  |CLK_BUFGP         |   0.000|
+SCLK        |         7.677(R)|      SLOW  |         4.130(R)|      FAST  |CLK_BUFGP         |   0.000|
+SYNC        |         7.344(R)|      SLOW  |         3.962(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -54,33 +54,33 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    1.916|         |         |         |
+CLK            |    1.519|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-DATO1<0>       |D1             |    6.865|
-DATO1<1>       |D1             |    6.939|
-DATO1<2>       |D1             |    6.971|
-DATO1<3>       |D1             |    6.754|
-DATO1<4>       |D1             |    8.064|
-DATO1<5>       |D1             |    7.782|
-DATO1<6>       |D1             |    7.906|
-DATO1<7>       |D1             |    7.554|
-DATO2<0>       |D2             |    7.251|
-DATO2<1>       |D2             |    6.895|
-DATO2<2>       |D2             |    6.949|
-DATO2<3>       |D2             |    6.862|
-DATO2<4>       |D2             |    7.814|
-DATO2<5>       |D2             |    7.019|
-DATO2<6>       |D2             |    7.298|
-DATO2<7>       |D2             |    7.106|
+DATO1<0>       |D1             |    7.502|
+DATO1<1>       |D1             |    7.803|
+DATO1<2>       |D1             |    7.224|
+DATO1<3>       |D1             |    7.141|
+DATO1<4>       |D1             |    7.650|
+DATO1<5>       |D1             |    7.424|
+DATO1<6>       |D1             |    7.078|
+DATO1<7>       |D1             |    7.122|
+DATO2<0>       |D2             |    7.126|
+DATO2<1>       |D2             |    7.188|
+DATO2<2>       |D2             |    6.904|
+DATO2<3>       |D2             |    6.948|
+DATO2<4>       |D2             |    6.694|
+DATO2<5>       |D2             |    7.156|
+DATO2<6>       |D2             |    7.655|
+DATO2<7>       |D2             |    7.285|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Dec 03 19:21:38 2014 
+Analysis completed Sun Dec 07 00:26:53 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

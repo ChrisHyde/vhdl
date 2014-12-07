@@ -3,7 +3,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:47:39 on Nov 25,2014
+# Start time: 12:58:13 on Dec 06,2014
 # vcom -reportprogress 300 -explicit -93 netgen/par/cnt_epp_timesim.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -14,10 +14,10 @@
 # -- Loading package VPACKAGE
 # -- Compiling entity cnt_epp
 # -- Compiling architecture Structure of cnt_epp
-# End time: 19:47:43 on Nov 25,2014, Elapsed time: 0:00:04
+# End time: 12:58:18 on Dec 06,2014, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:47:43 on Nov 25,2014
+# Start time: 12:58:18 on Dec 06,2014
 # vcom -reportprogress 300 -explicit -93 epp_device.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,10 +26,10 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity epp_device
 # -- Compiling architecture sim of epp_device
-# End time: 19:47:44 on Nov 25,2014, Elapsed time: 0:00:01
+# End time: 12:58:19 on Dec 06,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:47:44 on Nov 25,2014
+# Start time: 12:58:19 on Dec 06,2014
 # vcom -reportprogress 300 -explicit -93 cnt_epp_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -38,7 +38,7 @@
 # -- Compiling architecture rtl of cnt_epp_tb
 # ** Warning: [4] cnt_epp_tb.vhd(137): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] cnt_epp_tb.vhd(139): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 19:47:44 on Nov 25,2014, Elapsed time: 0:00:00
+# End time: 12:58:20 on Dec 06,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
 # //  ModelSim PE Student Edition 10.3d Oct  7 2014 
 # //
@@ -54,13 +54,11 @@
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
 # vsim -gui -do "do {cnt_epp_tb.tdo}" 
-# Start time: 19:47:47 on Nov 25,2014
+# Start time: 12:58:20 on Dec 06,2014
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.cnt_epp_tb(rtl)
-# SDF 10.3d Compiler 2014.10 Oct  7 2014
-# 
 # Loading vital2000.vital_timing(body)
 # Loading simprim.vcomponents
 # Loading vital2000.vital_primitives(body)
@@ -130,10 +128,10 @@
 # 
 #           File in use by: christopher  Hostname: CTHYDE-LAPTOP  ProcessID: 6148
 # 
-#           Attempting to use alternate WLF file "./wlft2a0v6j".
+#           Attempting to use alternate WLF file "./wlftw7hnz5".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft2a0v6j
+#           Using alternate file: ./wlftw7hnz5
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
@@ -142,5 +140,5 @@ run -all
 # ** Failure: FIN CICLO R/W
 #    Time: 19850 ns  Iteration: 0  Process: /cnt_epp_tb/eppDevice/line__33 File: epp_device.vhd
 # Break in Process line__33 at epp_device.vhd line 136
-# End time: 19:49:55 on Nov 25,2014, Elapsed time: 0:02:08
+# End time: 13:21:18 on Dec 06,2014, Elapsed time: 0:22:58
 # Errors: 0, Warnings: 23

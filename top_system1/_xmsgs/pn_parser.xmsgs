@@ -8,10 +8,13 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/cnt_epp.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/epp_device.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/top_system1.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/netgen/par/top_system1_timesim.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/top_system1/top_system1_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

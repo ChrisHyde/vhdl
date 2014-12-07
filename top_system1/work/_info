@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/christopher/Dropbox/workspace/modelado14/top_system1
 Ecnt_epp
-Z1 w1415887150
+Z1 w1416941651
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -21,9 +21,9 @@ VcVc^4fRYHn`5:S4Tf@^Jk2
 !s100 iO287D@WnNH4M`zU]elRn0
 Z6 OP;C;10.3d;59
 31
-Z7 !s110 1416174961
+Z7 !s110 1417870600
 !i10b 1
-Z8 !s108 1416174960.211000
+Z8 !s108 1417870600.435000
 Z9 !s90 -reportprogress|300|-explicit|-93|cnt_epp.vhd|
 Z10 !s107 cnt_epp.vhd|
 !i113 1
@@ -35,8 +35,8 @@ R3
 DEx4 work 7 cnt_epp 0 22 cVc^4fRYHn`5:S4Tf@^Jk2
 l60
 L49
-Vh01C2HInYX8gcL1:gYF<W3
-!s100 hDC@S@bYfj9MgfEEk9Snc3
+VOnhjz<HEFKPM=45zZnG[13
+!s100 jZG4OK97i?f[dZB6;0oB_3
 R6
 31
 R7
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Eepp_device
-Z13 w1416174927
+Z13 w1417870559
 Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
@@ -62,9 +62,9 @@ Vo6E<G<8e?W>f[>B<c`No_0
 !s100 `>lSjCJSWf?YoOI6DeoXB2
 R6
 31
-Z18 !s110 1416174962
+Z18 !s110 1417875650
 !i10b 1
-Z19 !s108 1416174962.687000
+Z19 !s108 1417875650.085000
 Z20 !s90 -reportprogress|300|-explicit|-93|epp_device.vhd|
 Z21 !s107 epp_device.vhd|
 !i113 1
@@ -78,8 +78,8 @@ R3
 DEx4 work 10 epp_device 0 22 o6E<G<8e?W>f[>B<c`No_0
 l25
 L16
-Vf5m7D<Fz0NXOiKPhR?en^0
-!s100 QW^P9;=b6>>YSR;oeeUhN3
+Va77<PEjdE]M`P?cBcJ2Ii1
+!s100 YQRCJ0o6fH]LF?:5BMnVV0
 R6
 31
 R18
@@ -91,23 +91,49 @@ R21
 R11
 R12
 Etop_system1
-Z22 w1415926400
+Z22 w1417875625
+Z23 DPx9 vital2000 16 vital_primitives 0 22 `a]zGa`>UD04SCd]1aJR_3
+Z24 DPx7 simprim 8 vpackage 0 22 ieF@fNI[UF]T6R2Q0ZG:61
+Z25 DPx9 vital2000 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z26 DPx7 simprim 11 vcomponents 0 22 DgFaojEEYblW>If<>z2eN2
 R2
 R3
 R0
-Z23 8top_system1.vhd
-Z24 Ftop_system1.vhd
+Z27 8netgen/par/top_system1_timesim.vhd
+Z28 Fnetgen/par/top_system1_timesim.vhd
 l0
-L32
-VI]o7H95=TiDUF>KK5^4O[2
-!s100 A=Y_^Nz=5ke=:A0oD6n`H2
+L41
+VFzK;:=IHaFa8ARYD<VPVR3
+!s100 m5X0z4n?mVW@RgbDOR3Zc1
 R6
 31
-R18
+Z29 !s110 1417875648
 !i10b 1
-Z25 !s108 1416174961.920000
-Z26 !s90 -reportprogress|300|-explicit|-93|top_system1.vhd|
-Z27 !s107 top_system1.vhd|
+Z30 !s108 1417875642.736000
+Z31 !s90 -reportprogress|300|-explicit|-93|netgen/par/top_system1_timesim.vhd|
+Z32 !s107 netgen/par/top_system1_timesim.vhd|
+!i113 1
+R11
+R12
+Astructure
+R23
+R24
+R25
+R26
+R2
+R3
+DEx4 work 11 top_system1 0 22 FzK;:=IHaFa8ARYD<VPVR3
+l248
+L56
+VnB1I4S5n9EB2Wz[7Fhg5F1
+!s100 Mkb2F]2o<zPJW]aVc>>iH0
+R6
+31
+R29
+!i10b 1
+R30
+R31
+R32
 !i113 1
 R11
 R12
@@ -121,50 +147,53 @@ VK7_<n3K;>?3i0gDl[AkQR0
 !s100 ^403Z>[l`8_nY>bVZP^;D3
 R6
 31
-R18
+!s110 1417870601
 !i10b 1
-R25
-R26
-R27
+!s108 1417870601.105000
+!s90 -reportprogress|300|-explicit|-93|top_system1.vhd|
+!s107 top_system1.vhd|
 !i113 1
 R11
 R12
+Ftop_system1.vhd
+w1415926400
+8top_system1.vhd
 Etop_system1_tb
-Z28 w1415927602
+Z33 w1415927602
 R2
 R3
 R0
-Z29 8top_system1_tb.vhd
-Z30 Ftop_system1_tb.vhd
+Z34 8top_system1_tb.vhd
+Z35 Ftop_system1_tb.vhd
 l0
 L35
 V0C?RaEzMHYmznmXcaUUd03
 !s100 9nDnAVSXacM<JecL`4RK;3
 R6
 31
-Z31 !s110 1416174963
+R18
 !i10b 1
-Z32 !s108 1416174963.573000
-Z33 !s90 -reportprogress|300|-explicit|-93|top_system1_tb.vhd|
-Z34 !s107 top_system1_tb.vhd|
+Z36 !s108 1417875650.943000
+Z37 !s90 -reportprogress|300|-explicit|-93|top_system1_tb.vhd|
+Z38 !s107 top_system1_tb.vhd|
 !i113 1
 R11
 R12
 Abehavior
 R2
 R3
-Z35 DEx4 work 14 top_system1_tb 0 22 0C?RaEzMHYmznmXcaUUd03
+Z39 DEx4 work 14 top_system1_tb 0 22 0C?RaEzMHYmznmXcaUUd03
 l83
 L38
-Z36 VX8PGM4Xd95nDTC85Q;LcZ3
-Z37 !s100 VRz6DGY;;EX_H8TlF^bz[3
+Z40 VX8PGM4Xd95nDTC85Q;LcZ3
+Z41 !s100 VRz6DGY;;EX_H8TlF^bz[3
 R6
 31
-R31
+R18
 !i10b 1
-R32
-R33
-R34
+R36
+R37
+R38
 !i113 1
 R11
 R12
