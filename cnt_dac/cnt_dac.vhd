@@ -33,42 +33,33 @@ signal DATO_1_16bits:  	std_logic_vector(15 downto 0);
 signal DATO_2_16bits:  	std_logic_vector(15 downto 0);
 signal endTx: 			  	std_logic;
 
-constant sclkPulseValue : unsigned:="1";
 
-signal sclkPulseCounter: integer range 0 to 1;
-
+signal prescaler : unsigned(0 downto 0);
 
 BEGIN
 DATO_1_16bits<="0000"&DATO1&"0000";
 DATO_2_16bits<="0000"&DATO2&"0000";
 
 
-		clkPulseCounter:process (clk,rst)
-		begin
-				if (rst='1') then
-					sclkPulseCounter <= 0;
-				elsif (clk'event and clk='1')then	
-					 
-						if (sclkPulseCounter = sclkPulseValue)then 
-							sclkPulseCounter <= 0;	
-						else					
-							sclkPulseCounter <= sclkPulseCounter+ 1;     	    	
-						end if;
-		 		   
-				end if;
-		end process;
+	
 
-		SCLKgenerator:process (sclkPulseCounter)
-		begin
-			SCLKaux<='0';
-				if (sclkPulseCounter= sclkPulseValue)  then 
-					SCLKaux <= '1';     
-				else
-					SCLKaux <= '0';
-				end if;
-		end process;
-		
-		SCLK<=SCLKaux;
+
+  gen_clk : process (clk, rst)
+  begin  -- process gen_clk
+    if rst = '1' then
+      SCLKaux   <= '0';
+      prescaler   <= (others => '0');
+    elsif rising_edge(clk) then   -- rising clock edge
+      if prescaler = X"1" then     -- 12 500 000 in hex
+        prescaler   <= (others => '0');
+        SCLKaux   <= not SCLKaux;
+      else
+        prescaler <= prescaler + "1";
+      end if;
+    end if;
+  end process gen_clk;
+
+SCLK <= SCLKaux;
 	
 	   counter:process(rst,CEcounter,SCLKaux)
 		begin

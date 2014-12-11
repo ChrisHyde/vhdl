@@ -115,7 +115,7 @@ file arch_in : text ;
                     data_io       => dato,
                     r_w           => 'w');
 
-wait for 5 ms;
+wait for 1 ms;
 
     dir := dir_frec ;
 	 dato:=x"73";
@@ -124,14 +124,14 @@ wait for 5 ms;
                     r_w           => 'w');
 
 
-wait for 5 ms;
+wait for 1 ms;
 
     	 dato:=x"bf";
     epp_cicle ( address => dir,
                     data_io       => dato,
                     r_w           => 'w');
 
-    wait for 5 ms;
+    wait for 1 ms;
 
     	 dato:=x"ff";
     epp_cicle ( address => dir,
@@ -139,7 +139,7 @@ wait for 5 ms;
                     r_w           => 'w');
 
 
-wait for 5 ms;
+wait for 1 ms;
    report "FIN CONTROLADO DE LA SIMULACION" severity failure;
   end process;
 end sim;

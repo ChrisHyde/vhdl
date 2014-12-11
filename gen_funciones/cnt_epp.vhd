@@ -138,7 +138,7 @@ DataBiestableD2:process (CLK,RST)
 --------------------END DATA----------------------------
 
 --tristate buffer
-DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='1')) else (others=>'Z');
+DATA<= DATO_RD when ((PWRITE= '1') and (DSTRB='0')) else (others=>'Z');
 
 
 

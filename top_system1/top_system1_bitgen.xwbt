@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\christopher\Dropbox\workspace\modelado14\top_system1\top_system1.ncd
-OUTFILE=C:\Users\christopher\Dropbox\workspace\modelado14\top_system1\top_system1.bit
-FAMILY=Spartan6
-PART=xc6slx45-3csg324
-WORKINGDIR=C:\Users\christopher\Dropbox\workspace\modelado14\top_system1
-LICENSE=WebPack
-USER_INFO=__0_0_0

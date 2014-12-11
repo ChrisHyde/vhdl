@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   23:17:28 12/07/2014
+-- Create Date:   11:48:23 12/10/2014
 -- Design Name:   
 -- Module Name:   C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/gen_funciones_tb.vhd
 -- Project Name:  gen_funciones
@@ -52,6 +52,7 @@ ARCHITECTURE behavior OF gen_funciones_tb IS
          SCLK : OUT  std_logic;
          D1 : OUT  std_logic;
          D2 : OUT  std_logic
+			
         );
     END COMPONENT;
 	 
@@ -63,21 +64,30 @@ ARCHITECTURE behavior OF gen_funciones_tb IS
 			 ASTRB   : out   std_logic;
 			 PWAIT  : in    std_logic);
 		END COMPONENT;
+
+COMPONENT DAC121S101
+	 port (
+    VOUT : out real range 0.0 to 3.5;
+    SYNC : in  std_logic;
+    SCLK : in  std_logic;
+    DIN  : in  std_logic);
+end COMPONENT;
     
 
    --Inputs
    signal RELOJ : std_logic := '0';
    signal RST : std_logic := '1';
-   signal ASTRB_comm:std_logic;
-		signal DSTRB_comm:std_logic;
-		signal PWRITE_comm:std_logic;
-		signal PWAIT_comm:std_logic;
-		signal DATA_comm:std_logic_vector(7 downto 0);
-		
-		--cnt_epp
-		
-		signal 	DATO_RD_comm :std_logic_vector(7 downto 0);
+   signal ASTRB : std_logic := '0';
+   signal DSTRB : std_logic := '0';
+   signal PWRITE : std_logic := '0';
 
+	--BiDirs
+   signal DATA : std_logic_vector(7 downto 0):=x"00";
+
+ 	--Outputs
+	signal VOUT1 : real range 0.0 to 3.5;
+	signal VOUT2 : real range 0.0 to 3.5;
+   signal PWAIT : std_logic;
    signal SYNC : std_logic;
    signal SCLK : std_logic;
    signal D1 : std_logic;
@@ -85,8 +95,6 @@ ARCHITECTURE behavior OF gen_funciones_tb IS
 
    -- Clock period definitions
    constant RELOJ_period : time := 10 ns;
-
-
  
 BEGIN
  
@@ -94,27 +102,42 @@ BEGIN
    uut: gen_funciones PORT MAP (
           RELOJ => RELOJ,
           RST => RST,
-          ASTRB => ASTRB_comm,
-          DSTRB => DSTRB_comm,
-          DATA => DATA_comm,
-          PWRITE => PWRITE_comm,
-          PWAIT => PWAIT_comm,
+          ASTRB => ASTRB,
+          DSTRB => DSTRB,
+          DATA => DATA,
+          PWRITE => PWRITE,
+          PWAIT => PWAIT,
           SYNC => SYNC,
           SCLK => SCLK,
           D1 => D1,
           D2 => D2
         );
- 	eppDevice:epp_device1
+		  
+		  eppDevice:epp_device1
 	  port map(
-		DATA=>DATA_comm,
-		PWRITE=>PWRITE_comm,
-		DSTRB=>DSTRB_comm,
-		ASTRB=>ASTRB_comm,
-		PWAIT=>PWAIT_comm
+		DATA=>DATA,
+		PWRITE=>PWRITE,
+		DSTRB=>DSTRB,
+		ASTRB=>ASTRB,
+		PWAIT=>PWAIT
 		);
+		
+	 dac1:DAC121S101
+    port map(  
+	 VOUT => VOUT1,
+    SYNC => SYNC,
+    SCLK => SCLK,
+    DIN  =>D1);
+	 dac2:DAC121S101
+	  
+	 port map(  
+	 VOUT=> VOUT2,
+    SYNC => SYNC,
+    SCLK => SCLK,
+    DIN  =>D2);
 
-
-    RELOJ_process :process
+   -- Clock process definitions
+   RELOJ_process :process
    begin
 		RELOJ <= '0';
 		wait for RELOJ_period/2;
@@ -122,10 +145,12 @@ BEGIN
 		wait for RELOJ_period/2;
    end process;
  
-   RST_process :process
+RST_process :process
    begin	
-		wait for 5 ns;
+		wait for 100 ns;
 		RST <= '0';		
    end process;
+	
+
 
 END;

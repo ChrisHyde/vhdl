@@ -3,30 +3,8 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:15 on Dec 07,2014
-# vcom -reportprogress 300 -explicit -93 gen_dir.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity gen_dir
-# -- Compiling architecture rtl of gen_dir
-# End time: 23:29:16 on Dec 07,2014, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:16 on Dec 07,2014
-# vcom -reportprogress 300 -explicit -93 dpram_mem.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity dpram_mem
-# -- Compiling architecture rtl of dpram_mem
-# End time: 23:29:17 on Dec 07,2014, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:17 on Dec 07,2014
-# vcom -reportprogress 300 -explicit -93 dcm.vhd 
+# Start time: 12:41:43 on Dec 11,2014
+# vcom -reportprogress 300 -explicit -93 ipcore_dir/dcm.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -36,20 +14,42 @@
 # -- Loading package VCOMPONENTS
 # -- Compiling entity dcm
 # -- Compiling architecture xilinx of dcm
-# End time: 23:29:18 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:46 on Dec 11,2014, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:18 on Dec 07,2014
+# Start time: 12:41:46 on Dec 11,2014
+# vcom -reportprogress 300 -explicit -93 gen_dir.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gen_dir
+# -- Compiling architecture rtl of gen_dir
+# End time: 12:41:47 on Dec 11,2014, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:41:47 on Dec 11,2014
+# vcom -reportprogress 300 -explicit -93 dpram_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dpram_mem
+# -- Compiling architecture rtl of dpram_mem
+# End time: 12:41:48 on Dec 11,2014, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:41:48 on Dec 11,2014
 # vcom -reportprogress 300 -explicit -93 cnt_epp.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity cnt_epp
 # -- Compiling architecture rtl of cnt_epp
-# End time: 23:29:19 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:48 on Dec 11,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:19 on Dec 07,2014
+# Start time: 12:41:48 on Dec 11,2014
 # vcom -reportprogress 300 -explicit -93 cnt_dpram.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -57,10 +57,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity cnt_dpram
 # -- Compiling architecture RTL of cnt_dpram
-# End time: 23:29:20 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:49 on Dec 11,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:20 on Dec 07,2014
+# Start time: 12:41:49 on Dec 11,2014
 # vcom -reportprogress 300 -explicit -93 cnt_dac.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,10 +68,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity cnt_dac
 # -- Compiling architecture RTL of cnt_dac
-# End time: 23:29:21 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:50 on Dec 11,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:21 on Dec 07,2014
+# Start time: 12:41:50 on Dec 11,2014
 # vcom -reportprogress 300 -explicit -93 gen_funciones.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -88,10 +88,10 @@
 # -- Loading entity dpram_mem
 # -- Loading entity gen_dir
 # -- Loading entity cnt_dac
-# End time: 23:29:22 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:51 on Dec 11,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:22 on Dec 07,2014
+# Start time: 12:41:51 on Dec 11,2014
 # vcom -reportprogress 300 -explicit -93 epp_device1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -100,17 +100,28 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity epp_device1
 # -- Compiling architecture sim of epp_device1
-# End time: 23:29:23 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:52 on Dec 11,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:29:23 on Dec 07,2014
+# Start time: 12:41:52 on Dec 11,2014
+# vcom -reportprogress 300 -explicit -93 DAC121S101.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DAC121S101
+# -- Compiling architecture rtl of DAC121S101
+# End time: 12:41:53 on Dec 11,2014, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:41:53 on Dec 11,2014
 # vcom -reportprogress 300 -explicit -93 gen_funciones_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity gen_funciones_tb
 # -- Compiling architecture behavior of gen_funciones_tb
-# End time: 23:29:24 on Dec 07,2014, Elapsed time: 0:00:01
+# End time: 12:41:53 on Dec 11,2014, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.3d Oct  7 2014 
 # //
@@ -126,7 +137,7 @@
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
 # vsim -gui -do "do {gen_funciones_tb.fdo}" 
-# Start time: 23:29:24 on Dec 07,2014
+# Start time: 12:41:54 on Dec 11,2014
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -153,7 +164,8 @@
 # Loading work.cnt_dac(rtl)
 # Loading ieee.std_logic_textio(body)
 # Loading work.epp_device1(sim)
-# ** Warning: Design size of 20873 statements or 18 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Loading work.dac121s101(rtl)
+# ** Warning: Design size of 21055 statements or 20 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
 # Expect performance to be quite adversely affected.
 # ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(6), and its initial value is not used.
 # 
@@ -166,62 +178,21 @@
 # Therefore, simulation behavior may occur that is not in compliance with
 # 
 # the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(4 downto 3).
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: christopher  Hostname: CTHYDE-LAPTOP  ProcessID: 7720
+# 
+#           Attempting to use alternate WLF file "./wlftg5i781".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftg5i781
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
-#    Time: 5 ns  Iteration: 2  Instance: /gen_funciones_tb/uut/U_dcm/dcm_sp_inst
+# ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
+#    Time: 0 ps  Iteration: 0  Instance: /gen_funciones_tb/dac2
+# ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
+#    Time: 0 ps  Iteration: 0  Instance: /gen_funciones_tb/dac1
 run -all
-add wave -position end  sim:/gen_funciones_tb/uut/DATO
-add wave -position end  sim:/gen_funciones_tb/uut/WE_DP1
-add wave -position end  sim:/gen_funciones_tb/uut/WE_DP2
-add wave -position end  sim:/gen_funciones_tb/uut/ADDR_OUT
-add wave -position 15  sim:/gen_funciones_tb/uut/DATO_OK
-restart -f
-# ** Warning: Design size of 11189 statements or 18 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
-# Expect performance to be quite adversely affected.
-# ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(6), and its initial value is not used.
-# 
-# Therefore, simulation behavior may occur that is not in compliance with
-# 
-# the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(6).
-# 
-# ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(4 downto 3), and its initial value is not used.
-# 
-# Therefore, simulation behavior may occur that is not in compliance with
-# 
-# the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(4 downto 3).
-# 
-run -all
-# ** Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
-#    Time: 5 ns  Iteration: 2  Instance: /gen_funciones_tb/uut/U_dcm/dcm_sp_inst
-add wave -position end  sim:/gen_funciones_tb/eppDevice/DATA
-add wave -position end  sim:/gen_funciones_tb/uut/U_cnt_dac/DATO1
-add wave -position end  sim:/gen_funciones_tb/uut/U_cnt_dac/DATO2
-add wave -position 17  sim:/gen_funciones_tb/uut/U_cnt_epp/DATA
-add wave -position 19  sim:/gen_funciones_tb/uut/U_cnt_epp/DIR_VLD
-add wave -position end  sim:/gen_funciones_tb/uut/U_cnt_epp/DATO_VLD
-restart -f
-# ** Warning: Design size of 11189 statements or 18 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
-# Expect performance to be quite adversely affected.
-# ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(6), and its initial value is not used.
-# 
-# Therefore, simulation behavior may occur that is not in compliance with
-# 
-# the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(6).
-# 
-# ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(4 downto 3), and its initial value is not used.
-# 
-# Therefore, simulation behavior may occur that is not in compliance with
-# 
-# the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(4 downto 3).
-# 
-add wave -position 22  sim:/gen_funciones_tb/uut/U_dpram_mem1/ADDR_IN
-run -all
-# ** Error:  Input Error : RST on DCM_SP  must be asserted for 3 CLKIN clock cycles. 
-#    Time: 5 ns  Iteration: 2  Instance: /gen_funciones_tb/uut/U_dcm/dcm_sp_inst
-# Break key hit
-# Simulation stop requested.
-# End time: 23:36:55 on Dec 07,2014, Elapsed time: 0:07:31
-# Errors: 3, Warnings: 9
