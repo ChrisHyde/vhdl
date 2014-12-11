@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml gen_funciones.twx gen_funciones.ncd -o gen_funciones.twr
+gen_funciones.pcf -ucf gen_funciones.ucf
+
+Design file:              gen_funciones.ncd
+Physical constraint file: gen_funciones.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock RELOJ
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ASTRB       |    6.334(R)|      SLOW  |   -1.614(R)|      FAST  |CLK               |   0.000|
+DATA<0>     |    5.037(R)|      SLOW  |   -2.351(R)|      FAST  |CLK               |   0.000|
+DATA<1>     |    5.019(R)|      SLOW  |   -2.415(R)|      FAST  |CLK               |   0.000|
+DATA<2>     |    4.872(R)|      SLOW  |   -2.273(R)|      FAST  |CLK               |   0.000|
+DATA<3>     |    5.001(R)|      SLOW  |   -2.346(R)|      FAST  |CLK               |   0.000|
+DATA<4>     |    4.494(R)|      SLOW  |   -2.181(R)|      FAST  |CLK               |   0.000|
+DATA<5>     |    4.716(R)|      SLOW  |   -2.311(R)|      FAST  |CLK               |   0.000|
+DATA<6>     |    4.597(R)|      SLOW  |   -2.297(R)|      FAST  |CLK               |   0.000|
+DATA<7>     |    4.530(R)|      SLOW  |   -2.144(R)|      FAST  |CLK               |   0.000|
+DSTRB       |    6.307(R)|      SLOW  |   -1.709(R)|      FAST  |CLK               |   0.000|
+PWRITE      |   10.350(R)|      SLOW  |   -3.435(R)|      FAST  |CLK               |   0.000|
+RST         |   14.598(R)|      SLOW  |   -2.937(R)|      FAST  |CLK               |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock RELOJ to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+D1          |        13.007(R)|      SLOW  |         7.729(R)|      FAST  |CLK               |   0.000|
+D2          |        13.101(R)|      SLOW  |         7.565(R)|      FAST  |CLK               |   0.000|
+PWAIT       |         4.515(R)|      SLOW  |         2.487(R)|      FAST  |CLK               |   0.000|
+SCLK        |         7.639(R)|      SLOW  |         4.622(R)|      FAST  |CLK               |   0.000|
+SYNC        |         9.536(R)|      SLOW  |         5.799(R)|      FAST  |CLK               |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock RELOJ
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RELOJ          |    4.553|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+DSTRB          |DATA<0>        |    7.272|
+DSTRB          |DATA<1>        |    7.632|
+DSTRB          |DATA<2>        |    7.632|
+DSTRB          |DATA<3>        |    7.293|
+DSTRB          |DATA<4>        |    7.293|
+DSTRB          |DATA<5>        |    7.631|
+DSTRB          |DATA<6>        |    7.631|
+DSTRB          |DATA<7>        |    7.292|
+PWRITE         |DATA<0>        |   11.477|
+PWRITE         |DATA<1>        |   11.837|
+PWRITE         |DATA<2>        |   11.837|
+PWRITE         |DATA<3>        |   11.498|
+PWRITE         |DATA<4>        |   11.498|
+PWRITE         |DATA<5>        |   11.836|
+PWRITE         |DATA<6>        |   11.836|
+PWRITE         |DATA<7>        |   11.497|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 11 12:37:35 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 264 MB
+
+
+
