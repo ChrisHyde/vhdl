@@ -139,13 +139,13 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
 		end process;
 	
 	
-	  fsm_proc:process(clk, rst,endTx)
+	  fsm_proc:process(SCLKaux, rst,endTx)
 		begin
 			if(rst = '1') then
 				state <= S0;
 				 SYNC<='1';	
 				 CEcounter<='0';
-		elsif (clk'event and clk = '1') then	
+		elsif (SCLKaux'event and SCLKaux = '1') then	
 	    	 case state is
 			      when s0 =>
 					  if (DATO_OK='0') then
@@ -160,7 +160,7 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
                    CEcounter<='1';	
 						 --.state <= s1;						 
 						    if(endTx = '1') then
-							  SYNC<='0';
+							  --SYNC<='0';
                      	state <= s2;				  
 						  end if;
 						 

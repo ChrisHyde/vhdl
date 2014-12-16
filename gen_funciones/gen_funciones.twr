@@ -37,18 +37,18 @@ Setup/Hold to clock RELOJ
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ASTRB       |    6.334(R)|      SLOW  |   -1.614(R)|      FAST  |CLK               |   0.000|
-DATA<0>     |    5.037(R)|      SLOW  |   -2.351(R)|      FAST  |CLK               |   0.000|
-DATA<1>     |    5.019(R)|      SLOW  |   -2.415(R)|      FAST  |CLK               |   0.000|
-DATA<2>     |    4.872(R)|      SLOW  |   -2.273(R)|      FAST  |CLK               |   0.000|
-DATA<3>     |    5.001(R)|      SLOW  |   -2.346(R)|      FAST  |CLK               |   0.000|
-DATA<4>     |    4.494(R)|      SLOW  |   -2.181(R)|      FAST  |CLK               |   0.000|
-DATA<5>     |    4.716(R)|      SLOW  |   -2.311(R)|      FAST  |CLK               |   0.000|
-DATA<6>     |    4.597(R)|      SLOW  |   -2.297(R)|      FAST  |CLK               |   0.000|
-DATA<7>     |    4.530(R)|      SLOW  |   -2.144(R)|      FAST  |CLK               |   0.000|
-DSTRB       |    6.307(R)|      SLOW  |   -1.709(R)|      FAST  |CLK               |   0.000|
-PWRITE      |   10.350(R)|      SLOW  |   -3.435(R)|      FAST  |CLK               |   0.000|
-RST         |   14.598(R)|      SLOW  |   -2.937(R)|      FAST  |CLK               |   0.000|
+ASTRB       |    7.452(R)|      SLOW  |   -1.603(R)|      FAST  |CLK               |   0.000|
+DATA<0>     |    4.899(R)|      SLOW  |   -2.236(R)|      FAST  |CLK               |   0.000|
+DATA<1>     |    4.498(R)|      SLOW  |   -2.048(R)|      FAST  |CLK               |   0.000|
+DATA<2>     |    4.753(R)|      SLOW  |   -2.124(R)|      FAST  |CLK               |   0.000|
+DATA<3>     |    4.787(R)|      SLOW  |   -2.187(R)|      FAST  |CLK               |   0.000|
+DATA<4>     |    4.417(R)|      SLOW  |   -1.895(R)|      FAST  |CLK               |   0.000|
+DATA<5>     |    4.593(R)|      SLOW  |   -1.990(R)|      FAST  |CLK               |   0.000|
+DATA<6>     |    4.215(R)|      SLOW  |   -1.904(R)|      FAST  |CLK               |   0.000|
+DATA<7>     |    4.376(R)|      SLOW  |   -1.743(R)|      FAST  |CLK               |   0.000|
+DSTRB       |    8.183(R)|      SLOW  |   -1.422(R)|      FAST  |CLK               |   0.000|
+PWRITE      |   10.093(R)|      SLOW  |   -4.088(R)|      FAST  |CLK               |   0.000|
+RST         |   17.112(R)|      SLOW  |   -0.837(R)|      FAST  |CLK               |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock RELOJ to Pad
@@ -56,11 +56,11 @@ Clock RELOJ to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-D1          |        13.007(R)|      SLOW  |         7.729(R)|      FAST  |CLK               |   0.000|
-D2          |        13.101(R)|      SLOW  |         7.565(R)|      FAST  |CLK               |   0.000|
+D1          |        13.281(R)|      SLOW  |         6.975(R)|      FAST  |CLK               |   0.000|
+D2          |        13.043(R)|      SLOW  |         6.782(R)|      FAST  |CLK               |   0.000|
 PWAIT       |         4.515(R)|      SLOW  |         2.487(R)|      FAST  |CLK               |   0.000|
-SCLK        |         7.639(R)|      SLOW  |         4.622(R)|      FAST  |CLK               |   0.000|
-SYNC        |         9.536(R)|      SLOW  |         5.799(R)|      FAST  |CLK               |   0.000|
+SCLK        |         4.931(R)|      SLOW  |         2.961(R)|      FAST  |CLK               |   0.000|
+SYNC        |         9.116(R)|      SLOW  |         5.493(R)|      FAST  |CLK               |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock RELOJ
@@ -68,33 +68,33 @@ Clock to Setup on destination clock RELOJ
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-RELOJ          |    4.553|         |         |         |
+RELOJ          |    6.109|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-DSTRB          |DATA<0>        |    7.272|
-DSTRB          |DATA<1>        |    7.632|
-DSTRB          |DATA<2>        |    7.632|
-DSTRB          |DATA<3>        |    7.293|
-DSTRB          |DATA<4>        |    7.293|
-DSTRB          |DATA<5>        |    7.631|
-DSTRB          |DATA<6>        |    7.631|
-DSTRB          |DATA<7>        |    7.292|
-PWRITE         |DATA<0>        |   11.477|
-PWRITE         |DATA<1>        |   11.837|
-PWRITE         |DATA<2>        |   11.837|
-PWRITE         |DATA<3>        |   11.498|
-PWRITE         |DATA<4>        |   11.498|
-PWRITE         |DATA<5>        |   11.836|
-PWRITE         |DATA<6>        |   11.836|
-PWRITE         |DATA<7>        |   11.497|
+DSTRB          |DATA<0>        |    7.354|
+DSTRB          |DATA<1>        |    7.714|
+DSTRB          |DATA<2>        |    7.714|
+DSTRB          |DATA<3>        |    7.375|
+DSTRB          |DATA<4>        |    7.375|
+DSTRB          |DATA<5>        |    7.713|
+DSTRB          |DATA<6>        |    7.713|
+DSTRB          |DATA<7>        |    7.374|
+PWRITE         |DATA<0>        |   11.220|
+PWRITE         |DATA<1>        |   11.580|
+PWRITE         |DATA<2>        |   11.580|
+PWRITE         |DATA<3>        |   11.241|
+PWRITE         |DATA<4>        |   11.241|
+PWRITE         |DATA<5>        |   11.579|
+PWRITE         |DATA<6>        |   11.579|
+PWRITE         |DATA<7>        |   11.240|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Dec 11 12:37:35 2014 
+Analysis completed Tue Dec 16 17:39:17 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

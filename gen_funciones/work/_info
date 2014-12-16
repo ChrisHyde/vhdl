@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones
 Ecnt_dac
-Z1 w1418297753
+Z1 w1418753299
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VaceoUXm6a]8Yz:88K7n7z0
 !s100 ^B`[O^HHX8LicoKR`0M9h0
 Z7 OP;C;10.3d;59
 31
-Z8 !s110 1418298109
+Z8 !s110 1418753346
 !i10b 1
-Z9 !s108 1418298109.577000
+Z9 !s108 1418753346.773000
 Z10 !s90 -reportprogress|300|-explicit|-93|cnt_dac.vhd|
 Z11 !s107 cnt_dac.vhd|
 !i113 1
@@ -35,10 +35,10 @@ R2
 R3
 R4
 Z14 DEx4 work 7 cnt_dac 0 22 aceoUXm6a]8Yz:88K7n7z0
-l41
+l52
 L18
-VK97IJXIGo[Y:ZSC2<gX5d0
-!s100 [lX=nKh^c^@1Kdb_`<S`J3
+VYHlIOSk7fHT<2??YOoAg`0
+!s100 2RB?[11Jcl5V;Z:D?M[;A3
 R7
 31
 R8
@@ -49,37 +49,37 @@ R11
 !i113 1
 R12
 R13
-Ecnt_dpram
-Z15 w1417816763
-R2
-R3
+Ecnt_dac_tb
+Z15 w1418750157
 R4
+R3
+R2
 R0
-Z16 8cnt_dpram.vhd
-Z17 Fcnt_dpram.vhd
+Z16 8cnt_dac_tb.vhd
+Z17 Fcnt_dac_tb.vhd
 l0
-L5
-Vj?V^Tg<QU73kVhhG3>[nQ3
-!s100 V2VnK5M3V^_@9Ek[HoDHE3
+L36
+VN]FeA:;DlfflhBINR]6`l2
+!s100 6@HLO]jX62VaH;RJH`I>I0
 R7
 31
-Z18 !s110 1418298108
+Z18 !s110 1418752397
 !i10b 1
-Z19 !s108 1418298108.859000
-Z20 !s90 -reportprogress|300|-explicit|-93|cnt_dpram.vhd|
-Z21 !s107 cnt_dpram.vhd|
+Z19 !s108 1418752397.651000
+Z20 !s90 -reportprogress|300|-explicit|-93|cnt_dac_tb.vhd|
+Z21 !s107 cnt_dac_tb.vhd|
 !i113 1
 R12
 R13
-Artl
-R2
-R3
+Abehavior
 R4
-Z22 DEx4 work 9 cnt_dpram 0 22 j?V^Tg<QU73kVhhG3>[nQ3
-l42
-L19
-VDJ2ezJ_c1l>ZeH_f^RQgX3
-!s100 i?Jme2KedYkgn]ckFD5Za2
+R3
+R2
+DEx4 work 10 cnt_dac_tb 0 22 N]FeA:;DlfflhBINR]6`l2
+l87
+L39
+V300A;2^aaG>34W;hA2kc90
+!s100 Y?NNL2[@]XY9]CTOMOcdc1
 R7
 31
 R18
@@ -90,38 +90,40 @@ R21
 !i113 1
 R12
 R13
-Ecnt_epp
-Z23 w1418217644
+Ecnt_dpram
+Z22 w1417816763
+R2
 R3
 R4
 R0
-Z24 8cnt_epp.vhd
-Z25 Fcnt_epp.vhd
+Z23 8cnt_dpram.vhd
+Z24 Fcnt_dpram.vhd
 l0
-L32
-VcVc^4fRYHn`5:S4Tf@^Jk2
-!s100 iO287D@WnNH4M`zU]elRn0
+L5
+Vj?V^Tg<QU73kVhhG3>[nQ3
+!s100 V2VnK5M3V^_@9Ek[HoDHE3
 R7
 31
-R18
+Z25 !s110 1418753345
 !i10b 1
-Z26 !s108 1418298108.142000
-Z27 !s90 -reportprogress|300|-explicit|-93|cnt_epp.vhd|
-Z28 !s107 cnt_epp.vhd|
+Z26 !s108 1418753345.849000
+Z27 !s90 -reportprogress|300|-explicit|-93|cnt_dpram.vhd|
+Z28 !s107 cnt_dpram.vhd|
 !i113 1
 R12
 R13
 Artl
+R2
 R3
 R4
-Z29 DEx4 work 7 cnt_epp 0 22 cVc^4fRYHn`5:S4Tf@^Jk2
-l60
-L49
-Vb]N1gIf84i]3UBJ9=O58N2
-!s100 ?2B??D]@b>60ie>cK]E<40
+Z29 DEx4 work 9 cnt_dpram 0 22 j?V^Tg<QU73kVhhG3>[nQ3
+l42
+L19
+VDJ2ezJ_c1l>ZeH_f^RQgX3
+!s100 i?Jme2KedYkgn]ckFD5Za2
 R7
 31
-R18
+R25
 !i10b 1
 R26
 R27
@@ -129,25 +131,103 @@ R28
 !i113 1
 R12
 R13
+Ecnt_dpram_tb
+Z30 w1417816247
+R3
+R4
+R0
+Z31 8../cnt_dpram/cnt_dpram_tb.vhd
+Z32 F../cnt_dpram/cnt_dpram_tb.vhd
+l0
+L35
+Vm2NIQ2W0C>4e=QW=6BRGn0
+!s100 a[8h8QLncb:kFiOQ:iVzU1
+R7
+31
+Z33 !s110 1418677857
+!i10b 1
+Z34 !s108 1418677857.534000
+Z35 !s90 -reportprogress|300|-explicit|-93|../cnt_dpram/cnt_dpram_tb.vhd|
+Z36 !s107 ../cnt_dpram/cnt_dpram_tb.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 12 cnt_dpram_tb 0 22 m2NIQ2W0C>4e=QW=6BRGn0
+l76
+L38
+VUFnHNK8mH;`Li7G1UCGQ:2
+!s100 o^N]IAg3HDXaRn=oBiF042
+R7
+31
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R12
+R13
+Ecnt_epp
+Z37 w1418217644
+R3
+R4
+R0
+Z38 8cnt_epp.vhd
+Z39 Fcnt_epp.vhd
+l0
+L32
+VcVc^4fRYHn`5:S4Tf@^Jk2
+!s100 iO287D@WnNH4M`zU]elRn0
+R7
+31
+R25
+!i10b 1
+Z40 !s108 1418753345.049000
+Z41 !s90 -reportprogress|300|-explicit|-93|cnt_epp.vhd|
+Z42 !s107 cnt_epp.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+Z43 DEx4 work 7 cnt_epp 0 22 cVc^4fRYHn`5:S4Tf@^Jk2
+l60
+L49
+Vb]N1gIf84i]3UBJ9=O58N2
+!s100 ?2B??D]@b>60ie>cK]E<40
+R7
+31
+R25
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R12
+R13
 Edac121s101
-Z30 w1411643218
+Z44 w1411643218
 R2
 R3
 R4
 R0
-Z31 8DAC121S101.vhd
-Z32 FDAC121S101.vhd
+Z45 8DAC121S101.vhd
+Z46 FDAC121S101.vhd
 l0
 L4
 VPAXE8Pe4b1<FiR@UCJkAc3
 !s100 bG[e<TGbX290SINX<Rn0e3
 R7
 31
-Z33 !s110 1418298112
+Z47 !s110 1418753349
 !i10b 1
-Z34 !s108 1418298112.525000
-Z35 !s90 -reportprogress|300|-explicit|-93|DAC121S101.vhd|
-Z36 !s107 DAC121S101.vhd|
+Z48 !s108 1418753349.832000
+Z49 !s90 -reportprogress|300|-explicit|-93|DAC121S101.vhd|
+Z50 !s107 DAC121S101.vhd|
 !i113 1
 R12
 R13
@@ -162,80 +242,80 @@ Vcc[j@:?3@T0192]NB8]GN0
 !s100 KFeXEiZk]^2`RihPbzKV80
 R7
 31
-R33
+R47
 !i10b 1
-R34
-R35
-R36
+R48
+R49
+R50
 !i113 1
 R12
 R13
 Edcm
-Z37 w1418208365
-Z38 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
+Z51 w1418208365
+Z52 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
 R2
-Z39 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z40 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z53 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z54 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R3
 R4
 R0
-Z41 8ipcore_dir/dcm.vhd
-Z42 Fipcore_dir/dcm.vhd
+Z55 8ipcore_dir/dcm.vhd
+Z56 Fipcore_dir/dcm.vhd
 l0
 L74
 Vm7J;0P5ooUa]Zaa[3Bh201
 !s100 `@2j82eEzfLP^NdSKf1]l2
 R7
 31
-Z43 !s110 1418298105
+Z57 !s110 1418753342
 !i10b 1
-Z44 !s108 1418298103.850000
-Z45 !s90 -reportprogress|300|-explicit|-93|ipcore_dir/dcm.vhd|
-Z46 !s107 ipcore_dir/dcm.vhd|
+Z58 !s108 1418753341.955000
+Z59 !s90 -reportprogress|300|-explicit|-93|ipcore_dir/dcm.vhd|
+Z60 !s107 ipcore_dir/dcm.vhd|
 !i113 1
 R12
 R13
 Axilinx
-R38
+R52
 R2
-R39
-R40
+R53
+R54
 R3
 R4
-Z47 DEx4 work 3 dcm 0 22 m7J;0P5ooUa]Zaa[3Bh201
+Z61 DEx4 work 3 dcm 0 22 m7J;0P5ooUa]Zaa[3Bh201
 l97
 L85
 Voz@E`UKHLM:kDKgkaPMGn0
 !s100 cl^9@ZUMNZaAKmN6Q1jj>2
 R7
 31
-R43
+R57
 !i10b 1
-R44
-R45
-R46
+R58
+R59
+R60
 !i113 1
 R12
 R13
 Edpram_mem
-Z48 w1417789699
+Z62 w1417789699
 R2
 R3
 R4
 R0
-Z49 8dpram_mem.vhd
-Z50 Fdpram_mem.vhd
+Z63 8dpram_mem.vhd
+Z64 Fdpram_mem.vhd
 l0
 L6
 ViCB0bIc4O5H=f_jIiSJJh2
 !s100 7f2Fd4_]^M1<0oDcRAJ6K0
 R7
 31
-Z51 !s110 1418298107
+Z65 !s110 1418753344
 !i10b 1
-Z52 !s108 1418298107.362000
-Z53 !s90 -reportprogress|300|-explicit|-93|dpram_mem.vhd|
-Z54 !s107 dpram_mem.vhd|
+Z66 !s108 1418753344.267000
+Z67 !s90 -reportprogress|300|-explicit|-93|dpram_mem.vhd|
+Z68 !s107 dpram_mem.vhd|
 !i113 1
 R12
 R13
@@ -243,83 +323,83 @@ Artl
 R2
 R3
 R4
-Z55 DEx4 work 9 dpram_mem 0 22 iCB0bIc4O5H=f_jIiSJJh2
+Z69 DEx4 work 9 dpram_mem 0 22 iCB0bIc4O5H=f_jIiSJJh2
 l22
 L18
 Vz`OhkJ@C^GkP7<QIgB@nP0
 !s100 ^<zmLf98ZKkk`kc7Ac4_J2
 R7
 31
-R51
+R65
 !i10b 1
-R52
-R53
-R54
+R66
+R67
+R68
 !i113 1
 R12
 R13
 Eepp_device1
-Z56 w1418293941
-Z57 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z70 w1418721922
+Z71 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R2
 R3
 R4
 R0
-Z58 8epp_device1.vhd
-Z59 Fepp_device1.vhd
+Z72 8epp_device1.vhd
+Z73 Fepp_device1.vhd
 l0
 L7
 VGl^`TH`1E6_mji;73EhIE3
 !s100 >ANManacjIn3h3<0<fkF@3
 R7
 31
-Z60 !s110 1418298111
+R47
 !i10b 1
-Z61 !s108 1418298111.823000
-Z62 !s90 -reportprogress|300|-explicit|-93|epp_device1.vhd|
-Z63 !s107 epp_device1.vhd|
+Z74 !s108 1418753349.098000
+Z75 !s90 -reportprogress|300|-explicit|-93|epp_device1.vhd|
+Z76 !s107 epp_device1.vhd|
 !i113 1
 R12
 R13
 Asim
-R57
+R71
 R2
 R3
 R4
 DEx4 work 11 epp_device1 0 22 Gl^`TH`1E6_mji;73EhIE3
 l24
 L16
-VaoLeiBPP:5O>23hnbR90K3
-!s100 A^iA:j5Ud_2JQZkX1Vj5S1
+V=`jaEeND:fa1kmP4DVCcJ3
+!s100 mY[?8:DM1dgdI>IjcnCX]3
 R7
 31
-R60
+R47
 !i10b 1
-R61
-R62
-R63
+R74
+R75
+R76
 !i113 1
 R12
 R13
 Egen_dir
-Z64 w1417981854
+Z77 w1417981854
 R2
 R3
 R4
 R0
-Z65 8gen_dir.vhd
-Z66 Fgen_dir.vhd
+Z78 8gen_dir.vhd
+Z79 Fgen_dir.vhd
 l0
 L5
 Vl[e6I9`Hm]Mh0VT3Uo=Zz2
 !s100 VcQbAio4<V5cA8hOD6EdC2
 R7
 31
-Z67 !s110 1418298106
+Z80 !s110 1418753343
 !i10b 1
-Z68 !s108 1418298106.285000
-Z69 !s90 -reportprogress|300|-explicit|-93|gen_dir.vhd|
-Z70 !s107 gen_dir.vhd|
+Z81 !s108 1418753343.502000
+Z82 !s90 -reportprogress|300|-explicit|-93|gen_dir.vhd|
+Z83 !s107 gen_dir.vhd|
 !i113 1
 R12
 R13
@@ -327,53 +407,53 @@ Artl
 R2
 R3
 R4
-Z71 DEx4 work 7 gen_dir 0 22 l[e6I9`Hm]Mh0VT3Uo=Zz2
+Z84 DEx4 work 7 gen_dir 0 22 l[e6I9`Hm]Mh0VT3Uo=Zz2
 l37
 L21
 V6Fjjo6h3_4PkLc>X7k[_`1
 !s100 mS4[7O4ceZ:6Llmz=GUzO1
 R7
 31
-R67
+R80
 !i10b 1
-R68
-R69
-R70
+R81
+R82
+R83
 !i113 1
 R12
 R13
 Egen_funciones
-Z72 w1418209114
+Z85 w1418209114
 R3
 R4
 R0
-Z73 8gen_funciones.vhd
-Z74 Fgen_funciones.vhd
+Z86 8gen_funciones.vhd
+Z87 Fgen_funciones.vhd
 l0
 L4
 V_h<8mVn4JQi9MD?3D7k]41
 !s100 J4[ZzQiSAoh^FNaE1SHD@0
 R7
 31
-Z75 !s110 1418298110
+Z88 !s110 1418753347
 !i10b 1
-Z76 !s108 1418298110.310000
-Z77 !s90 -reportprogress|300|-explicit|-93|gen_funciones.vhd|
-Z78 !s107 gen_funciones.vhd|
+Z89 !s108 1418753347.521000
+Z90 !s90 -reportprogress|300|-explicit|-93|gen_funciones.vhd|
+Z91 !s107 gen_funciones.vhd|
 !i113 1
 R12
 R13
 Artl
 R14
-R71
-R55
-R22
+R84
+R69
 R29
-R38
+R43
+R52
 R2
-R39
-R40
-R47
+R53
+R54
+R61
 R3
 R4
 DEx4 work 13 gen_funciones 0 22 _h<8mVn4JQi9MD?3D7k]41
@@ -383,11 +463,11 @@ V]fNYB@[23`a4W>FQ16J0_3
 !s100 7bY3TFkF9N6O7;A8f<aDn2
 R7
 31
-R75
+R88
 !i10b 1
-R76
-R77
-R78
+R89
+R90
+R91
 !i113 1
 R12
 R13
@@ -399,59 +479,59 @@ DPx7 simprim 11 vcomponents 0 22 DgFaojEEYblW>If<>z2eN2
 R3
 R4
 DEx4 work 13 gen_funciones 0 22 3MO_Cl5Nm0m<`eGG;Ed=`1
-l572
+l604
 L57
-Vo0_W`4MVS:7D?hgka]1B83
-!s100 WGKoKaa5GK34iXEAGggFQ1
+VHNB>ajANB:<X9E0JI`mFK3
+!s100 VJklfnO6z9AiLDN5An[?:3
 R7
 31
-!s110 1418243403
+!s110 1418748004
 !i10b 1
-!s108 1418243397.332000
+!s108 1418748002.688000
 !s90 -reportprogress|300|-explicit|-93|netgen/par/gen_funciones_timesim.vhd|
 !s107 netgen/par/gen_funciones_timesim.vhd|
 !i113 1
 R12
 R13
 Fnetgen/par/gen_funciones_timesim.vhd
-w1418243371
+w1418747989
 8netgen/par/gen_funciones_timesim.vhd
 Egen_funciones_tb
-Z79 w1418228660
+Z92 w1418722041
 R3
 R4
 R0
-Z80 8gen_funciones_tb.vhd
-Z81 Fgen_funciones_tb.vhd
+Z93 8gen_funciones_tb.vhd
+Z94 Fgen_funciones_tb.vhd
 l0
 L35
 VSC0^AWoWh2?H1VmE^Thn:3
 !s100 K7WZ7QKMDeiJF0E3R78182
 R7
 31
-Z82 !s110 1418298113
+Z95 !s110 1418753350
 !i10b 1
-Z83 !s108 1418298113.227000
-Z84 !s90 -reportprogress|300|-explicit|-93|gen_funciones_tb.vhd|
-Z85 !s107 gen_funciones_tb.vhd|
+Z96 !s108 1418753350.566000
+Z97 !s90 -reportprogress|300|-explicit|-93|gen_funciones_tb.vhd|
+Z98 !s107 gen_funciones_tb.vhd|
 !i113 1
 R12
 R13
 Abehavior
 R3
 R4
-Z86 DEx4 work 16 gen_funciones_tb 0 22 SC0^AWoWh2?H1VmE^Thn:3
+Z99 DEx4 work 16 gen_funciones_tb 0 22 SC0^AWoWh2?H1VmE^Thn:3
 l99
 L38
-Z87 VSFzF@XczYL7;4^ZN3P4Md0
-Z88 !s100 iERSRKRBN4iz_RfP8KP5z1
+Z100 V=RC<FjlPzC`=>Hn=Fe?RN1
+Z101 !s100 0F=Y?fZM6gR9G9dke;MC53
 R7
 31
-R82
+R95
 !i10b 1
-R83
-R84
-R85
+R96
+R97
+R98
 !i113 1
 R12
 R13

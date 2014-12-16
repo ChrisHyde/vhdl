@@ -128,8 +128,8 @@ BEGIN
     SYNC => SYNC,
     SCLK => SCLK,
     DIN  =>D1);
-	 dac2:DAC121S101
-	  
+	 
+	 dac2:DAC121S101	  
 	 port map(  
 	 VOUT=> VOUT2,
     SYNC => SYNC,
@@ -145,11 +145,9 @@ BEGIN
 		wait for RELOJ_period/2;
    end process;
  
-RST_process :process
-   begin	
-		wait for 100 ns;
-		RST <= '0';		
-   end process;
+
+		RST <= '0' after 100 ns;		
+  
 	
 
 

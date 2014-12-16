@@ -82,6 +82,13 @@ file arch_in : text ;
     dir  := (others   => '0');
     wait for 160 ns;
       
+ dir := dir_frec ;
+	 dato:=x"73";
+    epp_cicle ( address => dir,
+                    data_io       => dato,
+                    r_w           => 'w');
+ 
+ 
  
     file_open(arch_in,"../sources/Vo1.dat",read_mode);
      dir:= dir_dpram1        ;
@@ -110,36 +117,14 @@ file arch_in : text ;
     file_close(arch_in);
 
     dir := dir_frec ;
-	 dato:=x"13";
+	 dato:=x"f0";
     epp_cicle ( address => dir,
                     data_io       => dato,
                     r_w           => 'w');
 
-wait for 1 ms;
+wait for 5 ms;
 
-    dir := dir_frec ;
-	 dato:=x"73";
-    epp_cicle ( address => dir,
-                    data_io       => dato,
-                    r_w           => 'w');
-
-
-wait for 1 ms;
-
-    	 dato:=x"bf";
-    epp_cicle ( address => dir,
-                    data_io       => dato,
-                    r_w           => 'w');
-
-    wait for 1 ms;
-
-    	 dato:=x"ff";
-    epp_cicle ( address => dir,
-                    data_io       => dato,
-                    r_w           => 'w');
-
-
-wait for 1 ms;
+ 
    report "FIN CONTROLADO DE LA SIMULACION" severity failure;
   end process;
 end sim;

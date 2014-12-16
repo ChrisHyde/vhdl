@@ -1,0 +1,236 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   11:56:42 12/01/2014
+-- Design Name:   
+-- Module Name:   C:/Users/christopher/Dropbox/workspace/modelado14/cnt_dac/cnt_dac_tb.vhd
+-- Project Name:  cnt_dac
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: cnt_dac
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+use ieee.numeric_std.all;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY cnt_dac_tb IS
+END cnt_dac_tb;
+ 
+ARCHITECTURE behavior OF cnt_dac_tb IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    component cnt_dac
+  port (
+    CLK     : in  std_logic;
+    RST     : in  std_logic;
+    DATO1   : in  std_logic_vector(7 downto 0);
+    DATO2   : in  std_logic_vector(7 downto 0);
+    DATO_OK : in  std_logic;
+    SYNC    : out std_logic;
+    SCLK    : out std_logic;
+    D1      : out std_logic;
+    D2      : out std_logic);
+end component ;
+
+
+component DAC121S101
+   port (
+    VOUT : out real range 0.0 to 3.5;
+    SYNC : in  std_logic;
+    SCLK : in  std_logic;
+    DIN  : in  std_logic);
+end component ;
+    
+
+   --Inputs
+   signal CLK : std_logic := '0';
+   signal RST : std_logic := '1';
+   signal DATO1 : std_logic_vector(7 downto 0):=x"00";
+   signal DATO2 : std_logic_vector(7 downto 0):=x"00";
+   signal DATO_OK : std_logic := '0';
+
+ 	--Outputs
+   signal VOUT1 : real;
+   signal VOUT2 : real;
+	
+	
+signal SYNC_comm		: std_logic;
+signal SCLK_comm		: std_logic;
+signal D1_comm	      : std_logic;
+signal D2_comm	      : std_logic;
+
+   -- Clock period definitions
+   constant CLK_period : time := 10 ns;
+
+ 
+BEGIN
+
+cntdac:cnt_dac
+	port map(		
+		CLK=>CLK ,
+		RST=>RST ,
+		DATO1=>DATO1 ,
+		DATO2=>DATO2 ,
+		DATO_OK=>DATO_OK,
+		SYNC=>SYNC_comm ,
+		SCLK=>SCLK_comm,
+		D1=>D1_comm,
+		D2=>D2_comm
+		); 
+		
+DAC1: DAC121S101
+   port map (
+    VOUT =>VOUT1,
+    SYNC =>SYNC_comm,
+    SCLK =>SCLK_comm,
+    DIN  => D1_comm);
+		
+DAC2: DAC121S101
+   port map (
+    VOUT =>VOUT2,
+    SYNC =>SYNC_comm,
+    SCLK =>SCLK_comm,
+    DIN=> D2_comm
+	 );
+	  
+
+ clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+ 
+  rst_process :process
+   begin		
+		wait for 100 ns;
+		rst <= '0';
+   end process;
+
+   -- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+      wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(255, 8));
+      DATO2 <=std_logic_vector(to_unsigned(10, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(30, 8));
+      DATO2 <=std_logic_vector(to_unsigned(40, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(10, 8));
+      DATO2 <=std_logic_vector(to_unsigned(11, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(12, 8));
+      DATO2 <=std_logic_vector(to_unsigned(13, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(14, 8));
+      DATO2 <=std_logic_vector(to_unsigned(15, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(16, 8));
+      DATO2 <=std_logic_vector(to_unsigned(17, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(18, 8));
+      DATO2 <=std_logic_vector(to_unsigned(19, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(20, 8));
+      DATO2 <=std_logic_vector(to_unsigned(21, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(22, 8));
+      DATO2 <=std_logic_vector(to_unsigned(23, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(24, 8));
+      DATO2 <=std_logic_vector(to_unsigned(25, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(26, 8));
+      DATO2 <=std_logic_vector(to_unsigned(27, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(28, 8));
+      DATO2 <=std_logic_vector(to_unsigned(29, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(30, 8));
+      DATO2 <=std_logic_vector(to_unsigned(31, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(32, 8));
+      DATO2 <=std_logic_vector(to_unsigned(33, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(34, 8));
+      DATO2 <=std_logic_vector(to_unsigned(35, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 wait for 800 ns;
+      DATO1 <=std_logic_vector(to_unsigned(36, 8));
+      DATO2 <=std_logic_vector(to_unsigned(37, 8));	
+      DATO_OK<='1';
+		wait for 10 ns;	
+       DATO_OK<='0';
+		 report "FIN CONTROLADO DE LA SIMULACION" severity failure;
+		 --wait;
+   end process;
+
+END;
