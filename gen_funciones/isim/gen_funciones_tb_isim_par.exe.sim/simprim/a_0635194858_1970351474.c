@@ -2090,191 +2090,200 @@ LAB1:    return;
 }
 
 
-extern void simprim_a_0635194858_1970351474_0324271430_init()
+extern void simprim_a_0635194858_1970351474_2091714998_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0635194858_1970351474_0324271430", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0635194858_1970351474_0324271430.didat");
+	xsi_register_didat("simprim_a_0635194858_1970351474_2091714998", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0635194858_1970351474_2091714998.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0635194858_1970351474_0370994115_init()
+extern void simprim_a_0635194858_1970351474_0723460719_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0635194858_1970351474_0370994115", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0635194858_1970351474_0370994115.didat");
+	xsi_register_didat("simprim_a_0635194858_1970351474_0723460719", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0635194858_1970351474_0723460719.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_1111114247_1970351474_1612464527_init()
+extern void simprim_a_1173890617_1970351474_3118631851_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_1111114247_1970351474_1612464527", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1111114247_1970351474_1612464527.didat");
+	xsi_register_didat("simprim_a_1173890617_1970351474_3118631851", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1173890617_1970351474_3118631851.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_2407859229_1970351474_1612464527_init()
+extern void simprim_a_4066750639_1970351474_3118631851_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_2407859229_1970351474_1612464527", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2407859229_1970351474_1612464527.didat");
+	xsi_register_didat("simprim_a_4066750639_1970351474_3118631851", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_4066750639_1970351474_3118631851.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_4013345677_1970351474_2911588545_init()
+extern void simprim_a_2952513628_1970351474_3118631851_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_4013345677_1970351474_2911588545", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_4013345677_1970351474_2911588545.didat");
+	xsi_register_didat("simprim_a_2952513628_1970351474_3118631851", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2952513628_1970351474_3118631851.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_2580279918_1970351474_2911588545_init()
+extern void simprim_a_4125062131_1970351474_3178231577_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_2580279918_1970351474_2911588545", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2580279918_1970351474_2911588545.didat");
+	xsi_register_didat("simprim_a_4125062131_1970351474_3178231577", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_4125062131_1970351474_3178231577.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0186954105_1970351474_2873135658_init()
+extern void simprim_a_2378971566_1970351474_1458358039_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0186954105_1970351474_2873135658", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0186954105_1970351474_2873135658.didat");
+	xsi_register_didat("simprim_a_2378971566_1970351474_1458358039", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2378971566_1970351474_1458358039.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_2350353783_1970351474_2873135658_init()
+extern void simprim_a_1437260658_1970351474_1458358039_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_2350353783_1970351474_2873135658", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2350353783_1970351474_2873135658.didat");
+	xsi_register_didat("simprim_a_1437260658_1970351474_1458358039", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1437260658_1970351474_1458358039.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_1087354841_1970351474_4115089566_init()
+extern void simprim_a_2650455339_1970351474_1458358039_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_1087354841_1970351474_4115089566", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1087354841_1970351474_4115089566.didat");
+	xsi_register_didat("simprim_a_2650455339_1970351474_1458358039", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2650455339_1970351474_1458358039.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_1877772332_1970351474_2929757350_init()
+extern void simprim_a_2708190782_1970351474_2904840392_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_1877772332_1970351474_2929757350", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1877772332_1970351474_2929757350.didat");
+	xsi_register_didat("simprim_a_2708190782_1970351474_2904840392", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2708190782_1970351474_2904840392.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0280785056_1970351474_2904840392_init()
+extern void simprim_a_0766196387_1970351474_1719176045_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0280785056_1970351474_2904840392", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0280785056_1970351474_2904840392.didat");
+	xsi_register_didat("simprim_a_0766196387_1970351474_1719176045", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0766196387_1970351474_1719176045.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_2127975673_1970351474_1041996603_init()
+extern void simprim_a_1557948626_1970351474_3603362143_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_2127975673_1970351474_1041996603", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2127975673_1970351474_1041996603.didat");
+	xsi_register_didat("simprim_a_1557948626_1970351474_3603362143", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1557948626_1970351474_3603362143.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0112882361_1970351474_1041996603_init()
+extern void simprim_a_0470194148_1970351474_3603362143_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0112882361_1970351474_1041996603", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0112882361_1970351474_1041996603.didat");
+	xsi_register_didat("simprim_a_0470194148_1970351474_3603362143", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0470194148_1970351474_3603362143.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0112161564_1970351474_1041996603_init()
+extern void simprim_a_4133124151_1970351474_3603362143_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0112161564_1970351474_1041996603", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0112161564_1970351474_1041996603.didat");
+	xsi_register_didat("simprim_a_4133124151_1970351474_3603362143", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_4133124151_1970351474_3603362143.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_2827477213_1970351474_1071247628_init()
+extern void simprim_a_0545809982_1970351474_3565178630_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_2827477213_1970351474_1071247628", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2827477213_1970351474_1071247628.didat");
+	xsi_register_didat("simprim_a_0545809982_1970351474_3565178630", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0545809982_1970351474_3565178630.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_1800750659_1970351474_3654108372_init()
+extern void simprim_a_1940038376_1970351474_3565178630_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_1800750659_1970351474_3654108372", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1800750659_1970351474_3654108372.didat");
+	xsi_register_didat("simprim_a_1940038376_1970351474_3565178630", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1940038376_1970351474_3565178630.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_1173890617_1970351474_2721049923_init()
+extern void simprim_a_0198412744_1970351474_1721894249_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_1173890617_1970351474_2721049923", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1173890617_1970351474_2721049923.didat");
+	xsi_register_didat("simprim_a_0198412744_1970351474_1721894249", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0198412744_1970351474_1721894249.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_4066750639_1970351474_2721049923_init()
+extern void simprim_a_3709654854_1970351474_2919159500_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_4066750639_1970351474_2721049923", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_4066750639_1970351474_2721049923.didat");
+	xsi_register_didat("simprim_a_3709654854_1970351474_2919159500", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_3709654854_1970351474_2919159500.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0381369613_1970351474_2721049923_init()
+extern void simprim_a_2350353783_1970351474_2919159500_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0381369613_1970351474_2721049923", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0381369613_1970351474_2721049923.didat");
+	xsi_register_didat("simprim_a_2350353783_1970351474_2919159500", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2350353783_1970351474_2919159500.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_1404657287_1970351474_0887952692_init()
+extern void simprim_a_0628696987_1970351474_0892305155_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_1404657287_1970351474_0887952692", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1404657287_1970351474_0887952692.didat");
+	xsi_register_didat("simprim_a_0628696987_1970351474_0892305155", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0628696987_1970351474_0892305155.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
 
-extern void simprim_a_0574770417_1970351474_0195971755_init()
+extern void simprim_a_1437260658_1970351474_0500659028_init()
 {
 	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
 	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
-	xsi_register_didat("simprim_a_0574770417_1970351474_0195971755", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0574770417_1970351474_0195971755.didat");
+	xsi_register_didat("simprim_a_1437260658_1970351474_0500659028", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1437260658_1970351474_0500659028.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void simprim_a_1553129365_1970351474_0195971755_init()
+{
+	static char *pe[] = {(void *)simprim_a_0635194858_1970351474_p_0,(void *)simprim_a_0635194858_1970351474_p_1,(void *)simprim_a_0635194858_1970351474_p_2,(void *)simprim_a_0635194858_1970351474_p_3,(void *)simprim_a_0635194858_1970351474_p_4,(void *)simprim_a_0635194858_1970351474_p_5,(void *)simprim_a_0635194858_1970351474_p_6};
+	static char *se[] = {(void *)simprim_a_0635194858_1970351474_sub_4181471696_47466535,(void *)simprim_a_0635194858_1970351474_sub_3214396156_2740133013,(void *)simprim_a_0635194858_1970351474_sub_655425482_47466535};
+	xsi_register_didat("simprim_a_1553129365_1970351474_0195971755", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_1553129365_1970351474_0195971755.didat");
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }

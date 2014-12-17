@@ -8,5 +8,26 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/cnt_dpram/cnt_dpram_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/gen_dir/gen_dir_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/cnt_dac_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/epp_device1.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/gen_funciones_tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/netgen/par/gen_funciones_timesim.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

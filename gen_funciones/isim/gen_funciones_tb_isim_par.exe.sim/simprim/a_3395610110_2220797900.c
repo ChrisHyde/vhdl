@@ -48,10 +48,10 @@ LAB4:    goto LAB2;
 }
 
 
-extern void simprim_a_3395610110_2220797900_0282536232_init()
+extern void simprim_a_3395610110_2220797900_1983063228_init()
 {
 	static char *pe[] = {(void *)simprim_a_3395610110_2220797900_p_0};
-	xsi_register_didat("simprim_a_3395610110_2220797900_0282536232", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_3395610110_2220797900_0282536232.didat");
+	xsi_register_didat("simprim_a_3395610110_2220797900_1983063228", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_3395610110_2220797900_1983063228.didat");
 	xsi_register_executes(pe);
 }
 

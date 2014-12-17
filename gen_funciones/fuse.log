@@ -19,17 +19,9 @@ Compiling package vpackage
 Compiling package numeric_std
 Compiling package std_logic_textio
 Compiling package std_logic_arith
-Compiling package std_logic_unsigned
 Compiling package std_logic_signed
-Compiling architecture x_bufio2fb_v of entity X_BUFIO2FB [\X_BUFIO2FB(true,true,true,"UNPL...]
-Compiling architecture x_bufio2_v of entity X_BUFIO2 [\X_BUFIO2(true,"*",true,true,"UN...]
+Compiling package std_logic_unsigned
 Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
-Compiling architecture x_dcm_sp_clock_divide_by_2_v of entity x_dcm_sp_clock_divide_by_2 [x_dcm_sp_clock_divide_by_2_defau...]
-Compiling architecture x_dcm_sp_maximum_period_check_v of entity x_dcm_sp_maximum_period_check [\x_dcm_sp_maximum_period_check("...]
-Compiling architecture x_dcm_sp_maximum_period_check_v of entity x_dcm_sp_maximum_period_check [\x_dcm_sp_maximum_period_check("...]
-Compiling architecture x_dcm_sp_clock_lost_v of entity x_dcm_sp_clock_lost [x_dcm_sp_clock_lost_default]
-Compiling architecture x_dcm_sp_v of entity X_DCM_SP [\X_DCM_SP(true,"*",true,false,"U...]
-Compiling architecture x_ckbuf_v of entity X_CKBUF [\X_CKBUF(true,true,"UNPLACED",(0...]
 Compiling architecture x_ramb8bwer_v of entity X_RAMB8BWER [\X_RAMB8BWER(true,"*",true,true,...]
 Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
 Compiling architecture x_lut6_v of entity X_LUT6 [\X_LUT6(true,true,"UNPLACED",(0,...]
@@ -38,6 +30,14 @@ Compiling architecture x_carry4_v of entity X_CARRY4 [\X_CARRY4(true,"*",true,tr
 Compiling architecture x_lut5_v of entity X_LUT5 [\X_LUT5(true,true,"UNPLACED",(0,...]
 Compiling architecture x_obuft_v of entity X_OBUFT [\X_OBUFT(true,true,"DONT_CARE",1...]
 Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_bufio2fb_v of entity X_BUFIO2FB [\X_BUFIO2FB(true,true,true,"UNPL...]
+Compiling architecture x_bufio2_v of entity X_BUFIO2 [\X_BUFIO2(true,"*",true,true,"UN...]
+Compiling architecture x_dcm_sp_clock_divide_by_2_v of entity x_dcm_sp_clock_divide_by_2 [x_dcm_sp_clock_divide_by_2_defau...]
+Compiling architecture x_dcm_sp_maximum_period_check_v of entity x_dcm_sp_maximum_period_check [\x_dcm_sp_maximum_period_check("...]
+Compiling architecture x_dcm_sp_maximum_period_check_v of entity x_dcm_sp_maximum_period_check [\x_dcm_sp_maximum_period_check("...]
+Compiling architecture x_dcm_sp_clock_lost_v of entity x_dcm_sp_clock_lost [x_dcm_sp_clock_lost_default]
+Compiling architecture x_dcm_sp_v of entity X_DCM_SP [\X_DCM_SP(true,"*",true,false,"U...]
+Compiling architecture x_ckbuf_v of entity X_CKBUF [\X_CKBUF(true,true,"UNPLACED",(0...]
 Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
 Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
 Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
@@ -47,7 +47,8 @@ Compiling architecture sim of entity epp_device1 [epp_device1_default]
 Compiling architecture rtl of entity DAC121S101 [dac121s101_default]
 Compiling architecture behavior of entity gen_funciones_tb
 Time Resolution for simulation is 1ps.
-Compiled 355 VHDL Units
+Waiting for 29 sub-compilation(s) to finish...
+Compiled 349 VHDL Units
 Built simulation executable C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/gen_funciones_tb_isim_par.exe
-Fuse Memory Usage: 98504 KB
-Fuse CPU Usage: 6474 ms
+Fuse Memory Usage: 98320 KB
+Fuse CPU Usage: 5584 ms

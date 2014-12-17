@@ -7,7 +7,7 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: gen_funciones_timesim.vhd
--- /___/   /\     Timestamp: Wed Dec 17 14:45:02 2014
+-- /___/   /\     Timestamp: Wed Dec 17 16:00:25 2014
 -- \   \  /  \ 
 --  \___\/\___\
 --             

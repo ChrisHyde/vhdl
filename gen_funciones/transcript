@@ -3,7 +3,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 15:24:29 on Dec 17,2014
+# Start time: 17:01:27 on Dec 17,2014
 # vcom -reportprogress 300 -explicit -93 DAC121S101.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -11,10 +11,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity DAC121S101
 # -- Compiling architecture rtl of DAC121S101
-# End time: 15:24:30 on Dec 17,2014, Elapsed time: 0:00:01
+# End time: 17:01:28 on Dec 17,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 15:24:30 on Dec 17,2014
+# Start time: 17:01:28 on Dec 17,2014
 # vcom -reportprogress 300 -explicit -93 cnt_dac_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,7 +22,7 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity cnt_dac_tb
 # -- Compiling architecture behavior of cnt_dac_tb
-# End time: 15:24:31 on Dec 17,2014, Elapsed time: 0:00:01
+# End time: 17:01:29 on Dec 17,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.3d Oct  7 2014 
 # //
@@ -38,7 +38,7 @@
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
 # vsim -gui -do "do {cnt_dac_tb.tdo}" 
-# Start time: 15:24:31 on Dec 17,2014
+# Start time: 17:01:29 on Dec 17,2014
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,10 +50,10 @@
 # 
 #           File in use by: christopher  Hostname: CTHYDE-LAPTOP  ProcessID: 7720
 # 
-#           Attempting to use alternate WLF file "./wlftn4gjce".
+#           Attempting to use alternate WLF file "./wlftdqn0jy".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftn4gjce
+#           Using alternate file: ./wlftdqn0jy
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
@@ -62,12 +62,7 @@
 #    Time: 0 ps  Iteration: 0  Instance: /cnt_dac_tb/DAC2
 # ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
 #    Time: 0 ps  Iteration: 0  Instance: /cnt_dac_tb/DAC1
-run -all
-# ** Failure: FIN CONTROLADO DE LA SIMULACION
-#    Time: 12960 ns  Iteration: 0  Process: /cnt_dac_tb/stim_proc File: cnt_dac_tb.vhd
-# Break in Process stim_proc at cnt_dac_tb.vhd line 232
 add wave -position 3  sim:/cnt_dac_tb/DAC1/dato_bin
-add wave -position 5 sim:/cnt_dac_tb/DAC2/*
 add wave -position 5  sim:/cnt_dac_tb/DAC2/dato_bin
 restart
 run -all
@@ -78,5 +73,5 @@ run -all
 # ** Failure: FIN CONTROLADO DE LA SIMULACION
 #    Time: 12960 ns  Iteration: 0  Process: /cnt_dac_tb/stim_proc File: cnt_dac_tb.vhd
 # Break in Process stim_proc at cnt_dac_tb.vhd line 232
-# End time: 15:25:52 on Dec 17,2014, Elapsed time: 0:01:21
+# End time: 18:30:21 on Dec 17,2014, Elapsed time: 1:28:52
 # Errors: 4, Warnings: 2

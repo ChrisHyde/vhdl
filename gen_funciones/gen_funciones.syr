@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: gen_funciones.prj
@@ -147,7 +147,7 @@ Elaborating entity <dpram_mem> (architecture <rtl>) from library <work>.
 Elaborating entity <gen_dir> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <cnt_dac> (architecture <RTL>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\cnt_dac.vhd" Line 198. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\cnt_dac.vhd" Line 151. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:634 - "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\gen_funciones.vhd" Line 29: Net <DATO_RD[7]> does not have a driver.
 
 =========================================================================
@@ -294,10 +294,10 @@ Synthesizing Unit <cnt_dac>.
     -----------------------------------------------------------------------
     Found 1-bit adder for signal <prescaler[0]_PWR_13_o_add_3_OUT<0>> created at line 66.
     Found 4-bit adder for signal <muxSelectTX[3]_GND_26_o_add_5_OUT> created at line 1241.
-    Found 2-bit adder for signal <muxSelect[1]_GND_26_o_add_6_OUT> created at line 133.
-    Found 1-bit 10-to-1 multiplexer for signal <D1> created at line 148.
-    Found 1-bit 10-to-1 multiplexer for signal <D2> created at line 148.
-    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_21_o_Mux_17_o> created at line 212.
+    Found 2-bit adder for signal <muxSelect[1]_GND_26_o_add_6_OUT> created at line 86.
+    Found 1-bit 10-to-1 multiplexer for signal <D1> created at line 101.
+    Found 1-bit 10-to-1 multiplexer for signal <D2> created at line 101.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_21_o_Mux_17_o> created at line 165.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  11 D-type flip-flop(s).
@@ -684,12 +684,12 @@ RELOJ          |    3.672|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.55 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.08 secs
  
 --> 
 
-Total memory usage is 274616 kilobytes
+Total memory usage is 274424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

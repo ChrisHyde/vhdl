@@ -70,54 +70,7 @@ DATO_2_16bits<="0000"&DATO2&"0000";
 
 SCLK <= SCLKaux;
 	
---	   counter:process(rst,CEcounter,clk)
---		begin
---		   if(rst = '1') then
---			  muxSelect <= 0;	
---			  muxSelectTX<=(others=>'0');			  
---			  elsif (clk'event and clk='1') then
---			         if (CEcounter='1') then					
---             	        if(muxSelect mod (4) = 0)then
---							      muxSelectTX<=muxSelectTX+1;
---							  end if;							 
---							  if (muxSelect = countLimit ) then
---						         muxSelect <= 0;
---						     else							    
---									muxSelect <= muxSelect+1;	
---							  end if;					
---						else							 
---						   muxSelectTX<=(others=>'0');
---							muxSelect <= 0;	
---					   end if;	 
---			end if;			
---		end process;
---		
-		
-		
---			   counter:process(rst,CEcounter,clk)
---		begin
---		   if(rst = '1') then
---			  muxSelect <= 0;	
---			  muxSelectTX<=(others=>'0');			  
---			  elsif (clk'event and clk='1') then
---			         if (CEcounter='1') then	
---                      if (muxSelect<3)then						
---                       muxSelectTX<=(others=>'0');	 
---							 elsif (muxSelect mod (4) = 0)then
---							        muxSelectTX<=muxSelectTX+1;
---							 end if;							 
---							 if (muxSelect = countLimit ) then
---						         muxSelect <= 0;
---						     else							    
---									muxSelect <= muxSelect+1;	
---							  end if;					
---						else							 
---						   muxSelectTX<=(others=>'0');
---							muxSelect <= 0;	
---					   end if;	 
---			end if;			
---		end process;
-		
+
 		
 		counter:process(rst,CEcounter,clk)
 		begin
@@ -142,9 +95,9 @@ SCLK <= SCLKaux;
 		
 		
 	
-mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits,clk,rst)
+mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
 		begin
-		 
+	
 				case muxSelectTX is
 					when x"0"=> D1 <= DATO_1_16bits(15);
 									D2 <= DATO_2_16bits(15);
@@ -236,20 +189,6 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits,clk,rst)
 	 end if;
 end process;	
 
---endTx <= '1' when (muxSelectTX = countLimit) else '0';
-
---	  fsmMux_proc:process(clk, rst, muxSelectTX)
---		begin
---			if(rst = '1') then
---				  endTx <= '0';
---		elsif (clk'event and clk = '1') then
---				if (muxSelectTX=x"F") then
---					endTx <= '1';
---				else
---					endTx <= '0';
---				end if;
---		end if;
-
 
 
 	  fsmMux_proc:process(clk, rst,muxSelectTX)
@@ -277,32 +216,4 @@ end process;
 		   end case;
 	 end if;
 end process;	
-
-
-
-
-
---	  fsmMux_proc:process(clk, rst,muxSelectTX)
---		begin
---			if(rst = '1') then
---				  endTx <= '0';
---				  mxstate <= mx0;
---		elsif (clk'event and clk = '1') then	
---	    	 case mxstate is
---			      when mx0 =>
---					      endTx <= '0'; 
---					     	if (muxSelectTX=x"F") then
---							  mxstate <= mx1;
---							end if;
---					when mx1 =>		
---                    
---						  if (muxSelectTX=x"0") then
---						     endTx <= '1';
---							  mxstate <= mx0;
---							end if;				 			 
---		   end case;
---	 end if;
---end process;	
-
-
 end RTL;

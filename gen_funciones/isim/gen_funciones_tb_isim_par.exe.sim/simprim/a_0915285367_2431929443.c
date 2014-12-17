@@ -381,24 +381,17 @@ LAB35:    goto LAB33;
 }
 
 
-extern void simprim_a_0915285367_2431929443_1126735440_init()
+extern void simprim_a_0915285367_2431929443_0966456222_init()
 {
 	static char *pe[] = {(void *)simprim_a_0915285367_2431929443_p_0,(void *)simprim_a_0915285367_2431929443_p_1};
-	xsi_register_didat("simprim_a_0915285367_2431929443_1126735440", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_1126735440.didat");
+	xsi_register_didat("simprim_a_0915285367_2431929443_0966456222", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_0966456222.didat");
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_0915285367_2431929443_2879189160_init()
+extern void simprim_a_0915285367_2431929443_0945330601_init()
 {
 	static char *pe[] = {(void *)simprim_a_0915285367_2431929443_p_0,(void *)simprim_a_0915285367_2431929443_p_1};
-	xsi_register_didat("simprim_a_0915285367_2431929443_2879189160", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_2879189160.didat");
-	xsi_register_executes(pe);
-}
-
-extern void simprim_a_0915285367_2431929443_2858326687_init()
-{
-	static char *pe[] = {(void *)simprim_a_0915285367_2431929443_p_0,(void *)simprim_a_0915285367_2431929443_p_1};
-	xsi_register_didat("simprim_a_0915285367_2431929443_2858326687", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_2858326687.didat");
+	xsi_register_didat("simprim_a_0915285367_2431929443_0945330601", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_0945330601.didat");
 	xsi_register_executes(pe);
 }
 
@@ -490,6 +483,13 @@ extern void simprim_a_0915285367_2431929443_2348577352_init()
 {
 	static char *pe[] = {(void *)simprim_a_0915285367_2431929443_p_0,(void *)simprim_a_0915285367_2431929443_p_1};
 	xsi_register_didat("simprim_a_0915285367_2431929443_2348577352", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_2348577352.didat");
+	xsi_register_executes(pe);
+}
+
+extern void simprim_a_0915285367_2431929443_1126735440_init()
+{
+	static char *pe[] = {(void *)simprim_a_0915285367_2431929443_p_0,(void *)simprim_a_0915285367_2431929443_p_1};
+	xsi_register_didat("simprim_a_0915285367_2431929443_1126735440", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_0915285367_2431929443_1126735440.didat");
 	xsi_register_executes(pe);
 }
 

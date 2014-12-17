@@ -16,4 +16,74 @@ at 3617 ps: Error: VIOLACIÓN DEL TIEMPO A NIVEL ALTO DE SCLK (tH)
 at 3617 ps(1): Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
 at 3617 ps(1): Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
 # run all
-Stopped at time : 919985 ns : File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/gen_funciones_tb.vhd" Line 144
+
+** Failure:FIN CONTROLADO DE LA SIMULACION
+User(VHDL) Code Called Simulation Stop
+In process epp_device1.vhd:31 
+ 
+INFO: Simulator is stopped.
+# show driver /gen_funciones_tb/dac1/dato_bin
+Driver for /gen_funciones_tb/dac1/dato_bin[0]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[10]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[11]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[12]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[13]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[14]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[15]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[1]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[2]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[3]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[4]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[5]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[6]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[7]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[8]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+
+Driver for /gen_funciones_tb/dac1/dato_bin[9]
+	'0'	: /gen_funciones_tb/dac1/:98
+		  in File "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/DAC121S101.vhd" Line 98
+

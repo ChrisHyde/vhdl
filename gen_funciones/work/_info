@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones
 Ecnt_dac
-Z1 w1418822949
+Z1 w1418827784
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VaceoUXm6a]8Yz:88K7n7z0
 !s100 ^B`[O^HHX8LicoKR`0M9h0
 Z7 OP;C;10.3d;59
 31
-Z8 !s110 1418823326
+Z8 !s110 1418831762
 !i10b 1
-Z9 !s108 1418823326.653000
+Z9 !s108 1418831761.980000
 Z10 !s90 -reportprogress|300|-explicit|-93|cnt_dac.vhd|
 Z11 !s107 cnt_dac.vhd|
 !i113 1
@@ -37,8 +37,8 @@ R4
 Z14 DEx4 work 7 cnt_dac 0 22 aceoUXm6a]8Yz:88K7n7z0
 l51
 L18
-V_1QR8d0iTjJ94@j78Ojbf0
-!s100 aDA@4Fo]bG3`=@5?T[d0c0
+VOzDIfhjDo42U6A:_@G99Z3
+!s100 e6zQmloOo^JE<Xg>mz6J]1
 R7
 31
 R8
@@ -63,9 +63,9 @@ VN]FeA:;DlfflhBINR]6`l2
 !s100 6@HLO]jX62VaH;RJH`I>I0
 R7
 31
-Z18 !s110 1418826270
+Z18 !s110 1418832088
 !i10b 1
-Z19 !s108 1418826270.404000
+Z19 !s108 1418832088.452000
 Z20 !s90 -reportprogress|300|-explicit|-93|cnt_dac_tb.vhd|
 Z21 !s107 cnt_dac_tb.vhd|
 !i113 1
@@ -104,11 +104,11 @@ Vj?V^Tg<QU73kVhhG3>[nQ3
 !s100 V2VnK5M3V^_@9Ek[HoDHE3
 R7
 31
-R8
+Z28 !s110 1418827806
 !i10b 1
-Z28 !s108 1418823326.013000
-Z29 !s90 -reportprogress|300|-explicit|-93|cnt_dpram.vhd|
-Z30 !s107 cnt_dpram.vhd|
+Z29 !s108 1418827806.448000
+Z30 !s90 -reportprogress|300|-explicit|-93|cnt_dpram.vhd|
+Z31 !s107 cnt_dpram.vhd|
 !i113 1
 R12
 R13
@@ -116,79 +116,79 @@ Artl
 R2
 R3
 R4
-Z31 DEx4 work 9 cnt_dpram 0 22 j?V^Tg<QU73kVhhG3>[nQ3
+Z32 DEx4 work 9 cnt_dpram 0 22 j?V^Tg<QU73kVhhG3>[nQ3
 l42
 L19
 VDJ2ezJ_c1l>ZeH_f^RQgX3
 !s100 i?Jme2KedYkgn]ckFD5Za2
 R7
 31
-R8
-!i10b 1
 R28
+!i10b 1
 R29
 R30
+R31
 !i113 1
 R12
 R13
 Ecnt_epp
-Z32 w1418217644
+Z33 w1418217644
 R3
 R4
 R0
-Z33 8cnt_epp.vhd
-Z34 Fcnt_epp.vhd
+Z34 8cnt_epp.vhd
+Z35 Fcnt_epp.vhd
 l0
 L32
 VcVc^4fRYHn`5:S4Tf@^Jk2
 !s100 iO287D@WnNH4M`zU]elRn0
 R7
 31
-Z35 !s110 1418823325
+Z36 !s110 1418827805
 !i10b 1
-Z36 !s108 1418823325.389000
-Z37 !s90 -reportprogress|300|-explicit|-93|cnt_epp.vhd|
-Z38 !s107 cnt_epp.vhd|
+Z37 !s108 1418827805.715000
+Z38 !s90 -reportprogress|300|-explicit|-93|cnt_epp.vhd|
+Z39 !s107 cnt_epp.vhd|
 !i113 1
 R12
 R13
 Artl
 R3
 R4
-Z39 DEx4 work 7 cnt_epp 0 22 cVc^4fRYHn`5:S4Tf@^Jk2
+Z40 DEx4 work 7 cnt_epp 0 22 cVc^4fRYHn`5:S4Tf@^Jk2
 l60
 L49
 Vb]N1gIf84i]3UBJ9=O58N2
 !s100 ?2B??D]@b>60ie>cK]E<40
 R7
 31
-R35
-!i10b 1
 R36
+!i10b 1
 R37
 R38
+R39
 !i113 1
 R12
 R13
 Edac121s101
-Z40 w1411643218
+Z41 w1411643218
 R2
 R3
 R4
 R0
-Z41 8DAC121S101.vhd
-Z42 FDAC121S101.vhd
+Z42 8DAC121S101.vhd
+Z43 FDAC121S101.vhd
 l0
 L4
 VPAXE8Pe4b1<FiR@UCJkAc3
 !s100 bG[e<TGbX290SINX<Rn0e3
 R7
 31
-Z43 !s110 1418826269
+Z44 !s110 1418832087
 !i10b 1
-Z44 !s108 1418826269.684000
-Z45 !s90 -reportprogress|300|-explicit|-93|DAC121S101.vhd|
-Z46 !s107 DAC121S101.vhd|
+Z45 !s108 1418832087.592000
+Z46 !s90 -reportprogress|300|-explicit|-93|DAC121S101.vhd|
+Z47 !s107 DAC121S101.vhd|
 !i113 1
 R12
 R13
@@ -203,78 +203,78 @@ Vcc[j@:?3@T0192]NB8]GN0
 !s100 KFeXEiZk]^2`RihPbzKV80
 R7
 31
-R43
-!i10b 1
 R44
+!i10b 1
 R45
 R46
+R47
 !i113 1
 R12
 R13
 Edcm
-Z47 w1418208365
-Z48 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
+Z48 w1418208365
+Z49 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
 R2
-Z49 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z50 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z50 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z51 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R3
 R4
 R0
-Z51 8ipcore_dir/dcm.vhd
-Z52 Fipcore_dir/dcm.vhd
+Z52 8ipcore_dir/dcm.vhd
+Z53 Fipcore_dir/dcm.vhd
 l0
 L74
 Vm7J;0P5ooUa]Zaa[3Bh201
 !s100 `@2j82eEzfLP^NdSKf1]l2
 R7
 31
-Z53 !s110 1418823323
+Z54 !s110 1418827803
 !i10b 1
-Z54 !s108 1418823322.737000
-Z55 !s90 -reportprogress|300|-explicit|-93|ipcore_dir/dcm.vhd|
-Z56 !s107 ipcore_dir/dcm.vhd|
+Z55 !s108 1418827802.589000
+Z56 !s90 -reportprogress|300|-explicit|-93|ipcore_dir/dcm.vhd|
+Z57 !s107 ipcore_dir/dcm.vhd|
 !i113 1
 R12
 R13
 Axilinx
-R48
-R2
 R49
+R2
 R50
+R51
 R3
 R4
-Z57 DEx4 work 3 dcm 0 22 m7J;0P5ooUa]Zaa[3Bh201
+Z58 DEx4 work 3 dcm 0 22 m7J;0P5ooUa]Zaa[3Bh201
 l97
 L85
 Voz@E`UKHLM:kDKgkaPMGn0
 !s100 cl^9@ZUMNZaAKmN6Q1jj>2
 R7
 31
-R53
-!i10b 1
 R54
+!i10b 1
 R55
 R56
+R57
 !i113 1
 R12
 R13
 Edpram_mem
-Z58 w1417789699
+Z59 w1417789699
 R2
 R3
 R4
 R0
-Z59 8dpram_mem.vhd
-Z60 Fdpram_mem.vhd
+Z60 8dpram_mem.vhd
+Z61 Fdpram_mem.vhd
 l0
 L6
 ViCB0bIc4O5H=f_jIiSJJh2
 !s100 7f2Fd4_]^M1<0oDcRAJ6K0
 R7
 31
-Z61 !s110 1418823324
+R36
 !i10b 1
-Z62 !s108 1418823324.750000
+Z62 !s108 1418827805.011000
 Z63 !s90 -reportprogress|300|-explicit|-93|dpram_mem.vhd|
 Z64 !s107 dpram_mem.vhd|
 !i113 1
@@ -291,7 +291,7 @@ Vz`OhkJ@C^GkP7<QIgB@nP0
 !s100 ^<zmLf98ZKkk`kc7Ac4_J2
 R7
 31
-R61
+R36
 !i10b 1
 R62
 R63
@@ -314,9 +314,9 @@ VGl^`TH`1E6_mji;73EhIE3
 !s100 >ANManacjIn3h3<0<fkF@3
 R7
 31
-Z70 !s110 1418823926
+Z70 !s110 1418827809
 !i10b 1
-Z71 !s108 1418823926.139000
+Z71 !s108 1418827809.483000
 Z72 !s90 -reportprogress|300|-explicit|-93|epp_device1.vhd|
 Z73 !s107 epp_device1.vhd|
 !i113 1
@@ -356,11 +356,11 @@ Vl[e6I9`Hm]Mh0VT3Uo=Zz2
 !s100 VcQbAio4<V5cA8hOD6EdC2
 R7
 31
-R61
+Z77 !s110 1418827804
 !i10b 1
-Z77 !s108 1418823324.095000
-Z78 !s90 -reportprogress|300|-explicit|-93|gen_dir.vhd|
-Z79 !s107 gen_dir.vhd|
+Z78 !s108 1418827804.260000
+Z79 !s90 -reportprogress|300|-explicit|-93|gen_dir.vhd|
+Z80 !s107 gen_dir.vhd|
 !i113 1
 R12
 R13
@@ -368,79 +368,53 @@ Artl
 R2
 R3
 R4
-Z80 DEx4 work 7 gen_dir 0 22 l[e6I9`Hm]Mh0VT3Uo=Zz2
+Z81 DEx4 work 7 gen_dir 0 22 l[e6I9`Hm]Mh0VT3Uo=Zz2
 l37
 L21
 V6Fjjo6h3_4PkLc>X7k[_`1
 !s100 mS4[7O4ceZ:6Llmz=GUzO1
 R7
 31
-R61
-!i10b 1
 R77
+!i10b 1
 R78
 R79
+R80
 !i113 1
 R12
 R13
 Egen_funciones
-Z81 w1418823902
-Z82 DPx9 vital2000 16 vital_primitives 0 22 `a]zGa`>UD04SCd]1aJR_3
-Z83 DPx7 simprim 8 vpackage 0 22 ieF@fNI[UF]T6R2Q0ZG:61
-Z84 DPx9 vital2000 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z85 DPx7 simprim 11 vcomponents 0 22 DgFaojEEYblW>If<>z2eN2
+Z82 w1418209114
 R3
 R4
 R0
-Z86 8netgen/par/gen_funciones_timesim.vhd
-Z87 Fnetgen/par/gen_funciones_timesim.vhd
+Z83 8gen_funciones.vhd
+Z84 Fgen_funciones.vhd
 l0
-L41
-V3MO_Cl5Nm0m<`eGG;Ed=`1
-!s100 mneX>6Y_]a=WKg[6U9e3g2
+L4
+V_h<8mVn4JQi9MD?3D7k]41
+!s100 J4[ZzQiSAoh^FNaE1SHD@0
 R7
 31
-!s110 1418823924
+!s110 1418827807
 !i10b 1
-Z88 !s108 1418823923.940000
-Z89 !s90 -reportprogress|300|-explicit|-93|netgen/par/gen_funciones_timesim.vhd|
-Z90 !s107 netgen/par/gen_funciones_timesim.vhd|
-!i113 1
-R12
-R13
-Astructure
-R82
-R83
-R84
-R85
-R3
-R4
-DEx4 work 13 gen_funciones 0 22 3MO_Cl5Nm0m<`eGG;Ed=`1
-l593
-L57
-V_VaSSXfQYRGY``:QcBVAn2
-!s100 7SH1HQl@?f<olM=7HC::>1
-R7
-31
-!s110 1418823925
-!i10b 1
-R88
-R89
-R90
+Z85 !s108 1418827807.950000
+Z86 !s90 -reportprogress|300|-explicit|-93|gen_funciones.vhd|
+Z87 !s107 gen_funciones.vhd|
 !i113 1
 R12
 R13
 Artl
 R14
-R80
+R81
 R65
-R31
-R39
-R48
-R2
+R32
+R40
 R49
+R2
 R50
-R57
+R51
+R58
 R3
 R4
 DEx4 work 13 gen_funciones 0 22 _h<8mVn4JQi9MD?3D7k]41
@@ -450,35 +424,57 @@ V]fNYB@[23`a4W>FQ16J0_3
 !s100 7bY3TFkF9N6O7;A8f<aDn2
 R7
 31
-!s110 1418823327
+!s110 1418827808
 !i10b 1
-!s108 1418823327.355000
-!s90 -reportprogress|300|-explicit|-93|gen_funciones.vhd|
-!s107 gen_funciones.vhd|
+R85
+R86
+R87
 !i113 1
 R12
 R13
-Fgen_funciones.vhd
-w1418209114
-8gen_funciones.vhd
+Astructure
+DPx9 vital2000 16 vital_primitives 0 22 `a]zGa`>UD04SCd]1aJR_3
+DPx7 simprim 8 vpackage 0 22 ieF@fNI[UF]T6R2Q0ZG:61
+DPx9 vital2000 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+DPx7 simprim 11 vcomponents 0 22 DgFaojEEYblW>If<>z2eN2
+R3
+R4
+DEx4 work 13 gen_funciones 0 22 3MO_Cl5Nm0m<`eGG;Ed=`1
+l595
+L57
+V>BS]nJK=2I_z7;Uo`^lYi3
+!s100 Og=31PjgV?W7>gPN3]VSI3
+R7
+31
+!s110 1418827187
+!i10b 1
+!s108 1418827185.073000
+!s90 -reportprogress|300|-explicit|-93|netgen/par/gen_funciones_timesim.vhd|
+!s107 netgen/par/gen_funciones_timesim.vhd|
+!i113 1
+R12
+R13
+Fnetgen/par/gen_funciones_timesim.vhd
+w1418826905
+8netgen/par/gen_funciones_timesim.vhd
 Egen_funciones_tb
-Z91 w1418722041
+Z88 w1418722041
 R3
 R4
 R0
-Z92 8gen_funciones_tb.vhd
-Z93 Fgen_funciones_tb.vhd
+Z89 8gen_funciones_tb.vhd
+Z90 Fgen_funciones_tb.vhd
 l0
 L35
 VSC0^AWoWh2?H1VmE^Thn:3
 !s100 K7WZ7QKMDeiJF0E3R78182
 R7
 31
-Z94 !s110 1418823927
+Z91 !s110 1418827811
 !i10b 1
-Z95 !s108 1418823927.687000
-Z96 !s90 -reportprogress|300|-explicit|-93|gen_funciones_tb.vhd|
-Z97 !s107 gen_funciones_tb.vhd|
+Z92 !s108 1418827810.998000
+Z93 !s90 -reportprogress|300|-explicit|-93|gen_funciones_tb.vhd|
+Z94 !s107 gen_funciones_tb.vhd|
 !i113 1
 R12
 R13
@@ -492,11 +488,11 @@ V=RC<FjlPzC`=>Hn=Fe?RN1
 !s100 0F=Y?fZM6gR9G9dke;MC53
 R7
 31
-R94
+R91
 !i10b 1
-R95
-R96
-R97
+R92
+R93
+R94
 !i113 1
 R12
 R13

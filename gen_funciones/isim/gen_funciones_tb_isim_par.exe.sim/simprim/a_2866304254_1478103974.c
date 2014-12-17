@@ -3808,30 +3808,30 @@ LAB1:    return;
 }
 
 
-extern void simprim_a_2866304254_1478103974_0282536232_init()
+extern void simprim_a_2866304254_1478103974_1983063228_init()
 {
 	static char *pe[] = {(void *)simprim_a_2866304254_1478103974_p_0,(void *)simprim_a_2866304254_1478103974_p_1,(void *)simprim_a_2866304254_1478103974_p_2,(void *)simprim_a_2866304254_1478103974_p_3,(void *)simprim_a_2866304254_1478103974_p_4,(void *)simprim_a_2866304254_1478103974_p_5,(void *)simprim_a_2866304254_1478103974_p_6,(void *)simprim_a_2866304254_1478103974_p_7,(void *)simprim_a_2866304254_1478103974_p_8,(void *)simprim_a_2866304254_1478103974_p_9,(void *)simprim_a_2866304254_1478103974_p_10,(void *)simprim_a_2866304254_1478103974_p_11,(void *)simprim_a_2866304254_1478103974_p_12};
-	xsi_register_didat("simprim_a_2866304254_1478103974_0282536232", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_0282536232.didat");
+	xsi_register_didat("simprim_a_2866304254_1478103974_1983063228", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_1983063228.didat");
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_2866304254_1478103974_0311531377_init()
+extern void simprim_a_2866304254_1478103974_2104451969_init()
 {
 	static char *pe[] = {(void *)simprim_a_2866304254_1478103974_p_0,(void *)simprim_a_2866304254_1478103974_p_1,(void *)simprim_a_2866304254_1478103974_p_2,(void *)simprim_a_2866304254_1478103974_p_3,(void *)simprim_a_2866304254_1478103974_p_4,(void *)simprim_a_2866304254_1478103974_p_5,(void *)simprim_a_2866304254_1478103974_p_6,(void *)simprim_a_2866304254_1478103974_p_7,(void *)simprim_a_2866304254_1478103974_p_8,(void *)simprim_a_2866304254_1478103974_p_9,(void *)simprim_a_2866304254_1478103974_p_10,(void *)simprim_a_2866304254_1478103974_p_11,(void *)simprim_a_2866304254_1478103974_p_12};
-	xsi_register_didat("simprim_a_2866304254_1478103974_0311531377", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_0311531377.didat");
+	xsi_register_didat("simprim_a_2866304254_1478103974_2104451969", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_2104451969.didat");
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_2866304254_1478103974_0324271430_init()
+extern void simprim_a_2866304254_1478103974_2091714998_init()
 {
 	static char *pe[] = {(void *)simprim_a_2866304254_1478103974_p_0,(void *)simprim_a_2866304254_1478103974_p_1,(void *)simprim_a_2866304254_1478103974_p_2,(void *)simprim_a_2866304254_1478103974_p_3,(void *)simprim_a_2866304254_1478103974_p_4,(void *)simprim_a_2866304254_1478103974_p_5,(void *)simprim_a_2866304254_1478103974_p_6,(void *)simprim_a_2866304254_1478103974_p_7,(void *)simprim_a_2866304254_1478103974_p_8,(void *)simprim_a_2866304254_1478103974_p_9,(void *)simprim_a_2866304254_1478103974_p_10,(void *)simprim_a_2866304254_1478103974_p_11,(void *)simprim_a_2866304254_1478103974_p_12};
-	xsi_register_didat("simprim_a_2866304254_1478103974_0324271430", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_0324271430.didat");
+	xsi_register_didat("simprim_a_2866304254_1478103974_2091714998", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_2091714998.didat");
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_2866304254_1478103974_0370994115_init()
+extern void simprim_a_2866304254_1478103974_0723460719_init()
 {
 	static char *pe[] = {(void *)simprim_a_2866304254_1478103974_p_0,(void *)simprim_a_2866304254_1478103974_p_1,(void *)simprim_a_2866304254_1478103974_p_2,(void *)simprim_a_2866304254_1478103974_p_3,(void *)simprim_a_2866304254_1478103974_p_4,(void *)simprim_a_2866304254_1478103974_p_5,(void *)simprim_a_2866304254_1478103974_p_6,(void *)simprim_a_2866304254_1478103974_p_7,(void *)simprim_a_2866304254_1478103974_p_8,(void *)simprim_a_2866304254_1478103974_p_9,(void *)simprim_a_2866304254_1478103974_p_10,(void *)simprim_a_2866304254_1478103974_p_11,(void *)simprim_a_2866304254_1478103974_p_12};
-	xsi_register_didat("simprim_a_2866304254_1478103974_0370994115", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_0370994115.didat");
+	xsi_register_didat("simprim_a_2866304254_1478103974_0723460719", "isim/gen_funciones_tb_isim_par.exe.sim/simprim/a_2866304254_1478103974_0723460719.didat");
 	xsi_register_executes(pe);
 }
