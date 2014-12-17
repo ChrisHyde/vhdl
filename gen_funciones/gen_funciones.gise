@@ -34,6 +34,7 @@
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="cnt_dac_tb.tdo"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="cnt_dpram_tb.tdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="epp_device1.fdo"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="gen_funciones.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="gen_funciones.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="gen_funciones.bld"/>
@@ -52,6 +53,7 @@
     <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="gen_funciones.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="gen_funciones.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="gen_funciones.syr"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="gen_funciones.tdo"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="gen_funciones.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="gen_funciones.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="gen_funciones.unroutes" xil_pn:subbranch="Par"/>
@@ -73,9 +75,24 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="gen_funciones_summary.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="gen_funciones_tb.fdo"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="gen_funciones_tb.tdo"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gen_funciones_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="gen_funciones_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="gen_funciones_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="gen_funciones_tb_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="gen_funciones_tb_isim_par.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gen_funciones_tb_par.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="gen_funciones_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="gen_funciones_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/gen_funciones_timesim.nlf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/gen_funciones_timesim.sdf"/>
@@ -88,6 +105,10 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -97,9 +118,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418753331" xil_pn:in_ck="-8005115731049232137" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1418753331">
+    <transform xil_pn:end_ts="1418823313" xil_pn:in_ck="-8005115731049232137" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1418823313">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../cnt_dpram/cnt_dpram_tb.vhd"/>
       <outfile xil_pn:name="../gen_dir/gen_dir_tb.vhd"/>
       <outfile xil_pn:name="DAC121S101.vhd"/>
@@ -113,11 +138,11 @@
       <outfile xil_pn:name="gen_funciones.vhd"/>
       <outfile xil_pn:name="gen_funciones_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1418753331" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7610338267002883890" xil_pn:start_ts="1418753331">
+    <transform xil_pn:end_ts="1418823313" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7610338267002883890" xil_pn:start_ts="1418823313">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418753331" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1780384532098424500" xil_pn:start_ts="1418753331">
+    <transform xil_pn:end_ts="1418823313" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1780384532098424500" xil_pn:start_ts="1418823313">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -126,9 +151,14 @@
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/dcm.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1418753331" xil_pn:in_ck="-8005115731049232137" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1418753331">
+    <transform xil_pn:end_ts="1418823313" xil_pn:in_ck="-8005115731049232137" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1418823313">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../cnt_dpram/cnt_dpram_tb.vhd"/>
       <outfile xil_pn:name="../gen_dir/gen_dir_tb.vhd"/>
       <outfile xil_pn:name="DAC121S101.vhd"/>
@@ -142,9 +172,14 @@
       <outfile xil_pn:name="gen_funciones.vhd"/>
       <outfile xil_pn:name="gen_funciones_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1418753335" xil_pn:in_ck="6756696955071887210" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-910658420425706918" xil_pn:start_ts="1418753331">
+    <transform xil_pn:end_ts="1418823317" xil_pn:in_ck="6756696955071887210" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-910658420425706918" xil_pn:start_ts="1418823313">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="gen_funciones_tb.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
@@ -178,10 +213,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418753316" xil_pn:in_ck="2493102767711107629" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1032957009338876387" xil_pn:start_ts="1418753301">
+    <transform xil_pn:end_ts="1418823707" xil_pn:in_ck="2493102767711107629" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1032957009338876387" xil_pn:start_ts="1418823693">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="gen_funciones.lso"/>
       <outfile xil_pn:name="gen_funciones.ngc"/>
@@ -190,6 +227,8 @@
       <outfile xil_pn:name="gen_funciones.stx"/>
       <outfile xil_pn:name="gen_funciones.syr"/>
       <outfile xil_pn:name="gen_funciones.xst"/>
+      <outfile xil_pn:name="gen_funciones_tb_beh.prj"/>
+      <outfile xil_pn:name="gen_funciones_tb_par.prj"/>
       <outfile xil_pn:name="gen_funciones_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -198,21 +237,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1418747875" xil_pn:in_ck="-6826003318867527240" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8772178709680329195" xil_pn:start_ts="1418747861">
+    <transform xil_pn:end_ts="1418823725" xil_pn:in_ck="-6826003318867527240" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8772178709680329195" xil_pn:start_ts="1418823717">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="gen_funciones.bld"/>
       <outfile xil_pn:name="gen_funciones.ngd"/>
       <outfile xil_pn:name="gen_funciones_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418747921" xil_pn:in_ck="-3934654944936092711" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1418747875">
+    <transform xil_pn:end_ts="1418823747" xil_pn:in_ck="-3934654944936092711" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1418823725">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="gen_funciones.pcf"/>
       <outfile xil_pn:name="gen_funciones_map.map"/>
@@ -223,10 +261,9 @@
       <outfile xil_pn:name="gen_funciones_summary.xml"/>
       <outfile xil_pn:name="gen_funciones_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418747959" xil_pn:in_ck="-6711105757404212718" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1418747921">
+    <transform xil_pn:end_ts="1418823776" xil_pn:in_ck="-6711105757404212718" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1418823747">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="gen_funciones.ncd"/>
       <outfile xil_pn:name="gen_funciones.pad"/>
@@ -238,15 +275,10 @@
       <outfile xil_pn:name="gen_funciones_pad.txt"/>
       <outfile xil_pn:name="gen_funciones_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1418682776" xil_pn:in_ck="-7206324165549438426" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1418682739">
+    <transform xil_pn:end_ts="1418823837" xil_pn:in_ck="-7206324165549438426" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1418823776">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="gen_funciones.bgn"/>
       <outfile xil_pn:name="gen_funciones.bit"/>
@@ -256,23 +288,17 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1418747991" xil_pn:in_ck="-7206324165549438426" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-5426719512663111097" xil_pn:start_ts="1418747975">
+    <transform xil_pn:end_ts="1418823905" xil_pn:in_ck="-7206324165549438426" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-5426719512663111097" xil_pn:start_ts="1418823892">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/par/gen_funciones_timesim.nlf"/>
       <outfile xil_pn:name="netgen/par/gen_funciones_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/gen_funciones_timesim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1418747991" xil_pn:in_ck="-4148835753946113392" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1418747991">
+    <transform xil_pn:end_ts="1418823905" xil_pn:in_ck="-4148835753946113392" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1418823905">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../cnt_dpram/cnt_dpram_tb.vhd"/>
       <outfile xil_pn:name="../gen_dir/gen_dir_tb.vhd"/>
       <outfile xil_pn:name="DAC121S101.vhd"/>
@@ -282,23 +308,16 @@
       <outfile xil_pn:name="netgen/par/gen_funciones_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/gen_funciones_timesim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1418747998" xil_pn:in_ck="-6772393473556552439" xil_pn:name="TRAN_MSimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-8732519687097503514" xil_pn:start_ts="1418747991">
+    <transform xil_pn:end_ts="1418826263" xil_pn:in_ck="-6772393473556552439" xil_pn:name="TRAN_MSimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="8057946818532361406" xil_pn:start_ts="1418826259">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="gen_funciones_tb.tdo"/>
+      <outfile xil_pn:name="cnt_dac_tb.tdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
     </transform>
-    <transform xil_pn:end_ts="1418747959" xil_pn:in_ck="1788985244015133397" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1418747948">
+    <transform xil_pn:end_ts="1418823776" xil_pn:in_ck="1788985244015133397" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1418823766">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="gen_funciones.twr"/>
       <outfile xil_pn:name="gen_funciones.twx"/>

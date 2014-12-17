@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: gen_funciones.prj
 
@@ -147,7 +147,7 @@ Elaborating entity <dpram_mem> (architecture <rtl>) from library <work>.
 Elaborating entity <gen_dir> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <cnt_dac> (architecture <RTL>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\cnt_dac.vhd" Line 157. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\cnt_dac.vhd" Line 198. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:634 - "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\gen_funciones.vhd" Line 29: Net <DATO_RD[7]> does not have a driver.
 
 =========================================================================
@@ -257,16 +257,13 @@ Synthesizing Unit <cnt_dac>.
     Related source file is "C:\Users\christopher\Dropbox\workspace\modelado14\gen_funciones\cnt_dac.vhd".
     Found 1-bit register for signal <SYNC>.
     Found 1-bit register for signal <prescaler>.
-    Found 1-bit register for signal <muxSelectTX[3]_CLK_DFF_61_q>.
-    Found 1-bit register for signal <PWR_14_o_CLK_DFF_62>.
     Found 1-bit register for signal <CEcounter>.
     Found 1-bit register for signal <endTx>.
     Found 1-bit register for signal <SCLKaux>.
-    Found 1-bit register for signal <muxSelectTX[3]_CLK_DFF_60_q>.
-    Found 6-bit register for signal <muxSelect>.
-    Found 4-bit register for signal <muxSelectTX>.
+    Found 2-bit register for signal <muxSelect>.
     Found 2-bit register for signal <state>.
     Found 2-bit register for signal <mxstate>.
+    Found 4-bit register for signal <muxSelectTX>.
     Found finite state machine <FSM_1> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
@@ -285,8 +282,8 @@ Synthesizing Unit <cnt_dac>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
     | Transitions        | 5                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 2                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
     | Clock              | CLK (rising_edge)                              |
     | Reset              | RST (positive)                                 |
     | Reset type         | asynchronous                                   |
@@ -295,18 +292,16 @@ Synthesizing Unit <cnt_dac>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 1-bit adder for signal <prescaler[0]_PWR_13_o_add_3_OUT<0>> created at line 68.
+    Found 1-bit adder for signal <prescaler[0]_PWR_13_o_add_3_OUT<0>> created at line 66.
     Found 4-bit adder for signal <muxSelectTX[3]_GND_26_o_add_5_OUT> created at line 1241.
-    Found 6-bit adder for signal <muxSelect[5]_GND_26_o_add_8_OUT> created at line 89.
-    Found 1-bit 10-to-1 multiplexer for signal <muxSelectTX[3]_DATO_1_16bits[0]_Mux_14_o> created at line 107.
-    Found 1-bit 10-to-1 multiplexer for signal <muxSelectTX[3]_DATO_2_16bits[0]_Mux_15_o> created at line 107.
-    Found 1-bit tristate buffer for signal <D1> created at line 101
-    Found 1-bit tristate buffer for signal <D2> created at line 101
+    Found 2-bit adder for signal <muxSelect[1]_GND_26_o_add_6_OUT> created at line 133.
+    Found 1-bit 10-to-1 multiplexer for signal <D1> created at line 148.
+    Found 1-bit 10-to-1 multiplexer for signal <D2> created at line 148.
+    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_21_o_Mux_17_o> created at line 212.
     Summary:
 	inferred   3 Adder/Subtractor(s).
-	inferred  18 D-type flip-flop(s).
-	inferred   7 Multiplexer(s).
-	inferred   2 Tristate(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
 	inferred   2 Finite State Machine(s).
 Unit <cnt_dac> synthesized.
 
@@ -319,28 +314,29 @@ Macro Statistics
 # Adders/Subtractors                                   : 6
  1-bit adder                                           : 1
  16-bit adder                                          : 1
+ 2-bit adder                                           : 1
  4-bit adder                                           : 1
- 6-bit adder                                           : 1
  7-bit adder                                           : 1
  8-bit adder                                           : 1
-# Registers                                            : 33
- 1-bit register                                        : 21
+# Registers                                            : 30
+ 1-bit register                                        : 18
  16-bit register                                       : 1
+ 2-bit register                                        : 1
  4-bit register                                        : 1
- 6-bit register                                        : 1
  7-bit register                                        : 1
  8-bit register                                        : 8
 # Comparators                                          : 1
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 10
+# Multiplexers                                         : 12
  1-bit 10-to-1 multiplexer                             : 2
- 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 2-to-1 multiplexer                              : 3
+ 1-bit 3-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 1
- 6-bit 2-to-1 multiplexer                              : 2
  7-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 2
-# Tristates                                            : 10
- 1-bit tristate buffer                                 : 10
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
 # FSMs                                                 : 3
 
 =========================================================================
@@ -393,7 +389,7 @@ Macro Statistics
 # RAMs                                                 : 2
  256x8-bit dual-port block RAM                         : 2
 # Adders/Subtractors                                   : 2
- 6-bit adder                                           : 1
+ 2-bit adder                                           : 1
  8-bit adder                                           : 1
 # Counters                                             : 3
  1-bit up counter                                      : 1
@@ -401,14 +397,15 @@ Macro Statistics
  7-bit up counter                                      : 1
 # Accumulators                                         : 1
  16-bit up accumulator                                 : 1
-# Registers                                            : 74
- Flip-Flops                                            : 74
+# Registers                                            : 67
+ Flip-Flops                                            : 67
 # Comparators                                          : 1
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 7
+# Multiplexers                                         : 9
  1-bit 10-to-1 multiplexer                             : 2
- 1-bit 2-to-1 multiplexer                              : 1
- 6-bit 2-to-1 multiplexer                              : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 3-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 2
 # FSMs                                                 : 3
 
@@ -454,6 +451,9 @@ Optimizing unit <cnt_dpram> ...
 
 Optimizing unit <gen_dir> ...
 
+Optimizing unit <cnt_dac> ...
+INFO:Xst:3203 - The FF/Latch <U_cnt_dac/CEcounter> in Unit <gen_funciones> is the opposite to the following FF/Latch, which will be removed : <U_cnt_dac/SYNC> 
+
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block gen_funciones, actual ratio is 0.
@@ -464,8 +464,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 108
- Flip-Flops                                            : 108
+# Registers                                            : 100
+ Flip-Flops                                            : 100
 
 =========================================================================
 
@@ -488,23 +488,22 @@ Top Level Output File Name         : gen_funciones.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 130
+# BELS                             : 121
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 8
-#      LUT2                        : 18
-#      LUT3                        : 15
-#      LUT4                        : 15
-#      LUT5                        : 10
-#      LUT6                        : 28
+#      LUT2                        : 19
+#      LUT3                        : 12
+#      LUT4                        : 13
+#      LUT5                        : 7
+#      LUT6                        : 26
 #      MUXCY                       : 15
 #      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 16
-# FlipFlops/Latches                : 108
-#      FDC                         : 39
+# FlipFlops/Latches                : 100
+#      FDC                         : 32
 #      FDCE                        : 68
-#      FDP                         : 1
 # RAMS                             : 2
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 1
@@ -513,8 +512,7 @@ Primitive and Black Box Usage:
 #      IBUF                        : 4
 #      IBUFG                       : 1
 #      IOBUF                       : 8
-#      OBUF                        : 3
-#      OBUFT                       : 2
+#      OBUF                        : 5
 # DCMs                             : 1
 #      DCM_SP                      : 1
 
@@ -525,15 +523,15 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             107  out of  54576     0%  
- Number of Slice LUTs:                   96  out of  27288     0%  
-    Number used as Logic:                96  out of  27288     0%  
+ Number of Slice Registers:              99  out of  54576     0%  
+ Number of Slice LUTs:                   87  out of  27288     0%  
+    Number used as Logic:                87  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    137
-   Number with an unused Flip Flop:      30  out of    137    21%  
-   Number with an unused LUT:            41  out of    137    29%  
-   Number of fully used LUT-FF pairs:    66  out of    137    48%  
+ Number of LUT Flip Flop pairs used:    124
+   Number with an unused Flip Flop:      25  out of    124    20%  
+   Number with an unused LUT:            37  out of    124    29%  
+   Number of fully used LUT-FF pairs:    62  out of    124    50%  
    Number of unique control sets:         9
 
 IO Utilization: 
@@ -567,7 +565,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-RELOJ                              | DCM_SP:CLK0            | 110   |
+RELOJ                              | DCM_SP:CLK0            | 102   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -578,9 +576,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.869ns (Maximum Frequency: 258.485MHz)
-   Minimum input arrival time before clock: 3.550ns
-   Maximum output required time after clock: 4.419ns
+   Minimum period: 3.672ns (Maximum Frequency: 272.320MHz)
+   Minimum input arrival time before clock: 3.529ns
+   Maximum output required time after clock: 6.917ns
    Maximum combinational path delay: 5.585ns
 
 Timing Details:
@@ -589,32 +587,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RELOJ'
-  Clock period: 3.869ns (frequency: 258.485MHz)
-  Total number of paths / destination ports: 852 / 208
+  Clock period: 3.672ns (frequency: 272.320MHz)
+  Total number of paths / destination ports: 774 / 201
 -------------------------------------------------------------------------
-Delay:               3.869ns (Levels of Logic = 2)
-  Source:            U_dpram_mem1/Mram_mem_pos (RAM)
-  Destination:       U_cnt_dac/D1 (FF)
+Delay:               3.672ns (Levels of Logic = 3)
+  Source:            U_cnt_dpram/state_FSM_FFd3 (FF)
+  Destination:       U_cnt_dpram/state_FSM_FFd3 (FF)
   Source Clock:      RELOJ rising
   Destination Clock: RELOJ rising
 
-  Data Path: U_dpram_mem1/Mram_mem_pos to U_cnt_dac/D1
+  Data Path: U_cnt_dpram/state_FSM_FFd3 to U_cnt_dpram/state_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB8BWER:CLKBRDCLK->DOBDO6    1   1.850   0.827  U_dpram_mem1/Mram_mem_pos (DATO1<6>)
-     LUT6:I2->O            1   0.203   0.684  U_cnt_dac/Mmux_muxSelectTX[3]_DATO_1_16bits[0]_Mux_14_o11 (U_cnt_dac/Mmux_muxSelectTX[3]_DATO_1_16bits[0]_Mux_14_o1)
-     LUT4:I2->O            1   0.203   0.000  U_cnt_dac/Mmux_muxSelectTX[3]_DATO_1_16bits[0]_Mux_14_o13 (U_cnt_dac/muxSelectTX[3]_DATO_1_16bits[0]_Mux_14_o)
-     FDC:D                     0.102          U_cnt_dac/D1
+     FDC:C->Q              5   0.447   0.943  U_cnt_dpram/state_FSM_FFd3 (U_cnt_dpram/state_FSM_FFd3)
+     LUT3:I0->O           11   0.205   0.883  U_cnt_dpram/_n0117_inv1 (U_cnt_dpram/_n0117_inv)
+     LUT5:I4->O            1   0.205   0.684  U_cnt_dpram/state_FSM_FFd3-In1 (U_cnt_dpram/state_FSM_FFd3-In1)
+     LUT4:I2->O            1   0.203   0.000  U_cnt_dpram/state_FSM_FFd3-In9 (U_cnt_dpram/state_FSM_FFd3-In)
+     FDC:D                     0.102          U_cnt_dpram/state_FSM_FFd3
     ----------------------------------------
-    Total                      3.869ns (2.358ns logic, 1.511ns route)
-                                       (61.0% logic, 39.0% route)
+    Total                      3.672ns (1.162ns logic, 2.510ns route)
+                                       (31.6% logic, 68.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'RELOJ'
-  Total number of paths / destination ports: 165 / 145
+  Total number of paths / destination ports: 157 / 137
 -------------------------------------------------------------------------
-Offset:              3.550ns (Levels of Logic = 1)
+Offset:              3.529ns (Levels of Logic = 1)
   Source:            RST (PAD)
   Destination:       U_cnt_epp/DATO_7 (FF)
   Destination Clock: RELOJ rising
@@ -623,31 +622,32 @@ Offset:              3.550ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           108   1.222   1.898  RST_IBUF (RST_IBUF)
+     IBUF:I->O           100   1.222   1.877  RST_IBUF (RST_IBUF)
      FDC:CLR                   0.430          U_cnt_epp/DIR_VLD
     ----------------------------------------
-    Total                      3.550ns (1.652ns logic, 1.898ns route)
-                                       (46.5% logic, 53.5% route)
+    Total                      3.529ns (1.652ns logic, 1.877ns route)
+                                       (46.8% logic, 53.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'RELOJ'
-  Total number of paths / destination ports: 7 / 5
+  Total number of paths / destination ports: 31 / 5
 -------------------------------------------------------------------------
-Offset:              4.419ns (Levels of Logic = 2)
-  Source:            U_cnt_dac/PWR_14_o_CLK_DFF_62 (FF)
+Offset:              6.917ns (Levels of Logic = 3)
+  Source:            U_dpram_mem1/Mram_mem_pos (RAM)
   Destination:       D1 (PAD)
   Source Clock:      RELOJ rising
 
-  Data Path: U_cnt_dac/PWR_14_o_CLK_DFF_62 to D1
+  Data Path: U_dpram_mem1/Mram_mem_pos to D1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.447   0.579  U_cnt_dac/PWR_14_o_CLK_DFF_62 (U_cnt_dac/PWR_14_o_CLK_DFF_62)
-     INV:I->O              2   0.206   0.616  U_cnt_dac/PWR_14_o_CLK_DFF_62_inv1_INV_0 (U_cnt_dac/PWR_14_o_CLK_DFF_62_inv)
-     OBUFT:T->O                2.571          D1_OBUFT (D1)
+     RAMB8BWER:CLKBRDCLK->DOBDO6    1   1.850   0.827  U_dpram_mem1/Mram_mem_pos (DATO1<6>)
+     LUT6:I2->O            1   0.203   0.684  U_cnt_dac/Mmux_D111 (U_cnt_dac/Mmux_D11)
+     LUT4:I2->O            1   0.203   0.579  U_cnt_dac/Mmux_D113 (D1_OBUF)
+     OBUF:I->O                 2.571          D1_OBUF (D1)
     ----------------------------------------
-    Total                      4.419ns (3.224ns logic, 1.195ns route)
-                                       (73.0% logic, 27.0% route)
+    Total                      6.917ns (4.827ns logic, 2.090ns route)
+                                       (69.8% logic, 30.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -678,20 +678,20 @@ Clock to Setup on destination clock RELOJ
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-RELOJ          |    3.869|         |         |         |
+RELOJ          |    3.672|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.25 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.55 secs
  
 --> 
 
-Total memory usage is 274040 kilobytes
+Total memory usage is 274616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

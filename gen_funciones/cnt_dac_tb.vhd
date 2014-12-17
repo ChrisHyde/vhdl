@@ -134,7 +134,7 @@ DAC2: DAC121S101
    begin		
       -- hold reset state for 100 ns.
       wait for 800 ns;
-      DATO1 <=std_logic_vector(to_unsigned(255, 8));
+      DATO1 <=std_logic_vector(to_unsigned(170, 8));
       DATO2 <=std_logic_vector(to_unsigned(10, 8));	
       DATO_OK<='1';
 		wait for 10 ns;	
@@ -228,9 +228,9 @@ DAC2: DAC121S101
       DATO2 <=std_logic_vector(to_unsigned(37, 8));	
       DATO_OK<='1';
 		wait for 10 ns;	
-       DATO_OK<='0';
+     DATO_OK<='0';
 		 report "FIN CONTROLADO DE LA SIMULACION" severity failure;
 		 --wait;
    end process;
-
+ 
 END;

@@ -1,109 +1,9 @@
 # Reading C:/Modeltech_pe_edu_10.3d/tcl/vsim/pref.tcl
-# do {gen_funciones_tb.fdo}
+# do {cnt_dac_tb.tdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:01 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 ipcore_dir/dcm.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package VCOMPONENTS
-# -- Compiling entity dcm
-# -- Compiling architecture xilinx of dcm
-# End time: 19:09:03 on Dec 16,2014, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:03 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 gen_dir.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity gen_dir
-# -- Compiling architecture rtl of gen_dir
-# End time: 19:09:04 on Dec 16,2014, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:04 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 dpram_mem.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity dpram_mem
-# -- Compiling architecture rtl of dpram_mem
-# End time: 19:09:04 on Dec 16,2014, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:05 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 cnt_epp.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity cnt_epp
-# -- Compiling architecture rtl of cnt_epp
-# End time: 19:09:05 on Dec 16,2014, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:05 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 cnt_dpram.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity cnt_dpram
-# -- Compiling architecture RTL of cnt_dpram
-# End time: 19:09:06 on Dec 16,2014, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:06 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 cnt_dac.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity cnt_dac
-# -- Compiling architecture RTL of cnt_dac
-# End time: 19:09:07 on Dec 16,2014, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:07 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 gen_funciones.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity gen_funciones
-# -- Compiling architecture rtl of gen_funciones
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Loading package VCOMPONENTS
-# -- Loading entity dcm
-# -- Loading entity cnt_epp
-# -- Loading entity cnt_dpram
-# -- Loading entity dpram_mem
-# -- Loading entity gen_dir
-# -- Loading entity cnt_dac
-# End time: 19:09:09 on Dec 16,2014, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:09 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 epp_device1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity epp_device1
-# -- Compiling architecture sim of epp_device1
-# End time: 19:09:09 on Dec 16,2014, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:09 on Dec 16,2014
+# Start time: 15:24:29 on Dec 17,2014
 # vcom -reportprogress 300 -explicit -93 DAC121S101.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -111,17 +11,18 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity DAC121S101
 # -- Compiling architecture rtl of DAC121S101
-# End time: 19:09:10 on Dec 16,2014, Elapsed time: 0:00:01
+# End time: 15:24:30 on Dec 17,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:09:10 on Dec 16,2014
-# vcom -reportprogress 300 -explicit -93 gen_funciones_tb.vhd 
+# Start time: 15:24:30 on Dec 17,2014
+# vcom -reportprogress 300 -explicit -93 cnt_dac_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity gen_funciones_tb
-# -- Compiling architecture behavior of gen_funciones_tb
-# End time: 19:09:11 on Dec 16,2014, Elapsed time: 0:00:01
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cnt_dac_tb
+# -- Compiling architecture behavior of cnt_dac_tb
+# End time: 15:24:31 on Dec 17,2014, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.3d Oct  7 2014 
 # //
@@ -136,547 +37,46 @@
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {gen_funciones_tb.fdo}" 
-# Start time: 19:09:11 on Dec 16,2014
+# vsim -gui -do "do {cnt_dac_tb.tdo}" 
+# Start time: 15:24:31 on Dec 17,2014
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.gen_funciones_tb(behavior)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
 # Loading ieee.numeric_std(body)
-# Loading unisim.vcomponents
-# Loading work.gen_funciones(rtl)
-# Loading work.dcm(xilinx)
-# Loading unisim.ibufg(ibufg_v)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading unisim.vpkg(body)
-# Loading unisim.dcm_sp(dcm_sp_v)
-# Loading unisim.dcm_sp_clock_divide_by_2(dcm_sp_clock_divide_by_2_v)
-# Loading unisim.dcm_sp_maximum_period_check(dcm_sp_maximum_period_check_v)
-# Loading unisim.dcm_sp_clock_lost(dcm_sp_clock_lost_v)
-# Loading unisim.bufg(bufg_v)
-# Loading work.cnt_epp(rtl)
-# Loading work.cnt_dpram(rtl)
-# Loading work.dpram_mem(rtl)
-# Loading work.gen_dir(rtl)
+# Loading work.cnt_dac_tb(behavior)
 # Loading work.cnt_dac(rtl)
-# Loading ieee.std_logic_textio(body)
-# Loading work.epp_device1(sim)
 # Loading work.dac121s101(rtl)
-# ** Warning: Design size of 21081 statements or 20 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
-# Expect performance to be quite adversely affected.
-# ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(6), and its initial value is not used.
-# 
-# Therefore, simulation behavior may occur that is not in compliance with
-# 
-# the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(6).
-# 
-# ** Warning: (vsim-8684) No drivers exist on out port /gen_funciones_tb/uut/U_dcm/dcm_sp_inst/STATUS(4 downto 3), and its initial value is not used.
-# 
-# Therefore, simulation behavior may occur that is not in compliance with
-# 
-# the VHDL standard as the initial values come from the base signal /gen_funciones_tb/uut/U_dcm/status_internal(4 downto 3).
-# 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: christopher  Hostname: CTHYDE-LAPTOP  ProcessID: 7720
 # 
-#           Attempting to use alternate WLF file "./wlftximicy".
+#           Attempting to use alternate WLF file "./wlftn4gjce".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftximicy
+#           Using alternate file: ./wlftn4gjce
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
-#    Time: 0 ps  Iteration: 0  Instance: /gen_funciones_tb/dac2
+#    Time: 0 ps  Iteration: 0  Instance: /cnt_dac_tb/DAC2
 # ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
-#    Time: 0 ps  Iteration: 0  Instance: /gen_funciones_tb/dac1
+#    Time: 0 ps  Iteration: 0  Instance: /cnt_dac_tb/DAC1
 run -all
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1445 ns  Iteration: 9  Instance: /gen_funciones_tb/dac1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1445 ns  Iteration: 9  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 22845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 23525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 25605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 26285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 28365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 29045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 31125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 31805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 33885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 34565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 36645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 37325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 39405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 42165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 42845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 44925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 45605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 47685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 48365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 53205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 53885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 55965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 56645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 58725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 59405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 61485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 62165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 64245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 64925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 67005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 67685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 69765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 70445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 72525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 73205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 75285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 75965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 78045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 78725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 80805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 81485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 83565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 84245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 86325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 87005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 89085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 89765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 91845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 92525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 94605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 95285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 97365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 98045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 102885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 103565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 105645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 106325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 108405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 109085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 111165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 111845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 113925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 114605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 116685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 117365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 119445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 120125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 122205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 122885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 124965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 125645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 127725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 128405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 130485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 131165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 133245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 133925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 136005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 136685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 138765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 139445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 141525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 142205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 144285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 144965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 147045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 147725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 149805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 152565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 153245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 155325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 156005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 158085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 158765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 160845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 161525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 163605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 164285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 166365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 167045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 169125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 169805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 171885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 172565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 174645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 175325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 177405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 178085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 180165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 180845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 182925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 183605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 185685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 186365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 188445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 189125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 191205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 191885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 193965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 194645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 196725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 197405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 199485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 202245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 202925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 205005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 205685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 207765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 208445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 210525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 211205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 213285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 213965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 216045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 216725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 218805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 219485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 221565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 222245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 224325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 225005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 227085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 227765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 229845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 230525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 232605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 233285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 235365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 236045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 238125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 238805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 240885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 241565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 243645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 244325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 246405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 247085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 249165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 249845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 251925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 252605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 254685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 255365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 257445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 258125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 260205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 260885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 262965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 263645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 265725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 266405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 268485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 269165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 271245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 271925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 274005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 274685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 276765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 277445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 279525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 280205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 282285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 282965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 285045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 285725 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 287805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 288485 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 290565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 291245 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 293325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 294005 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 296085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 296765 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 298845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 299525 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 301605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 302285 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 304365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 305045 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 307125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 307805 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 309885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 310565 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 312645 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 313325 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 315405 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 316085 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 318165 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 318845 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 320925 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 321605 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 323685 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 324365 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 326445 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 327125 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 329205 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 329885 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 331965 ns  Iteration: 8  Instance: /gen_funciones_tb/dac2
+# ** Failure: FIN CONTROLADO DE LA SIMULACION
+#    Time: 12960 ns  Iteration: 0  Process: /cnt_dac_tb/stim_proc File: cnt_dac_tb.vhd
+# Break in Process stim_proc at cnt_dac_tb.vhd line 232
+add wave -position 3  sim:/cnt_dac_tb/DAC1/dato_bin
+add wave -position 5 sim:/cnt_dac_tb/DAC2/*
+add wave -position 5  sim:/cnt_dac_tb/DAC2/dato_bin
+restart
+run -all
+# ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
+#    Time: 0 ps  Iteration: 0  Instance: /cnt_dac_tb/DAC2
+# ** Error: VIOLACIÓN DEL TIEMPO PERIODO DE SCLK(tCS)
+#    Time: 0 ps  Iteration: 0  Instance: /cnt_dac_tb/DAC1
+# ** Failure: FIN CONTROLADO DE LA SIMULACION
+#    Time: 12960 ns  Iteration: 0  Process: /cnt_dac_tb/stim_proc File: cnt_dac_tb.vhd
+# Break in Process stim_proc at cnt_dac_tb.vhd line 232
+# End time: 15:25:52 on Dec 17,2014, Elapsed time: 0:01:21
+# Errors: 4, Warnings: 2

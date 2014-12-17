@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/gen_funciones_tb_isim_par.exe" -prj "C:/Users/christopher/Dropbox/workspace/modelado14/gen_funciones/gen_funciones_tb_par.prj" "work.gen_funciones_tb" 

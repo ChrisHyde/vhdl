@@ -25,5 +25,8 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U_cnt_epp/CE_RD</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">gen_funciones</arg>&gt;.
 </msg>
 
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U_cnt_dac/CEcounter</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">gen_funciones</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;U_cnt_dac/SYNC&gt; </arg>
+</msg>
+
 </messages>
 

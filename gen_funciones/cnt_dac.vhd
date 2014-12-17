@@ -25,22 +25,21 @@ s2 --WAITING STATE
 
 signal state: 				state_type;  --current and next state declaration.
 
-
-type stateMx is (
+type mux_fsm is (
 mx0, --HOLDING STATE
-mx1, --TRANSMISSION STATE
-mx2 --WAITING STATE
+mx1,mx2
 ); 
-signal mxstate: 	stateMx;
+
+signal mxstate: 				mux_fsm;  --current and next state declaration.
 
 signal SCLKaux: 			std_logic;
-signal muxSelect: 		integer range 0 to 60;
+signal muxSelect: 		integer range 0 to 3;
 signal muxSelectTX:     unsigned (3 downto 0);
 signal CEcounter: 		std_logic;
 signal DATO_1_16bits:  	std_logic_vector(15 downto 0);
 signal DATO_2_16bits:  	std_logic_vector(15 downto 0);
 signal endTx: 			  	std_logic;
-constant muxcounter: integer:=60;
+constant countLimit : integer:=64;
 
 constant sclkPulseValue : unsigned:="1";
 
@@ -54,56 +53,98 @@ DATO_1_16bits<="0000"&DATO1&"0000";
 DATO_2_16bits<="0000"&DATO2&"0000";
 
 
-
-	  gen_clk : process (clk, rst)
+ gen_clk : process (clk, rst)
   begin  -- process gen_clk
-    if (rst = '1') then
+    if rst = '1' then
       SCLKaux   <= '0';
       prescaler   <= (others => '0');
-    elsif (clk'event and clk='1') then   -- rising clock edge
-      if (prescaler = x"1") then     
-           prescaler   <= (others => '0');
-         SCLKaux   <= not SCLKaux;
+   elsif (clk'event and clk='1') then   -- rising clock edge
+      if prescaler = X"1" then     
+        prescaler   <= (others => '0');
+        SCLKaux   <= not SCLKaux;
       else
         prescaler <= prescaler + "1";
       end if;
     end if;
-  end process;
+  end process gen_clk;
 
 SCLK <= SCLKaux;
 	
-	   counter:process(rst,CEcounter,clk)
+--	   counter:process(rst,CEcounter,clk)
+--		begin
+--		   if(rst = '1') then
+--			  muxSelect <= 0;	
+--			  muxSelectTX<=(others=>'0');			  
+--			  elsif (clk'event and clk='1') then
+--			         if (CEcounter='1') then					
+--             	        if(muxSelect mod (4) = 0)then
+--							      muxSelectTX<=muxSelectTX+1;
+--							  end if;							 
+--							  if (muxSelect = countLimit ) then
+--						         muxSelect <= 0;
+--						     else							    
+--									muxSelect <= muxSelect+1;	
+--							  end if;					
+--						else							 
+--						   muxSelectTX<=(others=>'0');
+--							muxSelect <= 0;	
+--					   end if;	 
+--			end if;			
+--		end process;
+--		
+		
+		
+--			   counter:process(rst,CEcounter,clk)
+--		begin
+--		   if(rst = '1') then
+--			  muxSelect <= 0;	
+--			  muxSelectTX<=(others=>'0');			  
+--			  elsif (clk'event and clk='1') then
+--			         if (CEcounter='1') then	
+--                      if (muxSelect<3)then						
+--                       muxSelectTX<=(others=>'0');	 
+--							 elsif (muxSelect mod (4) = 0)then
+--							        muxSelectTX<=muxSelectTX+1;
+--							 end if;							 
+--							 if (muxSelect = countLimit ) then
+--						         muxSelect <= 0;
+--						     else							    
+--									muxSelect <= muxSelect+1;	
+--							  end if;					
+--						else							 
+--						   muxSelectTX<=(others=>'0');
+--							muxSelect <= 0;	
+--					   end if;	 
+--			end if;			
+--		end process;
+		
+		
+		counter:process(rst,CEcounter,clk)
 		begin
 		   if(rst = '1') then
 			  muxSelect <= 0;	
 			  muxSelectTX<=(others=>'0');			  
 			  elsif (clk'event and clk='1') then
-			         if (CEcounter='1') then	
-                     						
-             	      if(muxSelect mod (4) = 0)then
-									  muxSelectTX<=muxSelectTX+1;
-							end if;
-							if (muxSelect = muxcounter ) then
-						        muxSelect <= 0;
-							else
-								  muxSelect <= muxSelect+1;	
-							end if;						 
-
-				   	 else
-							 muxSelectTX<=(others=>'0');
-			             muxSelect <= 0;							 
+			         if (CEcounter='1') then	                
+							  if (muxSelect = 3 ) then
+							        muxSelect <= 0;
+							        muxSelectTX<=muxSelectTX+1;
+							 else
+							      muxSelect <= muxSelect+1;	
+							 end if;							 
+							 				
+						else							 
+						   muxSelectTX<=(others=>'0');
+							muxSelect <= 0;	
 					   end if;	 
 			end if;			
 		end process;
 		
 		
 	
-mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits,rst,clk)
+mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits,clk,rst)
 		begin
-		     if(rst = '1') then
-				D1 <= 'Z';
-				D2 <= 'Z';
-		elsif (clk'event and clk = '1') then	
+		 
 				case muxSelectTX is
 					when x"0"=> D1 <= DATO_1_16bits(15);
 									D2 <= DATO_2_16bits(15);
@@ -152,16 +193,16 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits,rst,clk)
 					
 					when x"F"=> D1 <= DATO_1_16bits(0);
 									D2 <= DATO_2_16bits(0);		
-														
+												
 																		
 					when others => D1 <= '0';
 										D2 <= '0';
 				end case;
-				end if;
+
 		end process;
 	
 	
-	  fsm_proc:process(clk, rst,endTx)
+	  fsm_proc:process(clk, rst,endTx,DATO_OK)
 		begin
 			if(rst = '1') then
 				state <= S0;
@@ -176,22 +217,38 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits,rst,clk)
 					      --state <= s0;
 					  else --if DATO_OK=1
 					    state <= s1;
-						  SYNC<='0';	
+						  	
 					  end if;
 					when s1 =>		
-                   CEcounter<='1';	
-						 SYNC<='0';				 
+                   CEcounter<='1';
+                 SYNC<='0';						 
+						 --.state <= s1;						 
 						    if(endTx = '1') then
-							  state <= s2;				  
+							 CEcounter<='0';	
+							  SYNC<='1';
+                     	state <= s2;				  
 						  end if;
 						 
 				   when s2 =>	
-					CEcounter<='0';
 					 SYNC<='1';	
 					 state <= s0;				 
 		   end case;
 	 end if;
 end process;	
+
+--endTx <= '1' when (muxSelectTX = countLimit) else '0';
+
+--	  fsmMux_proc:process(clk, rst, muxSelectTX)
+--		begin
+--			if(rst = '1') then
+--				  endTx <= '0';
+--		elsif (clk'event and clk = '1') then
+--				if (muxSelectTX=x"F") then
+--					endTx <= '1';
+--				else
+--					endTx <= '0';
+--				end if;
+--		end if;
 
 
 
@@ -207,19 +264,45 @@ end process;
 					     	if (muxSelectTX=x"F") then
 							  mxstate <= mx1;
 							end if;
-					when mx1 =>		
-                       endTx <= '1';
+					when mx1 =>	
+                    if (muxSelectTX=x"F") then
 							  mxstate <= mx2;
-							
-				   when mx2 =>	
-					 
-						  if (muxSelectTX=x"0") then
+							  else
+							  mxstate <= mx0;	
+							end if;				
+					when mx2 =>	                    
 							  mxstate <= mx0;
-							end if;
-					 			 
+							  endTx <= '1'; 
+										 			 
 		   end case;
 	 end if;
 end process;	
+
+
+
+
+
+--	  fsmMux_proc:process(clk, rst,muxSelectTX)
+--		begin
+--			if(rst = '1') then
+--				  endTx <= '0';
+--				  mxstate <= mx0;
+--		elsif (clk'event and clk = '1') then	
+--	    	 case mxstate is
+--			      when mx0 =>
+--					      endTx <= '0'; 
+--					     	if (muxSelectTX=x"F") then
+--							  mxstate <= mx1;
+--							end if;
+--					when mx1 =>		
+--                    
+--						  if (muxSelectTX=x"0") then
+--						     endTx <= '1';
+--							  mxstate <= mx0;
+--							end if;				 			 
+--		   end case;
+--	 end if;
+--end process;	
 
 
 end RTL;

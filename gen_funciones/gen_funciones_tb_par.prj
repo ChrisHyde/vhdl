@@ -1,0 +1,4 @@
+vhdl work "netgen/par/gen_funciones_timesim.vhd"
+vhdl work "epp_device1.vhd"
+vhdl work "DAC121S101.vhd"
+vhdl work "gen_funciones_tb.vhd"
