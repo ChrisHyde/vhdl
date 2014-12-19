@@ -20,18 +20,30 @@ architecture RTL of cnt_dac is
 type state_type is (
 s0, --HOLDING STATE
 s1, --TRANSMISSION STATE
-s2  --WAITING STATE
+s2 --WAITING STATE
 ); 
 
 signal state: 				state_type;  --current and next state declaration.
 
+type mux_fsm is (
+mx0, --HOLDING STATE
+mx1,mx2
+); 
+
+signal mxstate: 				mux_fsm;  --current and next state declaration.
+
 signal SCLKaux: 			std_logic;
-signal muxSelect: 		integer range 0 to 15;
+signal muxSelect: 		integer range 0 to 3;
 signal muxSelectTX:     unsigned (3 downto 0);
 signal CEcounter: 		std_logic;
 signal DATO_1_16bits:  	std_logic_vector(15 downto 0);
 signal DATO_2_16bits:  	std_logic_vector(15 downto 0);
 signal endTx: 			  	std_logic;
+constant countLimit : integer:=64;
+
+constant sclkPulseValue : unsigned:="1";
+
+signal sclkPulseCounter: integer range 0 to 1;
 
 
 signal prescaler : unsigned(0 downto 0);
@@ -41,16 +53,13 @@ DATO_1_16bits<="0000"&DATO1&"0000";
 DATO_2_16bits<="0000"&DATO2&"0000";
 
 
-	
-
-
-  gen_clk : process (clk, rst)
+ gen_clk : process (clk, rst)
   begin  -- process gen_clk
     if rst = '1' then
       SCLKaux   <= '0';
       prescaler   <= (others => '0');
-    elsif rising_edge(clk) then   -- rising clock edge
-      if prescaler = X"1" then     -- 12 500 000 in hex
+   elsif (clk'event and clk='1') then   -- rising clock edge
+      if prescaler = X"1" then     
         prescaler   <= (others => '0');
         SCLKaux   <= not SCLKaux;
       else
@@ -61,27 +70,34 @@ DATO_2_16bits<="0000"&DATO2&"0000";
 
 SCLK <= SCLKaux;
 	
-	   counter:process(rst,CEcounter,SCLKaux)
+
+		
+		counter:process(rst,clk)
 		begin
 		   if(rst = '1') then
-			  muxSelect <= 0;					  
-			  elsif (SCLKaux'event and SCLKaux='1') then
-			         if (CEcounter='1') then
-             	       if (muxSelect = 15 ) then
-						        muxSelect <= 0;
-						    else
-							     muxSelect <= muxSelect+1;								  
-						    end if;
+			  muxSelect <= 0;	
+			  muxSelectTX<=(others=>'0');			  
+			  elsif (clk'event and clk='1') then
+			         if (CEcounter='1') then	                
+							  if (muxSelect = 3 ) then
+							        muxSelect <= 0;
+							        muxSelectTX<=muxSelectTX+1;
+							 else
+							      muxSelect <= muxSelect+1;	
+							 end if;							 
+							 				
+						else							 
+						   muxSelectTX<=(others=>'0');
+							muxSelect <= 0;	
 					   end if;	 
 			end if;			
 		end process;
 		
-		muxSelectTX<=to_unsigned(muxSelect, muxSelectTX'length);
+		
 	
-
 mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
 		begin
-		     endTx <= '0';
+	
 				case muxSelectTX is
 					when x"0"=> D1 <= DATO_1_16bits(15);
 									D2 <= DATO_2_16bits(15);
@@ -130,22 +146,22 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
 					
 					when x"F"=> D1 <= DATO_1_16bits(0);
 									D2 <= DATO_2_16bits(0);		
-											endTx <= '1';					
+												
 																		
 					when others => D1 <= '0';
 										D2 <= '0';
 				end case;
-				
+
 		end process;
 	
 	
-	  fsm_proc:process(SCLKaux, rst,endTx)
+	  fsm_proc:process(clk, rst)
 		begin
 			if(rst = '1') then
 				state <= S0;
 				 SYNC<='1';	
 				 CEcounter<='0';
-		elsif (SCLKaux'event and SCLKaux = '1') then	
+		elsif (clk'event and clk = '1') then	
 	    	 case state is
 			      when s0 =>
 					  if (DATO_OK='0') then
@@ -154,19 +170,49 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
 					      --state <= s0;
 					  else --if DATO_OK=1
 					    state <= s1;
-						  SYNC<='0';	
+						  	
 					  end if;
 					when s1 =>		
-                   CEcounter<='1';	
+                   CEcounter<='1';
+                 SYNC<='0';						 
 						 --.state <= s1;						 
 						    if(endTx = '1') then
-							  --SYNC<='0';
+							 CEcounter<='0';	
+							  SYNC<='1';
                      	state <= s2;				  
 						  end if;
 						 
 				   when s2 =>	
 					 SYNC<='1';	
 					 state <= s0;				 
+		   end case;
+	 end if;
+end process;	
+
+
+
+	  fsmMux_proc:process(clk, rst)
+		begin
+			if(rst = '1') then
+				  endTx <= '0';
+				  mxstate <= mx0;
+		elsif (clk'event and clk = '1') then	
+	    	 case mxstate is
+			      when mx0 =>
+					      endTx <= '0'; 
+					     	if (muxSelectTX=x"F") then
+							  mxstate <= mx1;
+							end if;
+					when mx1 =>	
+                    if (muxSelectTX=x"F") then
+							  mxstate <= mx2;
+							  else
+							  mxstate <= mx0;	
+							end if;				
+					when mx2 =>	                    
+							  mxstate <= mx0;
+							  endTx <= '1'; 
+										 			 
 		   end case;
 	 end if;
 end process;	

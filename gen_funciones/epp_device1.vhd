@@ -80,7 +80,7 @@ file arch_in : text ;
     DSTRB   <= '1';
     ASTRB   <= '1';
     dir  := (others   => '0');
-    wait for 160 ns;
+    wait for 260 ns;
       
  dir := dir_frec ;
 	 dato:=x"73";

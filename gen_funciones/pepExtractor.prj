@@ -1,7 +1,0 @@
-work	"cnt_dac.vhd"
-work	"cnt_dpram.vhd"
-work	"cnt_epp.vhd"
-work	"dpram_mem.vhd"
-work	"gen_dir.vhd"
-work	"gen_funciones.vhd"
-work	"ipcore_dir/dcm.vhd"

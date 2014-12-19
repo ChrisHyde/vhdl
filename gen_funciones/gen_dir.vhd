@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity gen_dir is
 
- generic ( N : integer := 68 );  
+  
   port (
     CLK      : in  std_logic;
     RST      : in  std_logic;
@@ -21,7 +21,7 @@ end gen_dir;
 architecture rtl of gen_dir is
   constant dir_frec : std_logic_vector( 7 downto 0) := x"F0";
    
-	
+	 constant N : integer := 68 ;
   type state_type is (
 s0,  --HOLDING STATE
 s1   --WAIT DATA STATE  
@@ -60,7 +60,7 @@ fsm_proc:process(clk, rst,valor_freq,DIR_VLD,DIR,DATO_VLD)
 		begin
 			if(rst = '1') then
 				state <= s0;
-				valor_freq<=(others=>'0');
+				valor_freq<=(7=>'1', others=>'0');
 		   elsif (clk'event and clk = '1') then	
 	    	 case state is
 			      

@@ -72,7 +72,7 @@ SCLK <= SCLKaux;
 	
 
 		
-		counter:process(rst,CEcounter,clk)
+		counter:process(rst,clk)
 		begin
 		   if(rst = '1') then
 			  muxSelect <= 0;	
@@ -155,7 +155,7 @@ mux:process (muxSelectTX,DATO_1_16bits,DATO_2_16bits)
 		end process;
 	
 	
-	  fsm_proc:process(clk, rst,endTx,DATO_OK)
+	  fsm_proc:process(clk, rst)
 		begin
 			if(rst = '1') then
 				state <= S0;
@@ -191,7 +191,7 @@ end process;
 
 
 
-	  fsmMux_proc:process(clk, rst,muxSelectTX)
+	  fsmMux_proc:process(clk, rst)
 		begin
 			if(rst = '1') then
 				  endTx <= '0';
